@@ -84,6 +84,11 @@ dist/
 # ============================================
 docs/
 
+# Reports folder and other misc folder (not needed for code upload)
+network-analysis/others/
+network-analysis/reports/
+
+# ============================================
 # Raw PCAP files (large, can be re-downloaded from malware-traffic-analysis.net)
 # Exclude .pcap + .pcap.zip to keep repo small
 # But keep split pcap files since they are referenced in reports
