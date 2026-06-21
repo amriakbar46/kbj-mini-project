@@ -1,0 +1,59 @@
+# Suricata rules for Case 3 (2025-06-13) PHP-based RAT with BYOI staging
+# Tested against: 2025-06-13-traffic-analysis-exercise.pcap
+# Author: re-analysis 2026-06-21
+
+# ============================================
+# RULE 1: BYOI staging — download PHP from windows.php.net by non-developer
+# ============================================
+alert http $HOME_NET any -> $EXTERNAL_NET any (msg:"CUSTOM case3 BYOI staging - download PHP interpreter from windows.php.net"; flow:established,to_server; http.method; content:"GET"; http.host; content:"windows.php.net"; classtype:trojan-activity; sid:9300001; rev:1; metadata: attack.t1567.002 attack.t1195.002;)
+
+# ============================================
+# RULE 2: Initial C2 check-in — POST to Microsoft-typosquat with PowerShell UA
+# ============================================
+alert http $HOME_NET any -> $EXTERNAL_NET any (msg:"CUSTOM case3 Initial C2 check-in - PowerShell POST to Microsoft-typosquat"; flow:established,to_server; http.method; content:"POST"; http.user_agent; content:"WindowsPowerShell"; nocase; http.host; content:"|2d|"; http.host; content:"|2d|microsoft"; nocase; distance:0; classtype:trojan-activity; sid:9300002; rev:1; metadata: attack.t1071.001 attack.t1059.001;)
+
+# ============================================
+# RULE 3: RAT beacon — POST to C2 with no User-Agent + application/octet-stream
+# ============================================
+alert http $HOME_NET any -> $EXTERNAL_NET any (msg:"CUSTOM case3 RAT beacon - POST no UA octet-stream"; flow:established,to_server; http.method; content:"POST"; http.user_agent; content:!"|0d 0a|"; http.content_type; content:"application/octet-stream"; classtype:trojan-activity; sid:9300003; rev:1; metadata: attack.t1071.001 attack.t1573.001;)
+
+# ============================================
+# RULE 4: RAT beacon — POST to specific known C2 domain
+# ============================================
+alert http $HOME_NET any -> 104.21.0.0/16 any (msg:"CUSTOM case3 RAT beacon to windows-msgas.com (Cloudflare)"; flow:established,to_server; http.method; content:"POST"; http.host; content:"windows-msgas.com"; classtype:trojan-activity; sid:9300004; rev:1;)
+
+alert http $HOME_NET any -> 104.21.0.0/16 any (msg:"CUSTOM case3 RAT beacon to event-datamicrosoft.live (Cloudflare)"; flow:established,to_server; http.method; content:"POST"; http.host; content:"event-datamicrosoft.live"; classtype:trojan-activity; sid:9300005; rev:1;)
+
+alert http $HOME_NET any -> 104.16.0.0/12 any (msg:"CUSTOM case3 RAT beacon via Cloudflare Tunnel trycloudflare.com"; flow:established,to_server; http.method; content:"POST"; http.host; content:"trycloudflare.com"; classtype:trojan-activity; sid:9300006; rev:1; metadata: attack.t1090.004;)
+
+# ============================================
+# RULE 5: Initial stager recon — GET to event-time-microsoft.org with PS UA
+# ============================================
+alert http $HOME_NET any -> $EXTERNAL_NET any (msg:"CUSTOM case3 Initial recon GET to event-time-microsoft.org (PS UA)"; flow:established,to_server; http.method; content:"GET"; http.host; content:"event-time-microsoft.org"; http.user_agent; content:"WindowsPowerShell"; classtype:trojan-activity; sid:9300007; rev:1;)
+
+# ============================================
+# RULE 6: Initial access — JS inject PowerShell via Net.WebClient from compromised site
+# ============================================
+alert http $HOME_NET any -> $EXTERNAL_NET any (msg:"CUSTOM case3 Initial stager download from dng-microsoftds.com"; flow:established,to_server; http.method; content:"GET"; http.host; content:"dng-microsoftds.com"; classtype:trojan-activity; sid:9300008; rev:1;)
+
+# ============================================
+# RULE 7: C2 fallback IP (hardcoded in config.cfg) - block by IP
+# ============================================
+alert ip $HOME_NET any -> 159.69.187.78 any (msg:"CUSTOM case3 C2 fallback IP #1 (hardcoded in config.cfg)"; classtype:trojan-activity; sid:9300009; rev:1;)
+alert ip $HOME_NET any -> 64.95.12.71 any (msg:"CUSTOM case3 C2 fallback IP #2 (hardcoded in config.cfg)"; classtype:trojan-activity; sid:9300010; rev:1;)
+alert ip $HOME_NET any -> 184.95.51.165 any (msg:"CUSTOM case3 C2 fallback IP #3 (hardcoded in config.cfg)"; classtype:trojan-activity; sid:9300011; rev:1;)
+
+# ============================================
+# RULE 8: DNS query to known C2 / initial access domain (for EVE DNS log monitoring)
+# ============================================
+alert dns $HOME_NET any -> any 53 (msg:"CUSTOM case3 DNS query to known C2 (windows-msgas.com)"; dns.query; content:"windows-msgas.com"; nocase; classtype:trojan-activity; sid:9300012; rev:1;)
+alert dns $HOME_NET any -> any 53 (msg:"CUSTOM case3 DNS query to known C2 (event-datamicrosoft.live)"; dns.query; content:"event-datamicrosoft.live"; nocase; classtype:trojan-activity; sid:9300013; rev:1;)
+alert dns $HOME_NET any -> any 53 (msg:"CUSTOM case3 DNS query to Cloudflare Tunnel C2 (*.trycloudflare.com)"; dns.query; content:"trycloudflare.com"; nocase; classtype:trojan-activity; sid:9300014; rev:1;)
+alert dns $HOME_NET any -> any 53 (msg:"CUSTOM case3 DNS query to initial stager domain (event-time-microsoft.org)"; dns.query; content:"event-time-microsoft.org"; nocase; classtype:trojan-activity; sid:9300015; rev:1;)
+alert dns $HOME_NET any -> any 53 (msg:"CUSTOM case3 DNS query to initial stager domain (dng-microsoftds.com)"; dns.query; content:"dng-microsoftds.com"; nocase; classtype:trojan-activity; sid:9300016; rev:1;)
+alert dns $HOME_NET any -> any 53 (msg:"CUSTOM case3 DNS query to JS stager delivery (hillcoweb.com)"; dns.query; content:"hillcoweb.com"; nocase; classtype:trojan-activity; sid:9300017; rev:1;)
+
+# ============================================
+# RULE 9: TLS to PHP download source (anomaly - non-developer endpoint)
+# ============================================
+alert tls $HOME_NET any -> 83.137.149.15 any (msg:"CUSTOM case3 TLS to windows.php.net (83.137.149.15) - BYOI staging"; flow:established,to_server; classtype:trojan-activity; sid:9300018; rev:1; metadata: attack.t1127;)

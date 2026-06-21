@@ -411,6 +411,18 @@ Tujuan:
 
 Lihat `scripts/wireshark_evidence/README.md` untuk detail.
 
+## Case 3 Deep Analysis (forensic bundle decoding)
+
+Lihat `scripts/case3/README.md` untuk 5 script forensic analysis khusus
+Case 3 (PE analyzer, config decoder, payload analyzer, YARA validator, VT lookup).
+**Output artifacts** (YARA/Suricata/Sigma rules + VT lookup log + re-analysis memo)
+di-track di GitHub di `network-analysis/output/case3/analysis/`:
+- `yara_rules.yar` (4 rules, validated)
+- `suricata.rules` (18 rules, sid 9300001–9300018)
+- `sigma_rules.yml` (7 rules)
+- `vt_lookup_log.txt` (44/74 detections, API key redacted)
+- `REANALYSIS_MEMO.md` (44 KB, 4 iteration)
+
 # Exploratory DFIR Workflow
 
 Selama proses investigasi, beberapa analisis dilakukan secara exploratory dan iterative menggunakan command-line serta Python inline execution untuk validasi cepat terhadap artefak network traffic.

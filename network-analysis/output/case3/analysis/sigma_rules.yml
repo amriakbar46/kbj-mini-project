@@ -1,0 +1,255 @@
+# Sigma rules for Case 3 (2025-06-13) PHP-based RAT with BYOI staging
+# Compatible with SIEM backends: Splunk, Elastic, Microsoft Sentinel, etc.
+# Author: re-analysis 2026-06-21
+
+title: PHP Interpreter Executed from APPDATA Path (BYOI Indicator)
+id: 8a3b1c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d
+status: experimental
+level: high
+description: |
+  Detects php.exe being executed from non-standard %APPDATA% path.
+  In Case 3 (2025-06-13), PHP 8 interpreter was downloaded via BYOI
+  to %APPDATA%\php\php.exe (SHA256 b0c32fba...) and used to run config.cfg.
+references:
+  - https://attack.mitre.org/techniques/T1127/
+logsource:
+  product: windows
+  category: process_creation
+detection:
+  selection:
+    Image|endswith:
+      - '\php.exe'
+      - '\php-win.exe'
+      - '\php-cgi.exe'
+  filter_appdata:
+    Image|contains:
+      - '\AppData\Roaming\'
+      - '\AppData\Local\'
+  condition: selection and filter_appdata
+falsepositives:
+  - Developer machines with PHP in custom location
+fields:
+  - User
+  - Image
+  - CommandLine
+  - ParentImage
+tags:
+  - attack.defense_evasion
+  - attack.t1127
+  - case3_2025-06-13
+
+---
+title: c2.exe Launcher Execution from Suspicious APPDATA Path
+id: 7b9c8d2e-1f3a-4b5c-6d7e-8f9a0b1c2d3e
+status: experimental
+level: high
+description: |
+  Detects c2.exe (SHA256 1206473a7c...) launcher running from
+  %APPDATA%\<random>\ path. In Case 3, this launcher was located at
+  %APPDATA%\afUGkp\c2.exe and used to invoke php.exe with config.cfg.
+references:
+  - Internal: c2.exe hash from forensic bundle
+logsource:
+  product: windows
+  category: process_creation
+detection:
+  selection:
+    Image|contains:
+      - '\AppData\Roaming\'
+    Image|endswith:
+      - '\c2.exe'
+  condition: selection
+falsepositives:
+  - Unknown (very specific path pattern)
+fields:
+  - User
+  - Image
+  - CommandLine
+  - ParentImage
+  - ParentCommandLine
+tags:
+  - attack.execution
+  - attack.t1059
+  - case3_2025-06-13
+
+---
+title: Registry Run Key Persistence Set to php.exe with config.cfg Argument
+id: 4e5f6a7b-8c9d-0e1f-2a3b-4c5d6e7f8a9b
+status: experimental
+level: high
+description: |
+  Detects persistence via HKCU\Software\Microsoft\Windows\CurrentVersion\Run
+  with value pointing to php.exe with config.cfg or similar RAT script argument.
+  In Case 3, function UrHlx() in config.cfg did this via 'reg add' command.
+references:
+  - https://attack.mitre.org/techniques/T1547/001/
+logsource:
+  product: windows
+  category: registry_set
+detection:
+  selection:
+    EventType: SetValue
+    TargetObject|endswith:
+      - '\Software\Microsoft\Windows\CurrentVersion\Run\*'
+    TargetObject|contains: 'HKCU'
+  detail_filter:
+    Details|contains:
+      - 'php.exe'
+      - 'config.cfg'
+      - 'c2.exe'
+  condition: selection and detail_filter
+falsepositives:
+  - Developer tools that legitimately use php.exe in Run key
+fields:
+  - TargetObject
+  - Details
+  - User
+tags:
+  - attack.persistence
+  - attack.t1547.001
+  - case3_2025-06-13
+
+---
+title: PowerShell DownloadString with Invoke-Expression (Initial Stager Pattern)
+id: 2a3b4c5d-6e7f-8a9b-0c1d-2e3f4a5b6c7d
+status: experimental
+level: high
+description: |
+  Detects PowerShell process creating Net.WebClient with DownloadString
+  and Invoke-Expression (iex) usage in same command line. Common pattern
+  in case3 initial stager from compromised truglomedspa.com.
+references:
+  - https://attack.mitre.org/techniques/T1059/001/
+  - https://attack.mitre.org/techniques/T1105/
+logsource:
+  product: windows
+  category: process_creation
+detection:
+  selection_powershell:
+    Image|endswith:
+      - '\powershell.exe'
+      - '\pwsh.exe'
+  selection_downloadstring:
+    CommandLine|contains:
+      - 'DownloadString'
+      - 'DownloadFile'
+      - 'DownloadData'
+  selection_iex:
+    CommandLine|contains:
+      - 'Invoke-Expression'
+      - 'iex'
+  condition: selection_powershell and selection_downloadstring and selection_iex
+falsepositives:
+  - Penetration testing
+  - Sysadmin scripts
+fields:
+  - User
+  - Image
+  - CommandLine
+  - ParentImage
+tags:
+  - attack.execution
+  - attack.t1059.001
+  - attack.t1105
+  - case3_2025-06-13
+
+---
+title: Suspicious Shortcut (.lnk) in Startup Folder
+id: 9c8d7e6f-5a4b-3c2d-1e0f-9a8b7c6d5e4f
+status: experimental
+level: medium
+description: |
+  Detects newly-created .lnk files in Startup folders pointing to
+  executables in %APPDATA% paths. In Case 3, ycBFVIbLl.lnk was placed
+  in Startup folder pointing to %APPDATA%\afUGkp\c2.exe.
+references:
+  - https://attack.mitre.org/techniques/T1547/009/
+logsource:
+  product: windows
+  category: file_event
+detection:
+  selection:
+    TargetFilename|endswith:
+      - '\Start Menu\Programs\Startup\*.lnk'
+    TargetFilename|contains:
+      - '\AppData\'
+  condition: selection
+falsepositives:
+  - Some legitimate apps install Startup shortcuts
+fields:
+  - TargetFilename
+  - User
+  - Image
+tags:
+  - attack.persistence
+  - attack.t1547.009
+  - case3_2025-06-13
+
+---
+title: Node.js v21.7.3 Downloaded by Non-Developer User
+id: 1d2e3f4a-5b6c-7d8e-9f0a-1b2c3d4e5f6a
+status: experimental
+level: medium
+description: |
+  Detects download of Node.js v21.7.3 from nodejs.org by user context
+  that is unlikely to be a developer. In Case 3, command code 'JS=2'
+  in config.cfg triggered this download as part of BYOI cascade.
+references:
+  - https://attack.mitre.org/techniques/T1105/
+logsource:
+  product: zeek
+  service: http
+detection:
+  selection:
+    method: GET
+    host|contains: 'nodejs.org'
+    uri|contains: 'v21.7.3'
+  condition: selection
+falsepositives:
+  - Actual Node.js developers
+fields:
+  - src_ip
+  - host
+  - uri
+  - user_agent
+tags:
+  - attack.command_and_control
+  - attack.t1105
+  - case3_2025-06-13
+
+---
+title: HTTP POST to Cloudflare-fronted Domain with Octet-Stream and No User-Agent
+id: 6f5e4d3c-2b1a-0f9e-8d7c-6b5a4f3e2d1c
+status: experimental
+level: high
+description: |
+  Detects HTTP POST traffic to Cloudflare-fronted domains (104.21.0.0/16)
+  with no User-Agent and application/octet-stream Content-Type.
+  Characteristic pattern of case3 RAT beacon.
+references:
+  - https://attack.mitre.org/techniques/T1071/001/
+logsource:
+  product: zeek
+  service: http
+detection:
+  selection_method:
+    method: POST
+  selection_ip:
+    dest_ip|startswith: '104.21.'
+  selection_no_ua:
+    user_agent: ''
+  selection_ct:
+    request_content_type|contains: 'application/octet-stream'
+  condition: selection_method and selection_ip and (selection_no_ua or selection_ct)
+falsepositives:
+  - Some monitoring/agent traffic may match
+fields:
+  - src_ip
+  - dest_ip
+  - host
+  - uri
+  - method
+tags:
+  - attack.command_and_control
+  - attack.t1071.001
+  - case3_2025-06-13

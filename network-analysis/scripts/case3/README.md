@@ -46,7 +46,7 @@ python3 network-analysis/scripts/case3/case3_payload_analyzer.py \
 
 # 4. YARA validator
 python3 network-analysis/scripts/case3/case3_yara_validator.py \
-  docs/diskusi\ kelompok/case3_yara_rules.yar \
+  network-analysis/output/case3/analysis/yara_rules.yar \
   network-analysis/pcap/2025-06-13-traffic-analysis-exercise-forensic-analysis/ \
   network-analysis/
 
@@ -63,16 +63,26 @@ accidental commits), rotate it:
 1. Go to https://www.virustotal.com/gui/user/[username]/apikey
 2. Click "Regenerate API key"
 3. Update `network-analysis/.env` with the new key
-4. Delete old log files that may contain the old key (see
-   `docs/diskusi kelompok/case3_vt_lookup_log.txt`)
+4. Delete old log files that may contain the old key (the API key
+   in `network-analysis/output/case3/analysis/vt_lookup_log.txt` is
+   already redacted to `7c63a538...7b468e95` for safe public sharing)
 
 Free tier limits: 4 lookups/min, 500/day, 15.5K/month.
 
-## Output Files (already generated, in `docs/diskusi kelompok/`)
+## Output Artifacts (tracked in `network-analysis/output/case3/analysis/`)
 
-- `case3_report_REVISED.html` — Final incident report v2.3
-- `CASE3_REANALYSIS_MEMO.md` — Full re-analysis memo
-- `case3_yara_rules.yar` — 4 YARA rules (validated, 3 match)
-- `case3_suricata.rules` — 18 Suricata rules
-- `case3_sigma_rules.yml` — 7 Sigma rules
-- `case3_vt_lookup_log.txt` — Full VT lookup result log
+All detection-engineering artifacts are committed to the repo at
+`network-analysis/output/case3/analysis/`:
+
+| File | Content |
+|---|---|
+| `yara_rules.yar` | 4 YARA rules (validated, 3 match against forensic bundle) |
+| `suricata.rules` | 18 Suricata rules (sid 9300001–9300018, all compiled) |
+| `sigma_rules.yml` | 7 Sigma rules for SIEM |
+| `vt_lookup_log.txt` | Full VirusTotal lookup result log (API key redacted) |
+| `REANALYSIS_MEMO.md` | Full re-analysis memo (4 iteration, 44 KB) |
+
+The HTML report and PDF are kept locally under `docs/` (gitignored) since
+they are draft-only artifacts. The committed artifacts in
+`output/case3/analysis/` are the **final deliverables** referenced from
+the Final Report Lampiran A.

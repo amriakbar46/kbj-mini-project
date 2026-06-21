@@ -1,0 +1,143 @@
+=============================================
+VIRUSTOTAL LOOKUP LOG
+Case 3 (2025-06-13) BYOI PHP RAT
+Date: 2026-06-21
+API key: 7c63a538...7b468e95 (redacted)
+=============================================
+
+============================================================
+VIRUSTOTAL LOOKUP — Case 3 (2025-06-13) BYOI PHP RAT
+API key: 7c63a538...7b468e95 (redacted)
+============================================================
+
+[c2.exe (launcher)]
+  File:   /home/yoan/Yoan/kuliah/ITS/komputasi-berbasis-jaringan /mini-project-lagi/network-analysis/pcap/2025-06-13-traffic-analysis-exercise-forensic-analysis/AppData-Roaming-afUGkp/c2.exe
+  SHA256: 1206473a7c5643dc0a1a52c17418aa37fb5194e2395907aefaec976cb4849b4e
+  Found in VT database
+  Detection: 44/74 engines flagged malicious
+    Harmless:  0
+    Malicious: 44
+    Suspicious: 0
+    Undetected: 26
+    Timeout:    0
+    Type-unsupported: 4
+    Failure:     0
+  Type: peexe
+  Size: 17,920 bytes
+  Magic: PE32+ executable (GUI) x86-64 (stripped to external PDB), for MS Windows
+  TRID (file type detection): ['Microsoft Visual C++ compiled executable (generic) (41.1%)', 'Win64 Executable (generic) (26.1%)', 'Win16 NE executable (generic) (12.5%)']
+  Tags: long-sleeps, detect-debug-environment, clipboard, peexe, spreader, 64bits
+  Last submission: 2026-02-18 21:13:00+00:00
+  Times submitted: 19
+  Error: 'WhistleBlowerDict' object has no attribute 'category'
+
+[config.cfg (PHP RAT)]
+  File:   /home/yoan/Yoan/kuliah/ITS/komputasi-berbasis-jaringan /mini-project-lagi/network-analysis/pcap/2025-06-13-traffic-analysis-exercise-forensic-analysis/AppData-Roaming-php/config.cfg
+  SHA256: a24cda6fe5710272556b273d1b03081704a919130b5f10f18c7c16947f25d370
+  Found in VT database
+  Detection: 1/74 engines flagged malicious
+    Harmless:  0
+    Malicious: 1
+    Suspicious: 0
+    Undetected: 59
+    Timeout:    0
+    Type-unsupported: 14
+    Failure:     0
+  Type: php
+  Size: 25,923 bytes
+  Magic: PHP script, Unicode text, UTF-8 (with BOM) text, with very long lines (25912u), with CRLF, LF line terminators
+  TRID (file type detection): ['Text - UTF-8 encoded (100.0%)']
+  Tags: php
+  Last submission: 2025-11-24 05:48:56+00:00
+  Times submitted: 1
+  Error: 'Object' object has no attribute 'popular_threat_classification'
+
+[php.exe (interpreter)]
+  File:   /home/yoan/Yoan/kuliah/ITS/komputasi-berbasis-jaringan /mini-project-lagi/network-analysis/pcap/2025-06-13-traffic-analysis-exercise-forensic-analysis/AppData-Roaming-php/php.exe
+  SHA256: b0c32fba80e2b15abb9e253c1d36e47383fad18940eab3c08e2c11c78803f133
+  Found in VT database
+  Detection: 0/75 engines flagged malicious
+    Harmless:  0
+    Malicious: 0
+    Suspicious: 0
+    Undetected: 71
+    Timeout:    0
+    Type-unsupported: 4
+    Failure:     0
+  Type: peexe
+  Size: 143,872 bytes
+  Magic: PE32+ executable (console) x86-64, for MS Windows
+  TRID (file type detection): ['Win64 Executable (generic) (48.7%)', 'Win16 NE executable (generic) (23.3%)', 'OS/2 Executable (generic) (9.3%)']
+  Tags: peexe, 64bits, detect-debug-environment
+  Last submission: 2025-08-22 18:34:54+00:00
+  Times submitted: 5
+  Error: 'Object' object has no attribute 'popular_threat_classification'
+
+[payload 968 KB]
+  File:   /home/yoan/Yoan/kuliah/ITS/komputasi-berbasis-jaringan /mini-project-lagi/network-analysis/output/case3/payloads/http_file_data/frame_8561_stream_90_104.21.112.1_to_10.6.13.133.bin
+  SHA256: 9e2f538ca158d67ab3572080cf575ab21c0373ba05d19ce8794fcb3665fb7acf
+  Found in VT database
+  Detection: 5/76 engines flagged malicious
+    Harmless:  0
+    Malicious: 5
+    Suspicious: 0
+    Undetected: 57
+    Timeout:    0
+    Type-unsupported: 14
+    Failure:     0
+  Type: powershell
+  Size: 991,303 bytes
+  Magic: ASCII text, with very long lines (779u)
+  Error: 'Object' object has no attribute 'trid'
+
+============================================================
+SUMMARY
+============================================================
+
+=============================================
+TOP 10 DETECTION NAMES FOR c2.exe (SHA256 1206473a7c...)
+=============================================
+  [MAL] ALYac                         : Gen:Variant.Doina.100728
+  [MAL] APEX                          : Malicious
+  [MAL] AVG                           : Win64:MalwareX-gen [Misc]
+  [MAL] AhnLab-V3                     : Malware/Win.Generic.C5770504
+  [MAL] Arcabit                       : Trojan.Doina.D18978
+  [MAL] Avast                         : Win64:MalwareX-gen [Misc]
+  [MAL] Avira                         : TR/AVI.Agent.iaxqm
+  [MAL] BitDefender                   : Gen:Variant.Doina.100728
+  [MAL] Bkav                          : W64.AIDetectMalware
+  [MAL] CTX                           : exe.trojan.generic
+  [MAL] Cylance                       : Unsafe
+  [MAL] Cynet                         : Malicious (score: 99)
+  [MAL] DeepInstinct                  : MALICIOUS
+  [MAL] ESET-NOD32                    : Win64/TrojanDownloader.Agent_AGen.HR trojan
+  [MAL] Elastic                       : malicious (high confidence)
+  [MAL] Emsisoft                      : Gen:Variant.Doina.100728 (B)
+  [MAL] F-Secure                      : Trojan.TR/AVI.Agent.iaxqm
+  [MAL] Fortinet                      : W64/Agent_AGen.HR!tr.dldr
+  [MAL] GData                         : Gen:Variant.Doina.100728
+  [MAL] Google                        : Detected
+  [MAL] Ikarus                        : Trojan-Downloader.Win64.Agent
+  [MAL] K7AntiVirus                   : Trojan-Downloader ( 005d94351 )
+  [MAL] K7GW                          : Trojan-Downloader ( 005d94351 )
+  [MAL] Lionic                        : Trojan.Win32.Generic.4!c
+  [MAL] Malwarebytes                  : Trojan.Downloader
+  [MAL] MaxSecure                     : Trojan.Malware.326071286.susgen
+  [MAL] McAfeeD                       : ti!1206473A7C56
+  [MAL] MicroWorld-eScan              : Gen:Variant.Doina.100728
+  [MAL] Microsoft                     : Trojan:Win64/Zusy.AHE!MTB
+  [MAL] Paloalto                      : generic.ml
+  [MAL] Panda                         : Trj/Chgt.AD
+  [MAL] Rising                        : Malware.Undefined!8.C (TFE:5:gcmWe1wV0kN)
+  [MAL] Sangfor                       : Downloader.Win64.Agent.Vuso
+  [MAL] Skyhigh                       : Artemis!Trojan
+  [MAL] Sophos                        : Mal/Generic-S
+  [MAL] Symantec                      : ML.Attribute.HighConfidence
+  [MAL] Tencent                       : Malware.Win32.Gencirc.14947a9e
+  [MAL] TrellixENS                    : Artemis!799411105C6F
+  [MAL] TrendMicro                    : TROJ_GEN.R002C0DFT25
+  [MAL] TrendMicro-HouseCall          : TROJ_GEN.R002C0DFT25
+  [MAL] VIPRE                         : Gen:Variant.Doina.100728
+  [MAL] Varist                        : W64/ABDownloader.XYEA-6001
+  [MAL] Zillya                        : Downloader.AgentAGen.Win64.4435
+  [MAL] alibabacloud                  : Trojan[downloader]:Win/Agent_AGen.HV

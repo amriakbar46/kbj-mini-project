@@ -61,6 +61,13 @@ python scripts/wireshark_evidence/gen_wireshark_evidence.py
 
 Lihat `scripts/wireshark_evidence/README.md` untuk detail filter tshark per PNG.
 
+## Case 3 Deep Analysis Scripts
+
+Lihat `scripts/case3/README.md` untuk 5 script forensic analysis khusus
+Case 3 (PE analyzer, config decoder, payload analyzer, YARA validator, VT lookup).
+Output artifacts (YARA/Suricata/Sigma rules + VT log + re-analysis memo)
+tersimpan di `network-analysis/output/case3/analysis/` (tracked di GitHub).
+
 ---
 
 # Notes
