@@ -1,0 +1,23 @@
+case,tool,estimated_time_min,pct_of_total
+case1,TShark/Wireshark,25,26.3
+case1,PyShark scripts,15,15.8
+case1,BruteShark,10,10.5
+case1,PcapXray,15,15.8
+case1,CyberChef/strings,5,5.3
+case1,OSINT (VT/AbuseIPDB/OTX),10,10.5
+case1,Python scripts (beacon/comm),15,15.8
+case1,TOTAL (sum),95,100.0
+case2,TShark/Wireshark,20,25.0
+case2,PyShark scripts,12,15.0
+case2,BruteShark,8,10.0
+case2,PcapXray,10,12.5
+case2,OSINT (VT/AbuseIPDB/OTX),8,10.0
+case2,Python scripts (beacon/comm),22,27.5
+case2,TOTAL (sum),80,100.0
+case3,TShark/Wireshark,30,27.3
+case3,PyShark scripts,18,16.4
+case3,BruteShark,12,10.9
+case3,PcapXray,12,10.9
+case3,OSINT (VT/AbuseIPDB/OTX),12,10.9
+case3,Python scripts (beacon/comm/ja3/dga),26,23.6
+case3,TOTAL (sum),110,100.0

@@ -1,0 +1,223 @@
+ioc_type,value,notes
+ip,0.0.0.0,unique IP address
+ip,10.6.13.129,unique IP address
+ip,10.6.13.133,unique IP address
+ip,10.6.13.255,unique IP address
+ip,10.6.13.3,unique IP address
+ip,104.16.124.96,unique IP address
+ip,104.16.230.132,unique IP address
+ip,104.16.231.132,unique IP address
+ip,104.208.203.90,unique IP address
+ip,104.21.112.1,unique IP address
+ip,104.21.16.1,unique IP address
+ip,104.21.24.186,unique IP address
+ip,104.21.64.1,unique IP address
+ip,104.21.80.1,unique IP address
+ip,104.21.96.1,unique IP address
+ip,109.61.92.48,unique IP address
+ip,13.107.18.254,unique IP address
+ip,13.107.246.57,unique IP address
+ip,13.107.42.10,unique IP address
+ip,13.107.42.16,unique IP address
+ip,13.74.187.43,unique IP address
+ip,142.250.113.95,unique IP address
+ip,142.250.115.104,unique IP address
+ip,142.250.115.106,unique IP address
+ip,142.250.115.94,unique IP address
+ip,142.250.115.95,unique IP address
+ip,142.250.115.99,unique IP address
+ip,142.250.138.155,unique IP address
+ip,142.250.138.97,unique IP address
+ip,142.251.186.138,unique IP address
+ip,150.171.27.11,unique IP address
+ip,150.171.27.12,unique IP address
+ip,150.171.28.11,unique IP address
+ip,150.171.73.254,unique IP address
+ip,157.240.24.13,unique IP address
+ip,157.240.24.35,unique IP address
+ip,172.202.65.254,unique IP address
+ip,172.67.146.241,unique IP address
+ip,173.194.208.155,unique IP address
+ip,173.194.208.94,unique IP address
+ip,173.222.52.33,unique IP address
+ip,191.232.215.149,unique IP address
+ip,20.189.173.6,unique IP address
+ip,20.190.135.6,unique IP address
+ip,20.190.157.13,unique IP address
+ip,20.190.157.14,unique IP address
+ip,20.190.157.9,unique IP address
+ip,20.50.80.213,unique IP address
+ip,204.79.197.203,unique IP address
+ip,204.79.197.222,unique IP address
+ip,205.174.24.80,unique IP address
+ip,216.239.38.181,unique IP address
+ip,217.20.51.22,unique IP address
+ip,224.0.0.251,unique IP address
+ip,224.0.0.252,unique IP address
+ip,23.192.223.206,unique IP address
+ip,23.192.223.240,unique IP address
+ip,23.198.7.168,unique IP address
+ip,23.198.7.180,unique IP address
+ip,23.198.7.182,unique IP address
+ip,23.198.7.186,unique IP address
+ip,23.212.185.76,unique IP address
+ip,23.212.185.87,unique IP address
+ip,23.96.124.68,unique IP address
+ip,23.96.180.189,unique IP address
+ip,239.255.255.250,unique IP address
+ip,255.255.255.255,unique IP address
+ip,40.126.29.11,unique IP address
+ip,40.126.29.13,unique IP address
+ip,40.69.76.172,unique IP address
+ip,44.239.34.26,unique IP address
+ip,52.113.196.254,unique IP address
+ip,52.123.129.14,unique IP address
+ip,52.140.118.28,unique IP address
+ip,52.156.123.84,unique IP address
+ip,52.167.249.196,unique IP address
+ip,67.217.228.199,unique IP address
+ip,83.137.149.15,unique IP address
+domain,DESKTOP-5AVE44C.massfriction.com,DNS query
+domain,WIN-DQL4WFWJXQ4.massfriction.com,DNS query
+domain,_ldap._tcp.Default-First-Site-Name._sites.WIN-DQL4WFWJXQ4.massfriction.com,DNS query
+domain,_ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.massfriction.com,DNS query
+domain,_ldap._tcp.Default-First-Site-Name._sites.massfriction.com,DNS query
+domain,_ldap._tcp.WIN-DQL4WFWJXQ4.massfriction.com,DNS query
+domain,acroipm2.adobe.com,DNS query
+domain,analytics.google.com,DNS query
+domain,api.msn.com,DNS query
+domain,api.userway.org,DNS query
+domain,arc-ring.msedge.net,DNS query
+domain,array619.prod.do.dsp.mp.microsoft.com,DNS query
+domain,array620.prod.do.dsp.mp.microsoft.com,DNS query
+domain,assets.msn.com,DNS query
+domain,browser.pipe.aria.microsoft.com,DNS query
+domain,bx-ring.msedge.net,DNS query
+domain,cdn.userway.org,DNS query
+domain,ce7953307ad2079d6aaa354bfc57865b.clo.footprintdns.com,DNS query
+domain,client.wns.windows.com,DNS query
+domain,config.edge.skype.com,DNS query
+domain,connect.facebook.net,DNS query
+domain,ctldl.windowsupdate.com,DNS query
+domain,dng-microsoftds.com,DNS query
+domain,dns.msftncsi.com,DNS query
+domain,ecs.office.com,DNS query
+domain,edge-consumer-static.azureedge.net,DNS query
+domain,edge.microsoft.com,DNS query
+domain,event-datamicrosoft.live,DNS query
+domain,event-time-microsoft.org,DNS query
+domain,eventdata-microsoft.live,DNS query
+domain,f532cb556f727d508908f4950f1b685d.azr.footprintdns.com,DNS query
+domain,fd.api.iris.microsoft.com,DNS query
+domain,fonts.googleapis.com,DNS query
+domain,fonts.gstatic.com,DNS query
+domain,fp.msedge.net,DNS query
+domain,geo.prod.do.dsp.mp.microsoft.com,DNS query
+domain,hillcoweb.com,DNS query
+domain,k-ring.msedge.net,DNS query
+domain,kv601.prod.do.dsp.mp.microsoft.com,DNS query
+domain,login.live.com,DNS query
+domain,login.microsoftonline.com,DNS query
+domain,massfriction.com,DNS query
+domain,ogads-pa.clients6.google.com,DNS query
+domain,play.google.com,DNS query
+domain,s.clarity.ms,DNS query
+domain,settings-win.data.microsoft.com,DNS query
+domain,srtb.msn.com,DNS query
+domain,static.edge.microsoftapp.net,DNS query
+domain,stats.g.doubleclick.net,DNS query
+domain,teams-ring.msedge.net,DNS query
+domain,th.bing.com,DNS query
+domain,thaka.bing.com,DNS query
+domain,v10.events.data.microsoft.com,DNS query
+domain,varying-rentals-calgary-predict.trycloudflare.com,DNS query
+domain,win-dql4wfwjxq4.massfriction.com,DNS query
+domain,windows-msgas.com,DNS query
+domain,windows.msn.com,DNS query
+domain,windows.php.net,DNS query
+domain,wpad.massfriction.com,DNS query
+domain,www.bing.com,DNS query
+domain,www.clarity.ms,DNS query
+domain,www.cloudflare.com,DNS query
+domain,www.facebook.com,DNS query
+domain,www.google.com,DNS query
+domain,www.googleadservices.com,DNS query
+domain,www.googletagmanager.com,DNS query
+domain,www.gstatic.com,DNS query
+domain,www.msftconnecttest.com,DNS query
+domain,www.msn.com,DNS query
+domain,www.truglomedspa.com,DNS query
+url,GET http://www.msftconnecttest.com/connecttest.txt,"src=10.6.13.133, dst=23.192.223.206"
+url,GET http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/disallowedcertstl.cab?7092facacff507f7,"src=10.6.13.133, dst=217.20.51.22"
+url,GET http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/authrootstl.cab?14a7b69d3530a12d,"src=10.6.13.133, dst=217.20.51.22"
+url,POST http://10.6.13.129:5357/e762ae39-f18a-00e7-ba68-e9ffd915458c/,"src=10.6.13.133, dst=10.6.13.129"
+url,GET http://event-time-microsoft.org/zh0GPFZdKt,"src=10.6.13.133, dst=104.21.24.186"
+url,POST http://eventdata-microsoft.live/NV4RgNEu,"src=10.6.13.133, dst=104.21.112.1"
+url,POST http://windows-msgas.com/YSEpJj/CPZldd&293d91c90fd4799580711a44a9c358fa/R5n6W,"src=10.6.13.133, dst=104.21.16.1"
+url,POST http://windows-msgas.com/LIO92KGFa/7QqunUIPqCFL&1921d1790d9439a1582f369aaae9e8f5/mPF2uwY27hew2E,"src=10.6.13.133, dst=104.21.16.1"
+url,POST http://windows-msgas.com/sJwNeqH/O&1521b1b8cdb449a1d36b097f9cdf2430/dMhL,"src=10.6.13.133, dst=104.21.16.1"
+url,POST http://varying-rentals-calgary-predict.trycloudflare.com/bmvLMt6UaBCc/22jMpHiZLgaCY4&354f9148f3b439a1433a5327275539f4/r,"src=10.6.13.133, dst=104.16.230.132"
+url,POST http://event-datamicrosoft.live/Y/aVO65eLBJkt2Tn&d120b0d80e343591742fa2c82d99671d,"src=10.6.13.133, dst=104.21.16.1"
+url,POST http://event-datamicrosoft.live/zj0/95rep&31205efb7d9469b1852377d9e86394ad,"src=10.6.13.133, dst=104.21.16.1"
+url,POST http://varying-rentals-calgary-predict.trycloudflare.com/GTLBbfAXRm28/Wl0&353db0b803b44d954fd148bf3f5662db/Go4whW0sne,"src=10.6.13.133, dst=104.16.230.132"
+url,POST http://windows-msgas.com/xhuaU98DQz/PsgCI&312492d84dd469a1c5acddef4e47d4f1/9cu,"src=10.6.13.133, dst=104.21.16.1"
+url,POST http://varying-rentals-calgary-predict.trycloudflare.com/lCbuW2fPKbNhcU/0yk&31c7b1580f344de14d7c6a2e3d19c3c0/ofJqoxoJi28,"src=10.6.13.133, dst=104.16.230.132"
+url,POST http://event-datamicrosoft.live/rpyGYah/&153fb1492dd469b1d3406f2116ca55a9/2i,"src=10.6.13.133, dst=104.21.16.1"
+url,POST http://event-datamicrosoft.live/bck3He5bknO2/R1tmn&352091481234b995a626d5b736b72c3b/FwtKu,"src=10.6.13.133, dst=104.21.16.1"
+url,POST http://event-datamicrosoft.live/0Wf2VP3dC/KzXonG6YfLGvt&353c91580bd4797de2009a0a7b0dcd86/eo7zfb61GX,"src=10.6.13.133, dst=104.21.16.1"
+url,POST http://event-datamicrosoft.live/xgO1ItkW/CyE23hDWoPYU&35208ec92fd47db563ae8fe2f5ceda2b/ieIMojFvTYX3,"src=10.6.13.133, dst=104.21.16.1"
+url,POST http://varying-rentals-calgary-predict.trycloudflare.com/BqMun/WTM5Lh4r&34c49148ff344d91caf59e07011ba39c,"src=10.6.13.133, dst=104.16.230.132"
+url,POST http://varying-rentals-calgary-predict.trycloudflare.com/sW8/bu&3520d1486db449bdcf27b8b462fda4af/o04Cpg8w,"src=10.6.13.133, dst=104.16.230.132"
+url,POST http://windows-msgas.com/4hzRwPQh/17LxRwB2bJ4a&313d91cf5d347a61c5a11043d01d0c11/bxS8Fjsz,"src=10.6.13.133, dst=104.21.16.1"
+url,POST http://windows-msgas.com/64/VH5hLdF&58c19148031479a5b8f713046f27cd23/0,"src=10.6.13.133, dst=104.21.16.1"
+url,POST http://event-datamicrosoft.live/thsMuIdYY/BJdyr5n&3520b0c80dd4ad6167cbe4c16a0f3384/X2f5k,"src=10.6.13.133, dst=104.21.112.1"
+url,GET http://acroipm2.adobe.com/assets/Owner/arm/ProcessMAU.txt,"src=10.6.13.133, dst=23.192.223.240"
+url,POST http://windows-msgas.com/xqEDnV8VBpDb/zSp1&d5059158cdd435f57f9d182e1c80bfcb/FH1CCNR,"src=10.6.13.133, dst=104.21.16.1"
+url,POST http://event-datamicrosoft.live/VjWg7QIi/WO&192fb148ca35b595590a28b38a94a69b/eKOYpnnbTV3,"src=10.6.13.133, dst=104.21.112.1"
+url,POST http://varying-rentals-calgary-predict.trycloudflare.com/nBt5L/5i6vMKhf6ZX&59c190f80b97a9fdb97350de7b65b1cf/7rVMDKKhNQ1E,"src=10.6.13.133, dst=104.16.230.132"
+url,POST http://event-datamicrosoft.live/jaTjVx/CTXt9FA7k1xoar&1120b1782e3475b555efe21c749d4eea/j3sDojrmG,"src=10.6.13.133, dst=104.21.112.1"
+url,POST http://windows-msgas.com/PoiZboy3IfqgD/1j2Sm2MFvEJr&19c1b158edb46d9dd97f41ab2253531e/DXxdup5,"src=10.6.13.133, dst=104.21.16.1"
+url,POST http://event-datamicrosoft.live/udNnNd/g7kSz66bb&35c1d0c843d4a991237f32c05f43345d/Sjs6N,"src=10.6.13.133, dst=104.21.112.1"
+url,POST http://event-datamicrosoft.live/cirkYkCa4qwbET/&350fb1496b1479a1429a6490c3210921/l88,"src=10.6.13.133, dst=104.21.112.1"
+url,POST http://event-datamicrosoft.live/fB8/JijUxr&353d90b87dd47a65eb415cbd68830e03/anNgUtfcNXv,"src=10.6.13.133, dst=104.21.112.1"
+url,POST http://windows-msgas.com/xGRe9TFNmehESS/qEAPcVA0ty&d521b1b8ee3449a1f6032e3e85b0e4e0/I3,"src=10.6.13.133, dst=104.21.80.1"
+url,POST http://varying-rentals-calgary-predict.trycloudflare.com/4/LR&3904b1574e1479b1085dc28fcca989ed/A4TJKvs,"src=10.6.13.133, dst=104.16.231.132"
+url,POST http://windows-msgas.com/jswJLXwQfewe9l/6a85uXd&29c0b1c8cfb47de190768d5199f49b44/2wdu,"src=10.6.13.133, dst=104.21.80.1"
+url,POST http://event-datamicrosoft.live/K2fOOJk/Q&35005178efb479fde35a7a9e21fa08c6/Qw4nz,"src=10.6.13.133, dst=104.21.80.1"
+url,POST http://windows-msgas.com/QLHa/1am2s0fDt0x2DI&1120b2c97dccadf115a781d4e01032c9/0QyDQ,"src=10.6.13.133, dst=104.21.80.1"
+url,POST http://event-datamicrosoft.live/p/PACARK&153dd0f87db47da5573134d960d99be3,"src=10.6.13.133, dst=104.21.80.1"
+url,POST http://event-datamicrosoft.live/oLslQwPafzUq4/hmLnuAQvTokG&152451496d9c3591964c7626e46c6759/Eg,"src=10.6.13.133, dst=104.21.80.1"
+url,POST http://event-datamicrosoft.live/n2wNtjMiSoO/&2920b1c82fb47995a08e846795f90cdb/LHj,"src=10.6.13.133, dst=104.21.80.1"
+url,POST http://varying-rentals-calgary-predict.trycloudflare.com/Cx/N5fF3Zm4giEciT&152451b81314499d524cf03c772ba1de,"src=10.6.13.133, dst=104.16.231.132"
+url,POST http://event-datamicrosoft.live/ZN/TlutuiTpe&110091c8ed946d9d549bd44384eb12de/wU,"src=10.6.13.133, dst=104.21.80.1"
+url,POST http://varying-rentals-calgary-predict.trycloudflare.com/QjvJ/vPq2&354cb1fb4213a99dceb9a05dcfafb0be/I23Ll,"src=10.6.13.133, dst=104.16.231.132"
+url,POST http://event-datamicrosoft.live/ByV5vl/&354c51cb4db42d610238f955ded57380/U,"src=10.6.13.133, dst=104.21.80.1"
+url,POST http://varying-rentals-calgary-predict.trycloudflare.com/ULlkXQMv/nEejk8Ai&2921b1b8fe4c39a1f023427f88c03970/kBQ4lU,"src=10.6.13.133, dst=104.16.231.132"
+url,POST http://windows-msgas.com/NELbLgvs/Vznhhu&1120b1c92bb428611ceea474f3f0f105/KULxVGwNv5x,"src=10.6.13.133, dst=104.21.64.1"
+url,POST http://windows-msgas.com/kxmu/75gWIznZ7awOqS&310051590d14747d2d167c08fe28c70e/zO0WeLN5IQD,"src=10.6.13.133, dst=104.21.64.1"
+url,POST http://event-datamicrosoft.live/5TM1imBii/&d1209148c3d4b99d7ccfd8b50fcb2d37/eF1h6XNI,"src=10.6.13.133, dst=104.21.80.1"
+url,POST http://varying-rentals-calgary-predict.trycloudflare.com/ch68CfvZyua/nvpO2jW2126gj&290cb158ee35b5915019c30924bcb6f8/oItLdRe,"src=10.6.13.133, dst=104.16.231.132"
+url,POST http://event-datamicrosoft.live/8z0afosQGBbOCU/bQ&3540b1f8cbb469a16bbf8c5c8bd95575/EipT8J,"src=10.6.13.133, dst=104.21.80.1"
+url,POST http://event-datamicrosoft.live/Ysn/&153fb1487394b5919e80659747e87fdc/XXaIX3,"src=10.6.13.133, dst=104.21.80.1"
+url,POST http://varying-rentals-calgary-predict.trycloudflare.com/Q56/gQuZ&293c56d853ac499121307bcc57446559/YY0I3,"src=10.6.13.133, dst=104.16.231.132"
+url,POST http://event-datamicrosoft.live/aEMnbH7G9/50uVWDc&d901b1b70dd44da1f95f6e77ae0343f0/WjJSOMS7tpFmS,"src=10.6.13.133, dst=104.21.80.1"
+url,POST http://event-datamicrosoft.live/xT8xrxqhOxlw/9y&3104514803b44a6144d5f3137f50e611/Hkht6bQMmX,"src=10.6.13.133, dst=104.21.80.1"
+url,POST http://varying-rentals-calgary-predict.trycloudflare.com/w5j1arKLag/L0qMH&114451480bd449b1dd3476052b86e16d/te1ijgh4wA,"src=10.6.13.133, dst=104.16.230.132"
+url,POST http://event-datamicrosoft.live/zVp07bKJM1Ki&1521d14b0dd4b5b153633d91ae487fa9/gMC6gy0T,"src=10.6.13.133, dst=104.21.80.1"
+url,POST http://windows-msgas.com/R/3WTdm&5524b1490fb4bd91bac5a684bd777b78/ufyWawws,"src=10.6.13.133, dst=104.21.112.1"
+url,POST http://windows-msgas.com/B5UCA/9TcIh&d5405148fdd5adf17a3372b388c2b348/GEtO7FjQN8,"src=10.6.13.133, dst=104.21.112.1"
+url,POST http://varying-rentals-calgary-predict.trycloudflare.com/Hy5DKjamtN5yw/qNQ9QK&3520b1594bd44da1cb22cc2adbcda3f5/McDoVAqd,"src=10.6.13.133, dst=104.16.230.132"
+url,POST http://varying-rentals-calgary-predict.trycloudflare.com/gS1jCqsFm25cY&d50db1c8f3b479e17a996a76a77e4d54/vo6cqHO2,"src=10.6.13.133, dst=104.16.230.132"
+url,POST http://windows-msgas.com/gKB8Upe/1YTM2EFteYM&15c4514b4bd4a9615f74fa01cb0b3595/YlT5PRyDRvCp,"src=10.6.13.133, dst=104.21.112.1"
+url,POST http://varying-rentals-calgary-predict.trycloudflare.com/7uQe1sqGTIlU7t/f&d5c051580e3c79a17e7a7f2e29980960/5S,"src=10.6.13.133, dst=104.16.230.132"
+url,POST http://varying-rentals-calgary-predict.trycloudflare.com/a&3120b2bb2f342de18442a5fdf51df351/G45l,"src=10.6.13.133, dst=104.16.230.132"
+url,POST http://event-datamicrosoft.live/V0Yz/k3I22t2Mv&352db158f23c3971ab696c0c07bc6c8d/b,"src=10.6.13.133, dst=104.21.112.1"
+url,POST http://event-datamicrosoft.live/0mXrIBoUnse/E2w9ZZOVcjljZ&19c7d1484db5b9e5d97634044c56ac52/mKbbY1,"src=10.6.13.133, dst=104.21.112.1"
+url,POST http://varying-rentals-calgary-predict.trycloudflare.com/urU2Ig/5bjPc&293cb1cf2f15b99d9090ef53b52ea95f/IvKcKKj,"src=10.6.13.133, dst=104.16.231.132"
+url,POST http://windows-msgas.com/hOWk/DLcY4Uy67&2907b1c81fd42d9151d62854790e73dc,"src=10.6.13.133, dst=104.21.96.1"
+url,POST http://event-datamicrosoft.live/yX/wmqRcogCc&1520b148ff943da5936bcc04016fbba2/8OliyIgoH,"src=10.6.13.133, dst=104.21.112.1"
+user_agent,Microsoft NCSI,HTTP User-Agent
+user_agent,Microsoft-CryptoAPI/10.0,HTTP User-Agent
+user_agent,Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729),HTTP User-Agent
+user_agent,Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202,HTTP User-Agent
+user_agent,WSDAPI,HTTP User-Agent

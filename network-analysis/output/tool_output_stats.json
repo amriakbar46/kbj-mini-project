@@ -1,0 +1,106 @@
+{
+  "generated_at": "2026-06-14T15:55:54.918347",
+  "cases": {
+    "case1": {
+      "bruteshark": {
+        "file_count": 0,
+        "extracted_files_per_category": {
+          "dns": 0,
+          "files": 0,
+          "parameters": 0
+        },
+        "iocs_extracted": "Yes (DNS, HTTP, files)"
+      },
+      "pcapxray": {
+        "file_count": 7,
+        "visual_artifact": "Communication graph PNG, session DB",
+        "iocs_extracted": "Host/port summary from PCAP visualization"
+      },
+      "pyshark": {
+        "summary_file": "output/case1/pyshark/2024-09-04-summary.txt",
+        "file_count": 3,
+        "summary_line_count": 48,
+        "iocs_extracted": "DNS, HTTP, SMB stats"
+      },
+      "zeek_like": {
+        "file_count": 4,
+        "conn_summary_rows": 310,
+        "dns_summary_rows": 173,
+        "http_summary_rows": 114,
+        "suspicious_http_rows": 96,
+        "iocs_extracted": "Normalised conn log, DNS queries, HTTP requests"
+      }
+    },
+    "case2": {
+      "bruteshark": {
+        "file_count": 0,
+        "extracted_files_per_category": {
+          "dns": 0,
+          "files": 0,
+          "parameters": 0
+        },
+        "iocs_extracted": "Yes (DNS, HTTP, files)"
+      },
+      "pcapxray": {
+        "file_count": 0,
+        "visual_artifact": "Communication graph PNG, session DB",
+        "iocs_extracted": "Host/port summary from PCAP visualization"
+      },
+      "pyshark": {
+        "summary_file": "output/case2/pyshark/2024-11-26-summary.txt",
+        "file_count": 0,
+        "summary_line_count": 0,
+        "iocs_extracted": "DNS, HTTP, SMB stats"
+      },
+      "zeek_like": {
+        "file_count": 4,
+        "conn_summary_rows": 284,
+        "dns_summary_rows": 343,
+        "http_summary_rows": 74,
+        "suspicious_http_rows": 0,
+        "iocs_extracted": "Normalised conn log, DNS queries, HTTP requests"
+      }
+    },
+    "case3": {
+      "bruteshark": {
+        "file_count": 0,
+        "extracted_files_per_category": {
+          "dns": 0,
+          "files": 0,
+          "parameters": 0
+        },
+        "iocs_extracted": "Yes (DNS, HTTP, files)"
+      },
+      "pcapxray": {
+        "file_count": 0,
+        "visual_artifact": "Communication graph PNG, session DB",
+        "iocs_extracted": "Host/port summary from PCAP visualization"
+      },
+      "pyshark": {
+        "summary_file": "output/case3/pyshark/2025-06-13-summary.txt",
+        "file_count": 0,
+        "summary_line_count": 0,
+        "iocs_extracted": "DNS, HTTP, SMB stats"
+      },
+      "zeek_like": {
+        "file_count": 4,
+        "conn_summary_rows": 428,
+        "dns_summary_rows": 405,
+        "http_summary_rows": 76,
+        "suspicious_http_rows": 0,
+        "iocs_extracted": "Normalised conn log, DNS queries, HTTP requests"
+      }
+    }
+  },
+  "cross_case_summary": {
+    "bruteshark_files": 0,
+    "pcapxray_files": 7,
+    "pyshark_files": 3,
+    "zeek_like_files": 12,
+    "pyshark_summary_lines": 48,
+    "zeek_like_conn_summary_rows": 1022,
+    "zeek_like_dns_summary_rows": 921,
+    "zeek_like_http_summary_rows": 264,
+    "zeek_like_suspicious_http_rows": 96
+  }
+}

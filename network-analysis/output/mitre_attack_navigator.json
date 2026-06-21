@@ -1,0 +1,188 @@
+{
+  "name": "Mini Project - Network Traffic Analysis (3 Cases Union)",
+  "versions": {
+    "attack": "14",
+    "navigator": "4.9.1",
+    "layer": "4.5"
+  },
+  "domain": "enterprise-attack",
+  "description": "Combined MITRE ATT&CK coverage from 3 PCAP cases (2024-09-04, 2024-11-26, 2025-06-13). Score = number of cases where technique was identified. Layer is suitable for upload to https://mitre-attack.github.io/attack-navigator/ via 'Open Existing Layer' > 'Upload from local'.",
+  "filters": {
+    "platforms": [
+      "Windows"
+    ]
+  },
+  "sorting": 0,
+  "layout": "side",
+  "hideDisable": false,
+  "techniques": [
+    {
+      "techniqueID": "T1027",
+      "tactic": "defense-evasion",
+      "score": 3,
+      "color": "",
+      "comment": "Detected in 3 case(s)\n\n[case1] Encoded/encrypted body and binary blob with minimal readable strings\n\n[case2] Body CMD=ENCD \u00b7 ES=1 encoding on all beacon payloads\n\n[case3] 968KB obfuscated PS script with ${Get-...} variable manipulation (sandbox evasion)",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1036",
+      "tactic": "defense-evasion",
+      "score": 3,
+      "color": "",
+      "comment": "Detected in 3 case(s)\n\n[case1] Legacy Mozilla/4.0 MSIE 7.0 User-Agent on Windows 10.0\n\n[case2] Endpoint /fakeurl.htm uses generic name to disguise C2 traffic\n\n[case3] Microsoft-like domain typosquatting: event-datamicrosoft.live, windows-msgas.com, event-time-microsoft.org",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1041",
+      "tactic": "exfiltration",
+      "score": 1,
+      "color": "",
+      "comment": "Detected in 1 case(s)\n\n[case3] URI pattern with &32-char-hex substring (MD5-like) suggests encoded data exfiltration - content not decoded",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1046",
+      "tactic": "discovery",
+      "score": 2,
+      "color": "",
+      "comment": "Detected in 2 case(s)\n\n[case1] Lightweight: HTTP GET to Adobe CDN and Microsoft services for host enumeration (NCSI-like)\n\n[case3] POST to 10.6.13.129:5357/e762ae39-... (WSDAPI) - Windows Web Services on Devices API for local network enumeration",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1059",
+      "tactic": "execution",
+      "score": 1,
+      "color": "",
+      "comment": "Detected in 1 case(s)\n\n[case2] Hypothesis: NetSupport Manager client may execute commands on victim (not visible in network traffic)",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1059.001",
+      "tactic": "execution",
+      "score": 1,
+      "color": "",
+      "comment": "Detected in 1 case(s)\n\n[case3] WindowsPowerShell/5.1.26100.4202 User-Agent + 968KB PS script with Invoke-WebRequest, Compress-Archive, oauth2 token",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1071.001",
+      "tactic": "command-and-control",
+      "score": 3,
+      "color": "",
+      "comment": "Detected in 3 case(s)\n\n[case1] HTTP POST to /foots.php and /index.php - direct IP C2 channel\n\n[case2] 58 HTTP POST to /fakeurl.htm - direct IP C2 channel\n\n[case3] 64 HTTP POST to 5 C2 domains (typosquat + Cloudflare tunnel)",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1090",
+      "tactic": "command-and-control",
+      "score": 1,
+      "color": "",
+      "comment": "Detected in 1 case(s)\n\n[case3] Cloudflare Tunnel (trycloudflare.com) hides origin C2 IP",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1102",
+      "tactic": "command-and-control",
+      "score": 2,
+      "color": "",
+      "comment": "Detected in 2 case(s)\n\n[case1] Possible Adobe CDN dead-drop style lookup (acroipm2.adobe.com) - confidence medium\n\n[case3] Use of oauth2.googleapis.com/token and aadcdn.msftauth.net in payload (confidence medium)",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1105",
+      "tactic": "command-and-control",
+      "score": 3,
+      "color": "",
+      "comment": "Detected in 3 case(s)\n\n[case1] C2 config response redirects to /index.php for secondary payload\n\n[case2] Initial handshake body (250B) and response (152B) for tasking transfer\n\n[case3] Download 968.1 KB obfuscated PowerShell payload from 104.21.112.1",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1189",
+      "tactic": "initial-access",
+      "score": 3,
+      "color": "",
+      "comment": "Detected in 3 case(s)\n\n[case1] Hypothesis: malicious webpage or document with embedded download (no direct evidence in PCAP)\n\n[case2] Hypothesis: social engineering or drive-by deploys NetSupport Manager client (no direct evidence in PCAP)\n\n[case3] Hypothesis: malicious script delivered via phishing/document, executed via PowerShell (not visible in network)",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1219",
+      "tactic": "command-and-control",
+      "score": 1,
+      "color": "",
+      "comment": "Detected in 1 case(s)\n\n[case2] NetSupport Manager/1.3 User-Agent - commercial RAT abused as RAT",
+      "enabled": true,
+      "metadata": [],
+      "showSubtechniques": false
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffe766",
+      "#ff6666",
+      "#990000"
+    ],
+    "minValue": 1,
+    "maxValue": 3
+  },
+  "legendItems": [
+    {
+      "label": "1 case",
+      "color": "#ffe766"
+    },
+    {
+      "label": "2 cases",
+      "color": "#ff8c66"
+    },
+    {
+      "label": "3 cases (all)",
+      "color": "#990000"
+    }
+  ],
+  "metadata": [
+    {
+      "name": "cases_detected",
+      "value": "T1027,T1036,T1041,T1046,T1059,T1059.001,T1071.001,T1090,T1102,T1105,T1189,T1219"
+    }
+  ],
+  "showTacticRowBackground": false,
+  "tacticRowBackground": "#dddddd",
+  "selectTechniquesAcrossTactics": true,
+  "selectSubtechniquesWithParent": false,
+  "_attribution": {
+    "authors": [
+      "6025252002 Kafiyatul Fithri",
+      "6025252005 Dhayu Intan Nareswari",
+      "6025252014 Ridho Liwardana",
+      "6025252010 Yoan Amri Akbar"
+    ],
+    "generated_at": "2026-06-14T15:22:38.026338Z",
+    "source_pcap_count": 3,
+    "source_pcap_files": [
+      "pcap/2024-09-04-traffic-analysis-exercise.pcap",
+      "pcap/2024-11-26-traffic-analysis-exercise.pcap",
+      "pcap/2025-06-13-traffic-analysis-exercise.pcap"
+    ]
+  }
+}

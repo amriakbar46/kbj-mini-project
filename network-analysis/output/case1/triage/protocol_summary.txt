@@ -1,0 +1,176 @@
+====================
+pcap/2024-09-04-traffic-analysis-exercise.pcap
+
+===================================================================
+Protocol Hierarchy Statistics
+Filter: 
+
+eth                                      frames:5091 bytes:2048179
+  ip                                     frames:4797 bytes:2030539
+    udp                                  frames:575 bytes:268056
+      dhcp                               frames:4 bytes:1432
+      dns                                frames:173 bytes:23663
+      mdns                               frames:2 bytes:172
+      llmnr                              frames:1 bytes:75
+      cldap                              frames:20 bytes:4981
+        _ws.malformed                    frames:10 bytes:2605
+      nbns                               frames:18 bytes:1956
+      nbdgm                              frames:18 bytes:4194
+        smb                              frames:18 bytes:4194
+          mailslot                       frames:18 bytes:4194
+            browser                      frames:18 bytes:4194
+      ntp                                frames:8 bytes:1296
+      quic                               frames:331 bytes:230287
+        quic                             frames:1 bytes:206
+    tcp                                  frames:4222 bytes:1762483
+      ldap                               frames:150 bytes:52838
+        tcp.segments                     frames:31 bytes:23845
+          ldap                           frames:8 bytes:11000
+        _ws.malformed                    frames:1 bytes:642
+      http                               frames:114 bytes:36812
+        data-text-lines                  frames:5 bytes:1349
+        tcp.segments                     frames:1 bytes:159
+      nbss                               frames:260 bytes:59105
+        smb2                             frames:167 bytes:42516
+          tcp.segments                   frames:6 bytes:4683
+          dcerpc                         frames:32 bytes:8762
+            samr                         frames:30 bytes:8178
+        smb                              frames:83 bytes:15659
+          smb_pipe                       frames:20 bytes:2980
+            lanman                       frames:20 bytes:2980
+      tls                                frames:800 bytes:573367
+        tcp.segments                     frames:163 bytes:166626
+          tls                            frames:95 bytes:125520
+      kerberos                           frames:16 bytes:5069
+        tcp.segments                     frames:13 bytes:4178
+      dcerpc                             frames:144 bytes:42318
+        epm                              frames:24 bytes:6528
+        tcp.segments                     frames:7 bytes:5333
+        drsuapi                          frames:78 bytes:22428
+      tcp.segments                       frames:1 bytes:1430
+      data                               frames:56 bytes:6100
+  arp                                    frames:294 bytes:17640
+===================================================================
+====================
+pcap/2024-11-26-traffic-analysis-exercise.pcap
+
+===================================================================
+Protocol Hierarchy Statistics
+Filter: 
+
+eth                                      frames:26922 bytes:20851149
+  ip                                     frames:26544 bytes:20828469
+    udp                                  frames:680 bytes:212509
+      dns                                frames:343 bytes:43170
+      cldap                              frames:20 bytes:5041
+        _ws.malformed                    frames:10 bytes:2731
+      mdns                               frames:7 bytes:590
+      llmnr                              frames:2 bytes:150
+      nbns                               frames:20 bytes:2152
+      ssdp                               frames:10 bytes:1790
+      nbdgm                              frames:17 bytes:3951
+        smb                              frames:17 bytes:3951
+          mailslot                       frames:17 bytes:3951
+            browser                      frames:17 bytes:3951
+      ntp                                frames:8 bytes:1296
+      quic                               frames:253 bytes:154369
+        quic                             frames:2 bytes:1308
+    tcp                                  frames:25864 bytes:20615960
+      http                               frames:74 bytes:22461
+        data-text-lines                  frames:3 bytes:695
+          tcp.segments                   frames:1 bytes:60
+        ocsp                             frames:1 bytes:944
+        urlencoded-form                  frames:62 bytes:18498
+      ldap                               frames:113 bytes:43680
+        tcp.segments                     frames:25 bytes:20589
+          ldap                           frames:7 bytes:9751
+        _ws.malformed                    frames:2 bytes:1295
+      tls                                frames:5012 bytes:5901487
+        tcp.segments                     frames:1855 bytes:2453697
+          tls                            frames:1627 bytes:2297190
+      kerberos                           frames:16 bytes:5299
+        tcp.segments                     frames:13 bytes:4412
+      dcerpc                             frames:108 bytes:32659
+        epm                              frames:20 bytes:5536
+        tcp.segments                     frames:4 bytes:3220
+        drsuapi                          frames:50 bytes:14372
+        rpc_netlogon                     frames:2 bytes:2156
+        lsarpc                           frames:4 bytes:1128
+      nbss                               frames:388 bytes:93313
+        smb                              frames:86 bytes:16248
+          smb_pipe                       frames:20 bytes:2980
+            lanman                       frames:20 bytes:2980
+        smb2                             frames:292 bytes:76135
+          tcp.segments                   frames:7 bytes:6048
+          dcerpc                         frames:32 bytes:8764
+            samr                         frames:30 bytes:8180
+          data                           frames:4 bytes:3028
+            tcp.segments                 frames:1 bytes:1472
+          smb2                           frames:16 bytes:6049
+            smb2                         frames:6 bytes:2148
+      tcp.segments                       frames:2 bytes:2860
+      data                               frames:100 bytes:48470
+  arp                                    frames:378 bytes:22680
+===================================================================
+====================
+pcap/2025-06-13-traffic-analysis-exercise.pcap
+
+===================================================================
+Protocol Hierarchy Statistics
+Filter: 
+
+eth                                      frames:48877 bytes:42106050
+  ip                                     frames:48615 bytes:42090316
+    udp                                  frames:1302 bytes:616505
+      dhcp                               frames:4 bytes:1415
+      dns                                frames:392 bytes:51222
+      llmnr                              frames:2 bytes:150
+      cldap                              frames:16 bytes:4147
+        _ws.malformed                    frames:8 bytes:2195
+      nbns                               frames:33 bytes:3558
+      ssdp                               frames:15 bytes:2565
+      nbdgm                              frames:72 bytes:16746
+        smb                              frames:72 bytes:16746
+          mailslot                       frames:72 bytes:16746
+            browser                      frames:72 bytes:16746
+      ntp                                frames:6 bytes:972
+      quic                               frames:748 bytes:525754
+        quic                             frames:6 bytes:6814
+      mdns                               frames:3 bytes:246
+      data                               frames:11 bytes:9730
+    tcp                                  frames:47300 bytes:41471353
+      ldap                               frames:171 bytes:64945
+        tcp.segments                     frames:39 bytes:31654
+          ldap                           frames:11 bytes:15730
+      kerberos                           frames:18 bytes:5867
+        tcp.segments                     frames:15 bytes:4982
+      tls                                frames:14129 bytes:18686822
+        tcp.segments                     frames:1812 bytes:2391321
+          tls                            frames:1580 bytes:2240347
+          data                           frames:4 bytes:5720
+      http                               frames:76 bytes:31400
+        data-text-lines                  frames:3 bytes:1688
+          tcp.segments                   frames:2 bytes:1447
+        xml                              frames:2 bytes:1732
+          tcp.segments                   frames:2 bytes:1732
+        data                             frames:63 bytes:25353
+          tcp.segments                   frames:63 bytes:25353
+      dcerpc                             frames:190 bytes:57641
+        epm                              frames:34 bytes:9344
+        tcp.segments                     frames:9 bytes:7041
+        drsuapi                          frames:98 bytes:28276
+        rpc_netlogon                     frames:2 bytes:2172
+      nbss                               frames:166 bytes:42117
+        smb                              frames:4 bytes:852
+        smb2                             frames:161 bytes:41205
+          tcp.segments                   frames:5 bytes:4138
+          dcerpc                         frames:32 bytes:8750
+            samr                         frames:30 bytes:8166
+          smb2                           frames:10 bytes:3205
+      data                               frames:337 bytes:286000
+      tcp.segments                       frames:2 bytes:2155
+    icmp                                 frames:13 bytes:2458
+      dns                                frames:13 bytes:2458
+  arp                                    frames:260 bytes:15600
+  lldp                                   frames:2 bytes:134
+===================================================================

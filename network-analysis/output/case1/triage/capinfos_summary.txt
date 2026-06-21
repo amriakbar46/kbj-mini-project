@@ -1,0 +1,15 @@
+====================
+pcap/2024-09-04-traffic-analysis-exercise.pcap
+Number of packets:   5.091
+Capture duration:    3576,159984 seconds
+                     Number of packets = 5091
+====================
+pcap/2024-11-26-traffic-analysis-exercise.pcap
+Number of packets:   26 k
+Capture duration:    3259,651349 seconds
+                     Number of packets = 26922
+====================
+pcap/2025-06-13-traffic-analysis-exercise.pcap
+Number of packets:   48 k
+Capture duration:    2072,441142 seconds
+                     Number of packets = 48877

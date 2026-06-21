@@ -1,0 +1,149 @@
+# ============================================
+# Mini Project KBJ - Git Ignore
+# Optimized for GitHub upload (100MB file limit, 1GB repo recommended)
+# ============================================
+
+# ============================================
+# Environment & secrets (CRITICAL - never commit)
+# ============================================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.secret
+api_key*
+*_api_key*
+vt_api_key*
+
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+.coverage
+.mypy_cache/
+.ruff_cache/
+venv/
+env/
+ENV/
+
+# Virtualenv
+.venv/
+
+# ============================================
+# IDE
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ============================================
+# Logs
+# ============================================
+*.log
+*.log.*
+logs/
+
+# ============================================
+# OS-generated
+# ============================================
+.Trash-*
+.fseventsd
+.Spotlight-V100
+._*
+
+# ============================================
+# Temporary / build artifacts
+# ============================================
+tmp/
+temp/
+build/
+dist/
+*.tmp
+*.bak
+*.orig
+*.rej
+
+# ============================================
+# Forensic analysis - KEEP reports/scripts/IOC,
+# EXCLUDE raw data (PCAP) + large extraction outputs
+# ============================================
+
+# ============================================
+# Exclude entire docs/ folder (not needed for code upload)
+# ============================================
+docs/
+
+# Raw PCAP files (large, can be re-downloaded from malware-traffic-analysis.net)
+# Exclude .pcap + .pcap.zip to keep repo small
+# But keep split pcap files since they are referenced in reports
+*.pcap
+*.pcap.zip
+# EXCEPTION: keep .pcap.zip in pcap/ for case1 (source data for split files)
+!network-analysis/pcap/case*-split_*.pcap
+
+# PcapXray output (huge 465MB for case1, contains session DB)
+network-analysis/output/case1/pcapxray/
+network-analysis/output/case2/pcapxray/
+network-analysis/output/case3/pcapxray/
+
+# BruteShark output (small but redundant - can re-run)
+network-analysis/output/case*/bruteshark/
+
+# Extracted payloads (can be re-extracted from PCAP)
+**/payloads/http_file_data/*.bin
+**/payloads/c2_flows/*.bin
+# Extracted HTTP objects (foots.php, index.php, etc - reproducible from PCAP)
+**/payloads/http_objects/
+
+# PcapXray tool source repo (200MB+ with its own .git)
+network-analysis/tools/PcapXray/
+network-analysis/tools/bruteshark/
+network-analysis/tools/TracePcap/
+
+# Forensic bundle: KEEP only key files (c2.exe, config.cfg, php.exe, .lnk, txt)
+# EXCLUDE raw PHP runtime DLLs (can be re-downloaded from windows.php.net)
+network-analysis/pcap/*-forensic-analysis/AppData-Roaming-php/*.dll
+network-analysis/pcap/*-forensic-analysis/AppData-Roaming-php/*.exe
+network-analysis/pcap/*-forensic-analysis/AppData-Roaming-php/*.phar
+network-analysis/pcap/*-forensic-analysis/AppData-Roaming-php/*.bat
+network-analysis/pcap/*-forensic-analysis/AppData-Roaming-php/*.lib
+network-analysis/pcap/*-forensic-analysis/AppData-Roaming-php/ext/
+network-analysis/pcap/*-forensic-analysis/AppData-Roaming-php/dev/
+network-analysis/pcap/*-forensic-analysis/AppData-Roaming-php/extras/
+network-analysis/pcap/*-forensic-analysis/AppData-Roaming-php/lib/
+network-analysis/pcap/*-forensic-analysis/AppData-Roaming-php/license.txt
+network-analysis/pcap/*-forensic-analysis/AppData-Roaming-php/news.txt
+network-analysis/pcap/*-forensic-analysis/AppData-Roaming-php/snapshot.txt
+network-analysis/pcap/*-forensic-analysis/AppData-Roaming-php/README.md
+network-analysis/pcap/*-forensic-analysis/AppData-Roaming-php/readme-redist-bins.txt
+network-analysis/pcap/*-forensic-analysis/AppData-Roaming-php/php.ini-development
+network-analysis/pcap/*-forensic-analysis/AppData-Roaming-php/php.ini-production
+# KEEP: c2.exe, config.cfg, php.exe, ycBFVIbLl.lnk, forensic-notes.txt, ChromeCacheView/
+
+# ============================================
+# Misc
+# ============================================
+# Session/debug files
+session-ses_*.md
+tree-*.txt
+
+# Network traffic analysis original docx (has ppt_temen version in pdf)
+# Note: KEEP Network traffic analysis.pdf (original assignment doc)
+Network traffic analysis.docx
+
+# Python scripts output dir (reproducible)
+network-analysis/output/visualization/
+
+# PyShark outputs (reproducible)
+network-analysis/output/case*/pyshark/

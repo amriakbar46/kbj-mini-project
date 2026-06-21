@@ -1,0 +1,7 @@
+pyshark
+scapy
+pandas
+matplotlib
+networkx
+folium
+jupyter

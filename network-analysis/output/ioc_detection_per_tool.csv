@@ -1,0 +1,11 @@
+case,tool,ip_detected,domain_detected,url_detected,hash_detected,ua_detected,categories_detected,categories_total,detection_pct
+case1,BruteShark,1,1,1,0,1,4,5,80.0
+case1,Wireshark/TShark,1,1,1,1,1,5,5,100.0
+case1,NetworkMiner,1,1,1,1,1,5,5,100.0
+case1,Python/Zeek-like,1,1,1,0,1,4,5,80.0
+case2,BruteShark,1,1,1,0,1,4,5,80.0
+case2,Wireshark/TShark,1,1,1,1,1,5,5,100.0
+case2,Python/Zeek-like,1,1,1,1,1,5,5,100.0
+case3,BruteShark,1,1,1,0,1,4,5,80.0
+case3,Wireshark/TShark,1,1,1,1,1,5,5,100.0
+case3,Python/Zeek-like,1,1,1,0,1,4,5,80.0

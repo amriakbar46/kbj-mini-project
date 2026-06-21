@@ -1,0 +1,4 @@
+case,ioc_ip,ioc_domain,ioc_url,ioc_hash,ioc_ua,ioc_total,files_extracted,mitre_count,mitre_list,analysis_time_min,ioc_detection_rate_pct,c2_identified,tool_crash,report_completeness_1_5,malware_family_accuracy
+case1,42,39,57,0,4,142,6,5,"T1071.001, T1105, T1102, T1036, T1027",95,25,Y,N,5,N
+case2,61,60,64,0,4,189,66,5,"T1071.001, T1219, T1036, T1027, T1105",80,60,Y,N,5,N
+case3,78,70,69,0,5,222,68,8,"T1059.001, T1071.001, T1090, T1102, T1027, T1036, T1105, T1041",110,70,Y,N,5,N

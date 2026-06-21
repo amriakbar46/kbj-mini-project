@@ -1,0 +1,116 @@
+{
+  "case": "case3",
+  "pcap": "pcap/2025-06-13-traffic-analysis-exercise.pcap",
+  "total_tls_client_hello": 105,
+  "unique_ja3": 68,
+  "top_10_ja3": [
+    {
+      "ja3_hash": "091f51a7a1c3a4504a224cc081ce9cee",
+      "count": 13,
+      "sample_src_ips": [
+        "10.6.13.133"
+      ],
+      "sample_dst_ips": [
+        "173.222.52.33",
+        "52.140.118.28",
+        "20.50.80.213",
+        "52.167.249.196",
+        "40.69.76.172"
+      ]
+    },
+    {
+      "ja3_hash": "fae0e5d973c96ae1888b99538efa0363",
+      "count": 10,
+      "sample_src_ips": [
+        "10.6.13.133"
+      ],
+      "sample_dst_ips": [
+        "20.190.157.9",
+        "23.96.180.189",
+        "40.126.29.13",
+        "40.126.29.11",
+        "23.212.185.87"
+      ]
+    },
+    {
+      "ja3_hash": "f771c804c691561f9dd12b48a860cec9",
+      "count": 2,
+      "sample_src_ips": [
+        "10.6.13.133"
+      ],
+      "sample_dst_ips": [
+        "13.107.246.57"
+      ]
+    },
+    {
+      "ja3_hash": "b1c1da86d854ef2a32a5e4d88aeeac21",
+      "count": 2,
+      "sample_src_ips": [
+        "10.6.13.133"
+      ],
+      "sample_dst_ips": [
+        "13.107.246.57"
+      ]
+    },
+    {
+      "ja3_hash": "28292c517683a55aff2f4ea954d2d0b3",
+      "count": 2,
+      "sample_src_ips": [
+        "10.6.13.133"
+      ],
+      "sample_dst_ips": [
+        "204.79.197.222"
+      ]
+    },
+    {
+      "ja3_hash": "b8e23658c2fd05758c3107d73120e94e",
+      "count": 2,
+      "sample_src_ips": [
+        "10.6.13.133"
+      ],
+      "sample_dst_ips": [
+        "150.171.73.254"
+      ]
+    },
+    {
+      "ja3_hash": "dce338e0998e2d395e8d97fb7053e38f",
+      "count": 2,
+      "sample_src_ips": [
+        "10.6.13.133"
+      ],
+      "sample_dst_ips": [
+        "52.113.196.254"
+      ]
+    },
+    {
+      "ja3_hash": "f12d331b2318f504066e595b4383aa34",
+      "count": 2,
+      "sample_src_ips": [
+        "10.6.13.133"
+      ],
+      "sample_dst_ips": [
+        "191.232.215.149"
+      ]
+    },
+    {
+      "ja3_hash": "83c12e1fec061a490805ea1bac77c004",
+      "count": 2,
+      "sample_src_ips": [
+        "10.6.13.133"
+      ],
+      "sample_dst_ips": [
+        "172.202.65.254"
+      ]
+    },
+    {
+      "ja3_hash": "6f6e2c24d53301b5c80f21a31c9a57b5",
+      "count": 2,
+      "sample_src_ips": [
+        "10.6.13.133"
+      ],
+      "sample_dst_ips": [
+        "13.107.42.10"
+      ]
+    }
+  ]
+}

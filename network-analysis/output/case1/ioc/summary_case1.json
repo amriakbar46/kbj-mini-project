@@ -1,0 +1,477 @@
+{
+  "pcap": "pcap/2024-09-04-traffic-analysis-exercise.pcap",
+  "unique_ip_count": 42,
+  "dns_query_count": 39,
+  "http_request_count": 57,
+  "user_agent_count": 4,
+  "suspicious_post_count": 49,
+  "protocol_counter": {
+    "DHCP": 4,
+    "DNS": 173,
+    "MDNS": 2,
+    "LLMNR": 1,
+    "CLDAP": 20,
+    "NBNS": 18,
+    "TCP": 2681,
+    "LDAP": 150,
+    "HTTP": 109,
+    "DATA-TEXT-LINES": 5,
+    "BROWSER": 18,
+    "NTP": 8,
+    "SMB2": 135,
+    "NBSS": 10,
+    "SMB": 63,
+    "LANMAN": 20,
+    "TLS": 800,
+    "KERBEROS": 16,
+    "DCERPC": 44,
+    "EPM": 24,
+    "DRSUAPI": 78,
+    "SAMR": 30,
+    "DATA": 57,
+    "QUIC": 331
+  },
+  "suspicious_posts": [
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 17:35:07.211814"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 17:35:07.858400"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 17:35:08.684142"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/index.php",
+      "user_agent": "",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 17:35:12.546458"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 17:36:17.781476"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 17:37:26.911862"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 17:38:36.062291"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 17:39:45.206401"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 17:40:54.324762"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 17:41:54.999064"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 17:42:55.696228"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 17:43:56.836309"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 17:44:57.919897"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 17:45:58.615189"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 17:46:59.697304"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 17:48:24.750554"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 17:49:49.873627"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 17:51:15.032276"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 17:52:40.171010"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 17:54:10.320388"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 17:55:40.401561"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 17:57:10.504776"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 17:58:40.632883"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 18:00:06.765839"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 18:01:32.834551"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 18:02:58.902877"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 18:04:25.026600"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 18:05:53.133865"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 18:07:22.405323"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 18:08:50.470020"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 18:10:18.609257"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 18:11:36.778262"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 18:12:54.825234"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 18:14:13.888797"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 18:15:31.986370"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 18:16:47.300640"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 18:18:01.418761"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 18:19:15.568280"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 18:20:29.695712"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 18:21:43.799656"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 18:22:55.903686"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 18:24:08.045044"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 18:25:20.202713"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 18:26:32.348254"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 18:27:44.546934"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 18:28:46.700596"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 18:29:48.843962"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 18:30:50.997683"
+    },
+    {
+      "method": "POST",
+      "host": "79.124.78.197",
+      "uri": "/foots.php",
+      "user_agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)",
+      "src_ip": "172.17.0.99",
+      "dst_ip": "79.124.78.197",
+      "time": "2024-09-04 18:31:53.072428"
+    }
+  ]
+}

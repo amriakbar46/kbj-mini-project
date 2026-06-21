@@ -1,0 +1,143 @@
+ioc_type,value,notes
+ip,0.0.0.0,unique IP address
+ip,13.107.246.57,unique IP address
+ip,13.70.79.200,unique IP address
+ip,13.89.179.9,unique IP address
+ip,172.17.0.17,unique IP address
+ip,172.17.0.255,unique IP address
+ip,172.17.0.99,unique IP address
+ip,184.29.137.96,unique IP address
+ip,199.232.210.172,unique IP address
+ip,199.232.214.172,unique IP address
+ip,20.10.31.115,unique IP address
+ip,20.189.173.1,unique IP address
+ip,20.189.173.18,unique IP address
+ip,20.189.173.26,unique IP address
+ip,20.241.44.114,unique IP address
+ip,20.42.73.28,unique IP address
+ip,20.60.228.1,unique IP address
+ip,20.96.153.111,unique IP address
+ip,204.79.197.203,unique IP address
+ip,224.0.0.251,unique IP address
+ip,224.0.0.252,unique IP address
+ip,23.194.68.140,unique IP address
+ip,23.195.212.189,unique IP address
+ip,23.220.251.149,unique IP address
+ip,23.220.251.153,unique IP address
+ip,23.220.251.158,unique IP address
+ip,23.220.251.47,unique IP address
+ip,23.221.24.58,unique IP address
+ip,23.221.24.69,unique IP address
+ip,23.40.145.142,unique IP address
+ip,23.45.119.143,unique IP address
+ip,23.45.119.144,unique IP address
+ip,23.45.119.147,unique IP address
+ip,255.255.255.255,unique IP address
+ip,40.119.249.228,unique IP address
+ip,40.126.28.12,unique IP address
+ip,40.126.28.22,unique IP address
+ip,46.254.34.201,unique IP address
+ip,52.109.0.142,unique IP address
+ip,52.109.0.91,unique IP address
+ip,52.113.194.132,unique IP address
+ip,79.124.78.197,unique IP address
+domain,DESKTOP-RNVO9AT.bepositive.com,DNS query
+domain,_ldap._tcp.Default-First-Site-Name._sites.DomainDnsZones.bepositive.com,DNS query
+domain,_ldap._tcp.Default-First-Site-Name._sites.ForestDnsZones.bepositive.com,DNS query
+domain,_ldap._tcp.Default-First-Site-Name._sites.WIN-CTL9XBQ9Y19.bepositive.com,DNS query
+domain,_ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.bepositive.com,DNS query
+domain,_ldap._tcp.WIN-CTL9XBQ9Y19.bepositive.com,DNS query
+domain,acroipm2.adobe.com,DNS query
+domain,api.msn.com,DNS query
+domain,arc.msn.com,DNS query
+domain,assets.msn.com,DNS query
+domain,bepositive.com,DNS query
+domain,ctldl.windowsupdate.com,DNS query
+domain,dns.msftncsi.com,DNS query
+domain,download.windowsupdate.com,DNS query
+domain,ecs.office.com,DNS query
+domain,fd.api.iris.microsoft.com,DNS query
+domain,g.live.com,DNS query
+domain,img-s-msn-com.akamaized.net,DNS query
+domain,inputsuggestions.msdxcdn.microsoft.com,DNS query
+domain,login.microsoftonline.com,DNS query
+domain,mobile.events.data.microsoft.com,DNS query
+domain,odc.officeapps.live.com,DNS query
+domain,officeclient.microsoft.com,DNS query
+domain,oneclient.sfx.ms,DNS query
+domain,pti.store.microsoft.com,DNS query
+domain,settings-win.data.microsoft.com,DNS query
+domain,srtb.msn.com,DNS query
+domain,sso.godaddy.com,DNS query
+domain,storecatalogrevocation.storequality.microsoft.com,DNS query
+domain,th.bing.com,DNS query
+domain,v10.events.data.microsoft.com,DNS query
+domain,weathermapdata.blob.core.windows.net,DNS query
+domain,win-ctl9xbq9y19.bepositive.com,DNS query
+domain,windows.msn.com,DNS query
+domain,wpad.bepositive.com,DNS query
+domain,www.bing.com,DNS query
+domain,www.msftconnecttest.com,DNS query
+domain,www.msn.com,DNS query
+domain,x1.c.lencr.org,DNS query
+url,GET http://www.msftconnecttest.com/connecttest.txt,"src=172.17.0.99, dst=23.220.251.149"
+url,GET http://www.msftconnecttest.com/connecttest.txt,"src=172.17.0.99, dst=23.220.251.158"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,GET http://79.124.78.197/index.php?id=&subid=qIOuKk7U,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/index.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,GET http://acroipm2.adobe.com/assets/Owner/arm/ProcessMAU.txt,"src=172.17.0.99, dst=23.220.251.47"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,GET http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/authrootstl.cab?d7a8a57aa5acd39b,"src=172.17.0.99, dst=199.232.210.172"
+url,GET http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/disallowedcertstl.cab?91717f420e6dda94,"src=172.17.0.99, dst=199.232.210.172"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,GET http://x1.c.lencr.org/,"src=172.17.0.99, dst=184.29.137.96"
+url,GET http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/pinrulesstl.cab?a5fef2ac8502b132,"src=172.17.0.99, dst=199.232.214.172"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+url,POST http://79.124.78.197/foots.php,"src=172.17.0.99, dst=79.124.78.197"
+user_agent,Microsoft NCSI,HTTP User-Agent
+user_agent,Microsoft-CryptoAPI/10.0,HTTP User-Agent
+user_agent,Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729),HTTP User-Agent
+user_agent,Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729),HTTP User-Agent

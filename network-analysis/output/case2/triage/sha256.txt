@@ -1,0 +1,1 @@
+a38267943a7bf3b0e445d7e51cb0a68b3dee797d67081bc9a033f73d079c0f50  pcap/2024-11-26-traffic-analysis-exercise.pcap

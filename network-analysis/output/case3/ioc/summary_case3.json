@@ -1,0 +1,615 @@
+{
+  "pcap": "pcap/2025-06-13-traffic-analysis-exercise.pcap",
+  "unique_ip_count": 78,
+  "dns_query_count": 70,
+  "http_request_count": 69,
+  "user_agent_count": 5,
+  "suspicious_post_count": 64,
+  "protocol_counter": {
+    "DHCP": 4,
+    "DNS": 405,
+    "LLMNR": 2,
+    "_WS.MALFORMED": 8,
+    "CLDAP": 8,
+    "NBNS": 33,
+    "TCP": 32211,
+    "LDAP": 171,
+    "KERBEROS": 18,
+    "SSDP": 15,
+    "TLS": 14125,
+    "HTTP": 8,
+    "DATA-TEXT-LINES": 3,
+    "BROWSER": 72,
+    "NTP": 6,
+    "DCERPC": 58,
+    "EPM": 34,
+    "SMB": 4,
+    "SMB2": 129,
+    "DRSUAPI": 98,
+    "SAMR": 30,
+    "RPC_NETLOGON": 2,
+    "QUIC": 748,
+    "MDNS": 3,
+    "DATA": 417,
+    "NBSS": 1,
+    "XML": 2
+  },
+  "suspicious_posts": [
+    {
+      "method": "POST",
+      "host": "10.6.13.129:5357",
+      "uri": "/e762ae39-f18a-00e7-ba68-e9ffd915458c/",
+      "user_agent": "WSDAPI",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "10.6.13.129",
+      "time": "2025-06-13 22:35:21.938810"
+    },
+    {
+      "method": "POST",
+      "host": "eventdata-microsoft.live",
+      "uri": "/NV4RgNEu",
+      "user_agent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4202",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.112.1",
+      "time": "2025-06-13 22:35:58.461012"
+    },
+    {
+      "method": "POST",
+      "host": "windows-msgas.com",
+      "uri": "/YSEpJj/CPZldd&293d91c90fd4799580711a44a9c358fa/R5n6W",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.16.1",
+      "time": "2025-06-13 22:37:25.399582"
+    },
+    {
+      "method": "POST",
+      "host": "windows-msgas.com",
+      "uri": "/LIO92KGFa/7QqunUIPqCFL&1921d1790d9439a1582f369aaae9e8f5/mPF2uwY27hew2E",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.16.1",
+      "time": "2025-06-13 22:37:55.499370"
+    },
+    {
+      "method": "POST",
+      "host": "windows-msgas.com",
+      "uri": "/sJwNeqH/O&1521b1b8cdb449a1d36b097f9cdf2430/dMhL",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.16.1",
+      "time": "2025-06-13 22:38:25.577922"
+    },
+    {
+      "method": "POST",
+      "host": "varying-rentals-calgary-predict.trycloudflare.com",
+      "uri": "/bmvLMt6UaBCc/22jMpHiZLgaCY4&354f9148f3b439a1433a5327275539f4/r",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.16.230.132",
+      "time": "2025-06-13 22:38:55.714116"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/Y/aVO65eLBJkt2Tn&d120b0d80e343591742fa2c82d99671d",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.16.1",
+      "time": "2025-06-13 22:39:25.917868"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/zj0/95rep&31205efb7d9469b1852377d9e86394ad",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.16.1",
+      "time": "2025-06-13 22:39:55.969477"
+    },
+    {
+      "method": "POST",
+      "host": "varying-rentals-calgary-predict.trycloudflare.com",
+      "uri": "/GTLBbfAXRm28/Wl0&353db0b803b44d954fd148bf3f5662db/Go4whW0sne",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.16.230.132",
+      "time": "2025-06-13 22:40:26.050750"
+    },
+    {
+      "method": "POST",
+      "host": "windows-msgas.com",
+      "uri": "/xhuaU98DQz/PsgCI&312492d84dd469a1c5acddef4e47d4f1/9cu",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.16.1",
+      "time": "2025-06-13 22:40:56.153921"
+    },
+    {
+      "method": "POST",
+      "host": "varying-rentals-calgary-predict.trycloudflare.com",
+      "uri": "/lCbuW2fPKbNhcU/0yk&31c7b1580f344de14d7c6a2e3d19c3c0/ofJqoxoJi28",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.16.230.132",
+      "time": "2025-06-13 22:41:26.254891"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/rpyGYah/&153fb1492dd469b1d3406f2116ca55a9/2i",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.16.1",
+      "time": "2025-06-13 22:41:56.666239"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/bck3He5bknO2/R1tmn&352091481234b995a626d5b736b72c3b/FwtKu",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.16.1",
+      "time": "2025-06-13 22:42:26.755550"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/0Wf2VP3dC/KzXonG6YfLGvt&353c91580bd4797de2009a0a7b0dcd86/eo7zfb61GX",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.16.1",
+      "time": "2025-06-13 22:42:57.025042"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/xgO1ItkW/CyE23hDWoPYU&35208ec92fd47db563ae8fe2f5ceda2b/ieIMojFvTYX3",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.16.1",
+      "time": "2025-06-13 22:43:27.113229"
+    },
+    {
+      "method": "POST",
+      "host": "varying-rentals-calgary-predict.trycloudflare.com",
+      "uri": "/BqMun/WTM5Lh4r&34c49148ff344d91caf59e07011ba39c",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.16.230.132",
+      "time": "2025-06-13 22:43:57.234368"
+    },
+    {
+      "method": "POST",
+      "host": "varying-rentals-calgary-predict.trycloudflare.com",
+      "uri": "/sW8/bu&3520d1486db449bdcf27b8b462fda4af/o04Cpg8w",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.16.230.132",
+      "time": "2025-06-13 22:44:27.323864"
+    },
+    {
+      "method": "POST",
+      "host": "windows-msgas.com",
+      "uri": "/4hzRwPQh/17LxRwB2bJ4a&313d91cf5d347a61c5a11043d01d0c11/bxS8Fjsz",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.16.1",
+      "time": "2025-06-13 22:44:57.545916"
+    },
+    {
+      "method": "POST",
+      "host": "windows-msgas.com",
+      "uri": "/64/VH5hLdF&58c19148031479a5b8f713046f27cd23/0",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.16.1",
+      "time": "2025-06-13 22:45:27.641827"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/thsMuIdYY/BJdyr5n&3520b0c80dd4ad6167cbe4c16a0f3384/X2f5k",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.112.1",
+      "time": "2025-06-13 22:45:57.830889"
+    },
+    {
+      "method": "POST",
+      "host": "windows-msgas.com",
+      "uri": "/xqEDnV8VBpDb/zSp1&d5059158cdd435f57f9d182e1c80bfcb/FH1CCNR",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.16.1",
+      "time": "2025-06-13 22:46:27.922226"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/VjWg7QIi/WO&192fb148ca35b595590a28b38a94a69b/eKOYpnnbTV3",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.112.1",
+      "time": "2025-06-13 22:46:58.146467"
+    },
+    {
+      "method": "POST",
+      "host": "varying-rentals-calgary-predict.trycloudflare.com",
+      "uri": "/nBt5L/5i6vMKhf6ZX&59c190f80b97a9fdb97350de7b65b1cf/7rVMDKKhNQ1E",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.16.230.132",
+      "time": "2025-06-13 22:47:28.221032"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/jaTjVx/CTXt9FA7k1xoar&1120b1782e3475b555efe21c749d4eea/j3sDojrmG",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.112.1",
+      "time": "2025-06-13 22:47:58.322641"
+    },
+    {
+      "method": "POST",
+      "host": "windows-msgas.com",
+      "uri": "/PoiZboy3IfqgD/1j2Sm2MFvEJr&19c1b158edb46d9dd97f41ab2253531e/DXxdup5",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.16.1",
+      "time": "2025-06-13 22:48:28.428861"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/udNnNd/g7kSz66bb&35c1d0c843d4a991237f32c05f43345d/Sjs6N",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.112.1",
+      "time": "2025-06-13 22:48:58.678292"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/cirkYkCa4qwbET/&350fb1496b1479a1429a6490c3210921/l88",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.112.1",
+      "time": "2025-06-13 22:49:28.730287"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/fB8/JijUxr&353d90b87dd47a65eb415cbd68830e03/anNgUtfcNXv",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.112.1",
+      "time": "2025-06-13 22:49:58.959929"
+    },
+    {
+      "method": "POST",
+      "host": "windows-msgas.com",
+      "uri": "/xGRe9TFNmehESS/qEAPcVA0ty&d521b1b8ee3449a1f6032e3e85b0e4e0/I3",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.80.1",
+      "time": "2025-06-13 22:50:29.149314"
+    },
+    {
+      "method": "POST",
+      "host": "varying-rentals-calgary-predict.trycloudflare.com",
+      "uri": "/4/LR&3904b1574e1479b1085dc28fcca989ed/A4TJKvs",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.16.231.132",
+      "time": "2025-06-13 22:50:59.298083"
+    },
+    {
+      "method": "POST",
+      "host": "windows-msgas.com",
+      "uri": "/jswJLXwQfewe9l/6a85uXd&29c0b1c8cfb47de190768d5199f49b44/2wdu",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.80.1",
+      "time": "2025-06-13 22:51:29.379527"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/K2fOOJk/Q&35005178efb479fde35a7a9e21fa08c6/Qw4nz",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.80.1",
+      "time": "2025-06-13 22:51:59.554105"
+    },
+    {
+      "method": "POST",
+      "host": "windows-msgas.com",
+      "uri": "/QLHa/1am2s0fDt0x2DI&1120b2c97dccadf115a781d4e01032c9/0QyDQ",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.80.1",
+      "time": "2025-06-13 22:52:29.629868"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/p/PACARK&153dd0f87db47da5573134d960d99be3",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.80.1",
+      "time": "2025-06-13 22:52:59.721909"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/oLslQwPafzUq4/hmLnuAQvTokG&152451496d9c3591964c7626e46c6759/Eg",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.80.1",
+      "time": "2025-06-13 22:53:29.821849"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/n2wNtjMiSoO/&2920b1c82fb47995a08e846795f90cdb/LHj",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.80.1",
+      "time": "2025-06-13 22:53:59.935290"
+    },
+    {
+      "method": "POST",
+      "host": "varying-rentals-calgary-predict.trycloudflare.com",
+      "uri": "/Cx/N5fF3Zm4giEciT&152451b81314499d524cf03c772ba1de",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.16.231.132",
+      "time": "2025-06-13 22:54:30.025007"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/ZN/TlutuiTpe&110091c8ed946d9d549bd44384eb12de/wU",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.80.1",
+      "time": "2025-06-13 22:55:00.098904"
+    },
+    {
+      "method": "POST",
+      "host": "varying-rentals-calgary-predict.trycloudflare.com",
+      "uri": "/QjvJ/vPq2&354cb1fb4213a99dceb9a05dcfafb0be/I23Ll",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.16.231.132",
+      "time": "2025-06-13 22:55:30.185965"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/ByV5vl/&354c51cb4db42d610238f955ded57380/U",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.80.1",
+      "time": "2025-06-13 22:56:00.319448"
+    },
+    {
+      "method": "POST",
+      "host": "varying-rentals-calgary-predict.trycloudflare.com",
+      "uri": "/ULlkXQMv/nEejk8Ai&2921b1b8fe4c39a1f023427f88c03970/kBQ4lU",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.16.231.132",
+      "time": "2025-06-13 22:56:30.718129"
+    },
+    {
+      "method": "POST",
+      "host": "windows-msgas.com",
+      "uri": "/NELbLgvs/Vznhhu&1120b1c92bb428611ceea474f3f0f105/KULxVGwNv5x",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.64.1",
+      "time": "2025-06-13 22:57:00.724369"
+    },
+    {
+      "method": "POST",
+      "host": "windows-msgas.com",
+      "uri": "/kxmu/75gWIznZ7awOqS&310051590d14747d2d167c08fe28c70e/zO0WeLN5IQD",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.64.1",
+      "time": "2025-06-13 22:57:30.632665"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/5TM1imBii/&d1209148c3d4b99d7ccfd8b50fcb2d37/eF1h6XNI",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.80.1",
+      "time": "2025-06-13 22:58:00.795218"
+    },
+    {
+      "method": "POST",
+      "host": "varying-rentals-calgary-predict.trycloudflare.com",
+      "uri": "/ch68CfvZyua/nvpO2jW2126gj&290cb158ee35b5915019c30924bcb6f8/oItLdRe",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.16.231.132",
+      "time": "2025-06-13 22:58:30.871084"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/8z0afosQGBbOCU/bQ&3540b1f8cbb469a16bbf8c5c8bd95575/EipT8J",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.80.1",
+      "time": "2025-06-13 22:59:00.931984"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/Ysn/&153fb1487394b5919e80659747e87fdc/XXaIX3",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.80.1",
+      "time": "2025-06-13 22:59:31.042763"
+    },
+    {
+      "method": "POST",
+      "host": "varying-rentals-calgary-predict.trycloudflare.com",
+      "uri": "/Q56/gQuZ&293c56d853ac499121307bcc57446559/YY0I3",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.16.231.132",
+      "time": "2025-06-13 23:00:01.122975"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/aEMnbH7G9/50uVWDc&d901b1b70dd44da1f95f6e77ae0343f0/WjJSOMS7tpFmS",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.80.1",
+      "time": "2025-06-13 23:00:31.213482"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/xT8xrxqhOxlw/9y&3104514803b44a6144d5f3137f50e611/Hkht6bQMmX",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.80.1",
+      "time": "2025-06-13 23:01:01.332268"
+    },
+    {
+      "method": "POST",
+      "host": "varying-rentals-calgary-predict.trycloudflare.com",
+      "uri": "/w5j1arKLag/L0qMH&114451480bd449b1dd3476052b86e16d/te1ijgh4wA",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.16.230.132",
+      "time": "2025-06-13 23:01:31.610807"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/zVp07bKJM1Ki&1521d14b0dd4b5b153633d91ae487fa9/gMC6gy0T",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.80.1",
+      "time": "2025-06-13 23:02:01.960424"
+    },
+    {
+      "method": "POST",
+      "host": "windows-msgas.com",
+      "uri": "/R/3WTdm&5524b1490fb4bd91bac5a684bd777b78/ufyWawws",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.112.1",
+      "time": "2025-06-13 23:02:32.130615"
+    },
+    {
+      "method": "POST",
+      "host": "windows-msgas.com",
+      "uri": "/B5UCA/9TcIh&d5405148fdd5adf17a3372b388c2b348/GEtO7FjQN8",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.112.1",
+      "time": "2025-06-13 23:03:02.228340"
+    },
+    {
+      "method": "POST",
+      "host": "varying-rentals-calgary-predict.trycloudflare.com",
+      "uri": "/Hy5DKjamtN5yw/qNQ9QK&3520b1594bd44da1cb22cc2adbcda3f5/McDoVAqd",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.16.230.132",
+      "time": "2025-06-13 23:03:32.435441"
+    },
+    {
+      "method": "POST",
+      "host": "varying-rentals-calgary-predict.trycloudflare.com",
+      "uri": "/gS1jCqsFm25cY&d50db1c8f3b479e17a996a76a77e4d54/vo6cqHO2",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.16.230.132",
+      "time": "2025-06-13 23:04:02.379706"
+    },
+    {
+      "method": "POST",
+      "host": "windows-msgas.com",
+      "uri": "/gKB8Upe/1YTM2EFteYM&15c4514b4bd4a9615f74fa01cb0b3595/YlT5PRyDRvCp",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.112.1",
+      "time": "2025-06-13 23:04:32.509281"
+    },
+    {
+      "method": "POST",
+      "host": "varying-rentals-calgary-predict.trycloudflare.com",
+      "uri": "/7uQe1sqGTIlU7t/f&d5c051580e3c79a17e7a7f2e29980960/5S",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.16.230.132",
+      "time": "2025-06-13 23:05:02.578220"
+    },
+    {
+      "method": "POST",
+      "host": "varying-rentals-calgary-predict.trycloudflare.com",
+      "uri": "/a&3120b2bb2f342de18442a5fdf51df351/G45l",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.16.230.132",
+      "time": "2025-06-13 23:05:32.640422"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/V0Yz/k3I22t2Mv&352db158f23c3971ab696c0c07bc6c8d/b",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.112.1",
+      "time": "2025-06-13 23:06:02.817016"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/0mXrIBoUnse/E2w9ZZOVcjljZ&19c7d1484db5b9e5d97634044c56ac52/mKbbY1",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.112.1",
+      "time": "2025-06-13 23:06:32.887502"
+    },
+    {
+      "method": "POST",
+      "host": "varying-rentals-calgary-predict.trycloudflare.com",
+      "uri": "/urU2Ig/5bjPc&293cb1cf2f15b99d9090ef53b52ea95f/IvKcKKj",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.16.231.132",
+      "time": "2025-06-13 23:07:03.020656"
+    },
+    {
+      "method": "POST",
+      "host": "windows-msgas.com",
+      "uri": "/hOWk/DLcY4Uy67&2907b1c81fd42d9151d62854790e73dc",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.96.1",
+      "time": "2025-06-13 23:07:33.146730"
+    },
+    {
+      "method": "POST",
+      "host": "event-datamicrosoft.live",
+      "uri": "/yX/wmqRcogCc&1520b148ff943da5936bcc04016fbba2/8OliyIgoH",
+      "user_agent": "",
+      "src_ip": "10.6.13.133",
+      "dst_ip": "104.21.112.1",
+      "time": "2025-06-13 23:08:03.234210"
+    }
+  ]
+}

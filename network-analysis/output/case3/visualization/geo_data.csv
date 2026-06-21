@@ -1,0 +1,50 @@
+ip,country,countryCode,city,lat,lon,org,is_c2
+104.16.124.96,Canada,CA,Toronto,43.6532,-79.3832,"Cloudflare, Inc.",no
+104.16.230.132,Canada,CA,Toronto,43.6532,-79.3832,"Cloudflare, Inc.",yes
+104.16.231.132,Canada,CA,Toronto,43.6532,-79.3832,"Cloudflare, Inc.",yes
+104.208.203.90,United States,US,Boydton,36.677696,-78.37471,Microsoft Azure Cloud (eastus2),no
+104.21.112.1,Canada,CA,Toronto,43.6532,-79.3832,"Cloudflare, Inc.",yes
+104.21.16.1,Canada,CA,Toronto,43.6532,-79.3832,"Cloudflare, Inc.",yes
+104.21.24.186,Canada,CA,Toronto,43.6532,-79.3832,"Cloudflare, Inc.",yes
+104.21.64.1,Canada,CA,Toronto,43.6532,-79.3832,"Cloudflare, Inc.",yes
+104.21.80.1,Canada,CA,Toronto,43.6532,-79.3832,"Cloudflare, Inc.",yes
+104.21.96.1,Canada,CA,Toronto,43.6532,-79.3832,"Cloudflare, Inc.",yes
+109.61.92.48,United States,US,Dallas,32.7797,-96.8022,Cdn77 DAL,no
+13.107.18.254,United States,US,New York,40.7128,-74.006,Microsoft Corporation,no
+13.107.246.57,United States,US,New York,40.7128,-74.006,Microsoft Corporation,no
+13.107.42.10,United States,US,Newark,40.7357,-74.1724,Microsoft Corporation,no
+13.107.42.16,United States,US,Newark,40.7357,-74.1724,Microsoft Corporation,no
+13.74.187.43,Ireland,IE,Dublin,53.3478,-6.2597,Microsoft Azure Cloud (northeurope),no
+142.250.113.95,United States,US,Mountain View,37.4225,-122.085,Google LLC,no
+142.250.115.104,United States,US,Mountain View,37.4225,-122.085,Google LLC,no
+142.250.115.106,United States,US,Mountain View,37.4225,-122.085,Google LLC,no
+142.250.115.94,United States,US,Mountain View,37.4225,-122.085,Google LLC,no
+142.250.115.95,United States,US,Mountain View,37.4225,-122.085,Google LLC,no
+150.171.27.11,United States,US,Philadelphia,39.9526,-75.1652,Microsoft Corporation,no
+150.171.27.12,United States,US,Philadelphia,39.9526,-75.1652,Microsoft Corporation,no
+150.171.28.11,United States,US,Teterboro,40.8618,-74.0587,Microsoft Corporation,no
+150.171.73.254,United States,US,Newark,40.7357,-74.1724,Microsoft Corporation,no
+157.240.24.13,United States,US,Houston,29.7646,-95.3657,"Facebook, Inc.",no
+157.240.24.35,United States,US,Houston,29.7646,-95.3657,"Facebook, Inc.",no
+172.202.65.254,United States,US,Des Moines,41.5908,-93.6208,Microsoft Azure Arc Infrastructure (centralus),no
+172.67.146.241,Canada,CA,Toronto,43.6532,-79.3832,"Cloudflare, Inc.",no
+173.194.208.155,United States,US,Mountain View,37.4225,-122.085,Google LLC,no
+173.194.208.94,United States,US,Ashburn,39.0438,-77.4874,Google LLC,no
+173.222.52.33,United States,US,Cambridge,42.3649,-71.0888,"Akamai Technologies, Inc.",no
+191.232.215.149,Brazil,BR,São Paulo,-23.55,-46.633,Microsoft Azure Cloud (brazilsouth),no
+20.189.173.6,United States,US,San Francisco,37.783,-122.417,Microsoft Azure One Ds Collector (westus),no
+20.190.135.6,United States,US,Chicago,41.8819,-87.6278,Microsoft Azure Active Directory (northcentralus),no
+20.190.157.13,United States,US,San Antonio,29.4167,-98.5,Microsoft Azure Active Directory (southcentralus),no
+20.190.157.14,United States,US,San Antonio,29.4167,-98.5,Microsoft Azure Active Directory (southcentralus),no
+20.190.157.9,United States,US,San Antonio,29.4167,-98.5,Microsoft Azure Active Directory (southcentralus),no
+20.50.80.213,Ireland,IE,Dublin,53.3478,-6.2597,Microsoft Azure One Ds Collector (northeurope),no
+204.79.197.203,Canada,CA,Montreal,45.5019,-73.5674,Microsoft Corporation,no
+204.79.197.222,Canada,CA,Montreal,45.5019,-73.5674,Microsoft Corporation,no
+205.174.24.80,United States,US,Lansing,42.6898,-84.6427,"Liquid Web, L.L.C",no
+216.239.38.181,United States,US,Mountain View,37.422,-122.084,Google LLC,no
+52.123.129.14,United States,US,Redmond,47.6722,-122.1257,Microsoft Corporation,no
+52.140.118.28,India,IN,Pune,18.5144,73.864235,Microsoft Azure Cloud (centralindia),no
+52.156.123.84,United States,US,Quincy,47.233,-119.852,Microsoft Azure Cloud (westus2),no
+52.167.249.196,United States,US,Boydton,36.677696,-78.37471,Microsoft Azure Cloud (eastus2),no
+67.217.228.199,United States,US,Los Angeles,34.0515,-118.2707,BL Networks,no
+83.137.149.15,The Netherlands,NL,Blauwestad,53.1745,7.0494,Duocast,no

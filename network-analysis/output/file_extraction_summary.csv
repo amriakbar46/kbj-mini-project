@@ -1,0 +1,591 @@
+case,file_path,file_name,size_bytes,sha256,content_type,content_preview,frame_number,tcp_stream,src_ip_in_filename,dst_ip_in_filename,suspicious_flag
+case1,case1/triage/capinfos_summary.txt,capinfos_summary.txt,546,339e3badb823c3b7b27a479d5e8e994ebbaf525bb870519a2ef878b4b3d8a27d,text/plain,"====================
+pcap/2024-09-04-traffic-analysis-exercise.pcap
+Number of pa",0,0,,,no
+case1,case1/triage/environment.txt,environment.txt,432,01240ef1bbdaabeed981bbf8fa9784bf4cb156c9d3c954a9f4f3126a7c35bbbd,text/plain,"=== Host OS ===
+Linux yoan 6.8.0-111-generic #111-Ubuntu SMP PREEMPT_DYNAMIC Sat",0,0,,,no
+case1,case1/triage/file_sizes.txt,file_sizes.txt,290,f240fb6564730980e0b5d6b43452caf0efa60288d905704f5ebd53c5e221c50f,text/plain,"Permissions Size User Date Modified Name
+.rw-rw-r--  2,1M yoan  5 Sep  2024  pca",0,0,,,no
+case1,case1/triage/protocol_summary.txt,protocol_summary.txt,10274,f8925a939ba1c3a77e17ac3c22133ef517169ca57275d70ccae7ac408a5bcb8a,text/plain,"====================
+pcap/2024-09-04-traffic-analysis-exercise.pcap
+
+===========",0,0,,,no
+case1,case1/triage/sha256.txt,sha256.txt,339,2e98acbb16b85c7f26015b04ab0e823a59d8e07bc4c876872c079153c67fe4e4,text/plain,8fee06d0b1686faab4364f5b7a741e736ad7e713d5ca9299ff9161a4b4d4862e  pcap/2024-09-0,0,0,,,no
+case1,case1/ioc/beacon_intervals.csv,beacon_intervals.csv,4345,c46280296f68b4cb6fb0f193a88be99b7c15cb8a583b9c32b8d219294315ec56,text/plain,"timestamp,src_ip,dst_ip,host,uri,interval_seconds
+2024-09-04 17:35:07.211814,172",0,0,,,no
+case1,case1/ioc/ioc_case1.csv,ioc_case1.csv,8503,b31ed723341ba4d71ac0b8cfe004e3718e780e7018f36b5faeef82bd8946056c,text/plain,"ioc_type,value,notes
+ip,0.0.0.0,unique IP address
+ip,13.107.246.57,unique IP a",0,0,,,no
+case1,case1/ioc/summary_case1.json,summary_case1.json,18982,8291a0289258636d26ebfe772f354d2db334f1a207a47de36dafb0ef4c53469e,unknown,"{
+  ""pcap"": ""pcap/2024-09-04-traffic-analysis-exercise.pcap"",
+  ""unique_ip_count",0,0,,,no
+case1,case1/payloads/payload.bin,payload.bin,105,ed0855c1637e5f93be7d54acb2cb8872683a0e5eb670258abb1ebc41bfbf4591,unknown,�c�\�.@���N).�ſ.N&k7�rk�4�W��vYK��.�X��b�F.�u���c7'v�V`..Y.ѣ...�n;T���V..'�6��,0,0,,,no
+case1,case1/payloads/c2_flows/frame_2236_stream_51_172.17.0.99_to_79.124.78.197.bin,frame_2236_stream_51_172.17.0.99_to_79.124.78.197.bin,105,ed0855c1637e5f93be7d54acb2cb8872683a0e5eb670258abb1ebc41bfbf4591,application/octet-stream,�c�\�.@���N).�ſ.N&k7�rk�4�W��vYK��.�X��b�F.�u���c7'v�V`..Y.ѣ...�n;T���V..'�6��,2236,51,172.17.0.99,79.124.78.197.,yes
+case1,case1/payloads/c2_flows/frame_2236_stream_51_172.17.0.99_to_79.124.78.197.txt,frame_2236_stream_51_172.17.0.99_to_79.124.78.197.txt,187,13042f7aab0e0c849808a7b410372642ae21bbd72499f9818abbc94f73e92e50,application/octet-stream,�c�\�.@���N).�ſ.N&k7�rk�4�W��vYK��.�X��b�F.,2236,51,172.17.0.99,79.124.78.197.,yes
+case1,case1/payloads/c2_flows/http_c2_flow_summary.csv,http_c2_flow_summary.csv,6016,0021eee2b2822d1fa9f498196dbef3733da21638841cb48ee8499cb5c4560886,binary/network-artifact,"frame.number,frame.time,tcp.stream,ip.src,ip.dst,http.request.method,http.host,h",0,0,,,yes
+case1,case1/payloads/http_file_data/frame_2232_stream_51_79.124.78.197_to_172.17.0.99.bin,frame_2232_stream_51_79.124.78.197_to_172.17.0.99.bin,61,736f0cb5cc23435dad920dbe447efcf102e61c8691fa8528f5f39f386537f43e,application/octet-stream,HckDcK0czXjaq48jVHNn|qIOuKk7U|http://79.124.78.197/index.php|,2232,51,79.124.78.197,172.17.0.99.,no
+case1,case1/payloads/http_file_data/frame_2236_stream_51_172.17.0.99_to_79.124.78.197.bin,frame_2236_stream_51_172.17.0.99_to_79.124.78.197.bin,105,ed0855c1637e5f93be7d54acb2cb8872683a0e5eb670258abb1ebc41bfbf4591,application/octet-stream,�c�\�.@���N).�ſ.N&k7�rk�4�W��vYK��.�X��b�F.�u���c7'v�V`..Y.ѣ...�n;T���V..'�6��,2236,51,172.17.0.99,79.124.78.197.,no
+case1,case1/payloads/http_file_data/frame_2238_stream_51_79.124.78.197_to_172.17.0.99.bin,frame_2238_stream_51_79.124.78.197_to_172.17.0.99.bin,1,3f39d5c348e5b79d06e842c114e6cc571583bbf44e4b0ebfda1a01ec05745d43,application/octet-stream,D,2238,51,79.124.78.197,172.17.0.99.,no
+case1,case1/payloads/http_file_data/frame_3442_stream_85_23.220.251.47_to_172.17.0.99.bin,frame_3442_stream_85_23.220.251.47_to_172.17.0.99.bin,4,69bf0bc46f51b33377c4f3d92caf876714f6bbbe99e7544487327920873f9820,application/octet-stream,****,3442,85,23.220.251.47,172.17.0.99.,no
+case1,case1/payloads/http_file_data/frame_54_stream_1_23.220.251.149_to_172.17.0.99.bin,frame_54_stream_1_23.220.251.149_to_172.17.0.99.bin,22,5e9a7996fe94d7be10595d7133748760bf8348198b71b7a50fd8affaa980ac61,application/octet-stream,Microsoft Connect Test,54,1,23.220.251.149,172.17.0.99.,no
+case1,case1/payloads/http_file_data/frame_74_stream_2_23.220.251.158_to_172.17.0.99.bin,frame_74_stream_2_23.220.251.158_to_172.17.0.99.bin,22,5e9a7996fe94d7be10595d7133748760bf8348198b71b7a50fd8affaa980ac61,application/octet-stream,Microsoft Connect Test,74,2,23.220.251.158,172.17.0.99.,no
+case1,case1/payloads/http_objects/ProcessMAU.txt,ProcessMAU.txt,4,69bf0bc46f51b33377c4f3d92caf876714f6bbbe99e7544487327920873f9820,text/plain,****,0,0,,,no
+case1,case1/payloads/http_objects/connecttest(1).txt,connecttest(1).txt,22,5e9a7996fe94d7be10595d7133748760bf8348198b71b7a50fd8affaa980ac61,text/plain,Microsoft Connect Test,0,0,,,no
+case1,case1/payloads/http_objects/connecttest.txt,connecttest.txt,22,5e9a7996fe94d7be10595d7133748760bf8348198b71b7a50fd8affaa980ac61,text/plain,Microsoft Connect Test,0,0,,,no
+case1,case1/payloads/http_objects/foots(1).php,foots(1).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(10).php,foots(10).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(11).php,foots(11).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(12).php,foots(12).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(13).php,foots(13).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(14).php,foots(14).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(15).php,foots(15).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(16).php,foots(16).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(17).php,foots(17).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(18).php,foots(18).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(19).php,foots(19).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(2).php,foots(2).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(20).php,foots(20).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(21).php,foots(21).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(22).php,foots(22).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(23).php,foots(23).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(24).php,foots(24).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(25).php,foots(25).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(26).php,foots(26).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(27).php,foots(27).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(28).php,foots(28).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(29).php,foots(29).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(3).php,foots(3).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(30).php,foots(30).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(31).php,foots(31).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(32).php,foots(32).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(33).php,foots(33).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(34).php,foots(34).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(35).php,foots(35).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(36).php,foots(36).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(37).php,foots(37).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(38).php,foots(38).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(39).php,foots(39).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(4).php,foots(4).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(40).php,foots(40).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(41).php,foots(41).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(42).php,foots(42).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(43).php,foots(43).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(44).php,foots(44).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(45).php,foots(45).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(46).php,foots(46).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(47).php,foots(47).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(5).php,foots(5).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(6).php,foots(6).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(7).php,foots(7).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(8).php,foots(8).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots(9).php,foots(9).php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/foots.php,foots.php,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,unknown,,0,0,,,no
+case1,case1/payloads/http_objects/index(1).php,index(1).php,1,3f39d5c348e5b79d06e842c114e6cc571583bbf44e4b0ebfda1a01ec05745d43,unknown,D,0,0,,,no
+case1,case1/payloads/http_objects/index.php,index.php,105,ed0855c1637e5f93be7d54acb2cb8872683a0e5eb670258abb1ebc41bfbf4591,unknown,�c�\�.@���N).�ſ.N&k7�rk�4�W��vYK��.�X��b�F.�u���c7'v�V`..Y.ѣ...�n;T���V..'�6��,0,0,,,no
+case1,case1/payloads/http_objects/index.php%3fid=&subid=qIOuKk7U,index.php%3fid=&subid=qIOuKk7U,61,736f0cb5cc23435dad920dbe447efcf102e61c8691fa8528f5f39f386537f43e,unknown,HckDcK0czXjaq48jVHNn|qIOuKk7U|http://79.124.78.197/index.php|,0,0,,,no
+case1,case1/visualization/geo_data.csv,geo_data.csv,3202,45c2803cf5d75c4aaa3b4809d6193df800b1301e3893670800495baa9ba146f3,text/plain,"ip,country,countryCode,city,lat,lon,org,is_c2
+13.107.246.57,United States,US,Ne",0,0,,,no
+case1,case1/visualization/tls_ja3.csv,tls_ja3.csv,7988,7f8f2d243e8e1680762f44474f3bdbac200e27522b2b2fa60d06bf976f114a08,text/plain,"frame_no,timestamp,src_ip,dst_ip,tls_version,tls_version_int,cipher_suites_count",0,0,,,no
+case1,case1/visualization/tls_ja3_summary.json,tls_ja3_summary.json,2505,3059e61ff32b667796d4e5478088c3c7d0e56911cee83a80f31becd41c0fa921,unknown,"{
+  ""case"": ""case1"",
+  ""pcap"": ""pcap/2024-09-04-traffic-analysis-exercise.pcap"",",0,0,,,no
+case1,case1/pyshark/2024-09-04-summary.txt,2024-09-04-summary.txt,827,f91f0091d9f6629a2a93349917a9eba1be059f31936cf8937b89304d53fc8aea,text/plain,"======================================================================
+Analyzing",0,0,,,no
+case1,case1/pyshark/2024-11-26-summary.txt,2024-11-26-summary.txt,863,ca0e1f09d143db42c981d6b1a2b8f77df76e150ee32e3f5f1030dae491f66b6d,text/plain,"======================================================================
+Analyzing",0,0,,,no
+case1,case1/pyshark/2025-06-13-summary.txt,2025-06-13-summary.txt,839,98f6657078ecf9d16e5b25f5bcf7fb86d51e883d241447ad86d937563aebebc6,text/plain,"======================================================================
+Analyzing",0,0,,,no
+case1,case1/zeek_like/conn_summary.csv,conn_summary.csv,12147,836f98f96b4cb8c87edae1aa888be21c5551c76c83fc9ef588c5b7c8c63acec7,text/plain,"src_ip,dst_ip,src_port,dst_port,protocol
+172.17.0.99,172.17.0.17,49765,389,TCP
+1",0,0,,,no
+case1,case1/zeek_like/dns_summary.csv,dns_summary.csv,13308,e6fd7d883e89e43c147c06aea0b65eba4fe1fe6ed334468490584bfa208cb17b,text/plain,"timestamp,src_ip,dst_ip,query
+2024-09-04 17:32:31.328745,172.17.0.99,172.17.0.17",0,0,,,no
+case1,case1/zeek_like/http_summary.csv,http_summary.csv,16722,9304cecbd7927f51368e41168586c8c75881050548e1e21c553809090c07c4ce,text/plain,"timestamp,src_ip,dst_ip,method,host,uri,user_agent
+2024-09-04 17:32:31.936110,17",0,0,,,no
+case1,case1/zeek_like/suspicious_http.csv,suspicious_http.csv,14547,9a453cc541ee2800f43deb3d2a9cdc6558eec35e3b723e338102833d11e54a73,text/plain,"timestamp,src_ip,dst_ip,method,host,uri,user_agent
+2024-09-04 17:35:07.211814,17",0,0,,,no
+case1,case1/pcapxray/Report/2024-09-04-traffic-analysis-exercise_packet_details.txt,2024-09-04-traffic-analysis-exercise_packet_details.txt,7071366,535255da0403304cdc39f5754f31cd1f20b0418c66ca23a699c1976f5f32c872,text/plain,"{
+  ""0.0.0.0/255.255.255.255/67"": {
+    ""Ethernet"": {
+      ""dst"": ""ff:ff:ff:ff:",0,0,,,no
+case1,case1/pcapxray/Report/2024-11-26-traffic-analysis-exercise_packet_details.txt,2024-11-26-traffic-analysis-exercise_packet_details.txt,78845267,f43635b21b6be6af8382256c50bbb44b2da90e54026915b2efa0f62ed1b44bd5,text/plain,"{
+  ""10.11.26.183/10.11.26.255/137"": {
+    ""Ethernet"": {
+      ""dst"": ""ff:ff:ff:",0,0,,,no
+case1,case1/pcapxray/Report/2025-06-13-traffic-analysis-exercise_All_All_All,2025-06-13-traffic-analysis-exercise_All_All_All,17486,c4a1ab4f3f81eb5be1c46583b95c1ca81e1712d0c0a04d0eb33b8dc991b96f15,unknown,"digraph ""network_diagram - All"" {
+	graph [bgcolor=grey dpi=150 fontcolor=black f",0,0,,,no
+case1,case1/pcapxray/Report/2025-06-13-traffic-analysis-exercise_communication_details.txt,2025-06-13-traffic-analysis-exercise_communication_details.txt,19963,971ff1241dfacd1a57461ead9c1e734edd6c19d78550ea65a18a7b4bde30fb8c,text/plain,"CommunicationDetails: {
+  ""104.16.124.96"": {
+    ""device_vendor"": ""Unknown"",
+   ",0,0,,,no
+case1,case1/pcapxray/Report/2025-06-13-traffic-analysis-exercise_device_details.txt,2025-06-13-traffic-analysis-exercise_device_details.txt,962,c3be4cdc371a470ae1282113eeaf89c29775bb9fb9929ed7704be0d42a8c7920,text/plain,"deviceDetails: {
+  ""00:26:b9:71:ad:36"": {
+    ""device_vendor"": ""Dell Inc."",
+    ",0,0,,,no
+case1,case1/pcapxray/Report/2025-06-13-traffic-analysis-exercise_packet_details.txt,2025-06-13-traffic-analysis-exercise_packet_details.txt,157905238,ba32b9941b9cc038352bd639d2402c9b28068d05fb539f8165b339925edb996b,text/plain,"{
+  ""0.0.0.0/255.255.255.255/67"": {
+    ""Ethernet"": {
+      ""dst"": ""ff:ff:ff:ff:",0,0,,,no
+case1,case1/pcapxray/Report/pcapxray_sessions.db,pcapxray_sessions.db,243675136,185cc8a3ad60d5230035b92383f2866e5f77c9c812bf217af92ec57d73329cd7,unknown,SQLite format 3......@  ......�c................................................,0,0,,,no
+case2,case2/triage/capinfos_summary.txt,capinfos_summary.txt,1113,6f1c297fbdf01aaa22e5a29048fd4656b88f98879f764040fc83769870d2425a,text/plain,"File name:           pcap/2024-11-26-traffic-analysis-exercise.pcap
+File type:  ",0,0,,,no
+case2,case2/triage/file_sizes.txt,file_sizes.txt,124,c7122c7dfaf31284a0f02fb11062e548c504ec35b4393ff99e0eb35f5dc4c01b,text/plain,"Permissions Size User Date Modified Name
+.rw-rw-r--   21M yoan 28 Nov  2024  pca",0,0,,,no
+case2,case2/triage/protocol_summary.txt,protocol_summary.txt,3501,e55bdb56bb571c95e6b0ea38ae1b7c96f0bc5f54b674a864b5cb69a1c0dccc75,text/plain,"
+===================================================================
+Protocol Hi",0,0,,,no
+case2,case2/triage/sha256.txt,sha256.txt,113,85305be61b2e75a194a6086cf1d151d0d1d4545abc3aad2d7a8b11d51af5a4a5,text/plain,a38267943a7bf3b0e445d7e51cb0a68b3dee797d67081bc9a033f73d079c0f50  pcap/2024-11-2,0,0,,,no
+case2,case2/ioc/beacon_intervals.csv,beacon_intervals.csv,6645,674fdb54efc23c4b0d0468025ec0d855167dfec08de616271faf03705cbb78bc,text/plain,"timestamp,src_ip,dst_ip,host,uri,interval_seconds
+2024-11-26 11:50:45.849438,10.",0,0,,,no
+case2,case2/ioc/ioc_case2.csv,ioc_case2.csv,12061,cd7beeba34920706b64c63f74e404236a2b33be2f2031c7711fae9bb930d5f63,text/plain,"ioc_type,value,notes
+ip,10.11.26.183,unique IP address
+ip,10.11.26.255,unique ",0,0,,,no
+case2,case2/ioc/summary_case2.json,summary_case2.json,16661,24c366f8eb28b80e75d783e796743cab398f8c664a4590dd6ab0fe3b537f9399,unknown,"{
+  ""pcap"": ""pcap/2024-11-26-traffic-analysis-exercise.pcap"",
+  ""unique_ip_count",0,0,,,no
+case2,case2/payloads/payload_hashes.txt,payload_hashes.txt,10562,f8419e20c014ebb0b0436b1d77fa52d1974468ee684b7a4aff1582b4dddc5cfa,text/plain,cd6f72bd96cbbad446325f8c2d087283f051ccaf77523dc436eec2d98be29bf7  output/case2/p,0,0,,,no
+case2,case2/payloads/http_file_data/frame_12790_stream_76_104.117.247.99_to_10.11.26.183.bin,frame_12790_stream_76_104.117.247.99_to_10.11.26.183.bin,504,cd6f72bd96cbbad446325f8c2d087283f051ccaf77523dc436eec2d98be29bf7,application/octet-stream,"0�.�
+..��.�0�.�.	+.....0...�.�0�.�0���5031.0	..U....US1.0...U.
+.Let's Encrypt1.",12790,76,104.117.247.99,10.11.26.183.,no
+case2,case2/payloads/http_file_data/frame_20340_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_20340_stream_77_10.11.26.183_to_194.180.191.64.bin,22,2b69346572041eefe558a82b58d654237e087ce9ab4e0876254a40a8954279a9,application/octet-stream,"CMD=POLL
+INFO=1
+ACK=1
+",20340,77,10.11.26.183,194.180.191.64.,no
+case2,case2/payloads/http_file_data/frame_20341_stream_77_194.180.191.64_to_10.11.26.183.bin,frame_20341_stream_77_194.180.191.64_to_10.11.26.183.bin,61,79653567106d923034d36a9025d2d37955ff55dae5d77c1a79a321d850235d00,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=�g+$�{.� \�..�W��D�6��=M�.w}�.o�.�.�.����
+",20341,77,194.180.191.64,10.11.26.183.,yes
+case2,case2/payloads/http_file_data/frame_20342_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_20342_stream_77_10.11.26.183_to_194.180.191.64.bin,250,839e234a3a10b60d559ee5679d2019ad4e58d9cd66e6cfd971207c3c6ef8ea4d,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=u�2h.r�.4�]��%y-�����=I���D3�W��i�7?�.��=@����F�fժ��&t�[.�6r",20342,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_20344_stream_78_104.26.1.231_to_10.11.26.183.bin,frame_20344_stream_78_104.26.1.231_to_10.11.26.183.bin,16,af0c1c32558e6dc1e4e8f3e1d151268b8f6eb7cd844c9ac6dfc4b862decc7983,application/octet-stream,"33.7488,-84.3877",20344,78,104.26.1.231,10.11.26.183.,no
+case2,case2/payloads/http_file_data/frame_20346_stream_77_194.180.191.64_to_10.11.26.183.bin,frame_20346_stream_77_194.180.191.64_to_10.11.26.183.bin,152,a5a0a597e4b76ebec517a83126dbce37625a763b57307afe7064d9eb0a523956,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=u�2h.r�. \�..�W�h�E��=I���=n~��ӌ�����c��.�}.X�.�),�,�Dq�,�.",20346,77,194.180.191.64,10.11.26.183.,yes
+case2,case2/payloads/http_file_data/frame_20348_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_20348_stream_77_10.11.26.183_to_194.180.191.64.bin,76,f0e200cacd273e3dd257057f27aeda839a1f2f31482e0bb01ea8b1363a7af245,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=l3.<(T{.E���.�V..��k�9|||$(m��$Cj_���и���0Mt��s���M�6��
+",20348,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_20350_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_20350_stream_77_10.11.26.183_to_194.180.191.64.bin,84,59dc18363d5d0313ae94aa0ecad2d06dc77144758eeae2cc5ed8b4eee3923752,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=l3.<(T{.E���.�V..��k�9|||$(m��$C�ļ�.ǒ��.���y>p��4.���x�UAA�",20350,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_20572_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_20572_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",20572,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_21145_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_21145_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",21145,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_21153_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_21153_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",21153,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_21246_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_21246_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",21246,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_21295_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_21295_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",21295,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_21337_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_21337_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",21337,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_21352_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_21352_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",21352,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_21364_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_21364_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",21364,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_21415_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_21415_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",21415,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_21608_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_21608_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",21608,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_21708_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_21708_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",21708,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_21721_stream_108_23.53.127.105_to_10.11.26.183.bin,frame_21721_stream_108_23.53.127.105_to_10.11.26.183.bin,4,69bf0bc46f51b33377c4f3d92caf876714f6bbbe99e7544487327920873f9820,application/octet-stream,****,21721,108,23.53.127.105,10.11.26.183.,no
+case2,case2/payloads/http_file_data/frame_21782_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_21782_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",21782,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_21792_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_21792_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",21792,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_21823_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_21823_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",21823,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_25880_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_25880_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",25880,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_25891_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_25891_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",25891,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_25937_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_25937_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",25937,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_25968_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_25968_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",25968,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_25985_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_25985_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",25985,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26022_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26022_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26022,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26051_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26051_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26051,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26055_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26055_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26055,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26066_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26066_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26066,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26074_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26074_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26074,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26087_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26087_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26087,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26097_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26097_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26097,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26107_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26107_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26107,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26119_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26119_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26119,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26133_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26133_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26133,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26215_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26215_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26215,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26297_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26297_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26297,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26301_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26301_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26301,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26317_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26317_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26317,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26325_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26325_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26325,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26339_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26339_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26339,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26357_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26357_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26357,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26371_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26371_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26371,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26381_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26381_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26381,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26395_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26395_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26395,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26407_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26407_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26407,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26425_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26425_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26425,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26431_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26431_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26431,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26441_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26441_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26441,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26449_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26449_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26449,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26508_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26508_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26508,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26533_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26533_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26533,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26554_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26554_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26554,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26570_stream_77_10.11.26.183_to_194.180.191.64.bin,frame_26570_stream_77_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26570,77,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26809_stream_140_10.11.26.183_to_194.180.191.64.bin,frame_26809_stream_140_10.11.26.183_to_194.180.191.64.bin,22,2b69346572041eefe558a82b58d654237e087ce9ab4e0876254a40a8954279a9,application/octet-stream,"CMD=POLL
+INFO=1
+ACK=1
+",26809,140,10.11.26.183,194.180.191.64.,no
+case2,case2/payloads/http_file_data/frame_26810_stream_140_194.180.191.64_to_10.11.26.183.bin,frame_26810_stream_140_194.180.191.64_to_10.11.26.183.bin,61,79653567106d923034d36a9025d2d37955ff55dae5d77c1a79a321d850235d00,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=�g+$�{.� \�..�W��D�6��=M�.w}�.o�.�.�.����
+",26810,140,194.180.191.64,10.11.26.183.,yes
+case2,case2/payloads/http_file_data/frame_26811_stream_140_10.11.26.183_to_194.180.191.64.bin,frame_26811_stream_140_10.11.26.183_to_194.180.191.64.bin,250,839e234a3a10b60d559ee5679d2019ad4e58d9cd66e6cfd971207c3c6ef8ea4d,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=u�2h.r�.4�]��%y-�����=I���D3�W��i�7?�.��=@����F�fժ��&t�[.�6r",26811,140,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26812_stream_140_194.180.191.64_to_10.11.26.183.bin,frame_26812_stream_140_194.180.191.64_to_10.11.26.183.bin,152,a5a0a597e4b76ebec517a83126dbce37625a763b57307afe7064d9eb0a523956,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=u�2h.r�. \�..�W�h�E��=I���=n~��ӌ�����c��.�}.X�.�),�,�Dq�,�.",26812,140,194.180.191.64,10.11.26.183.,yes
+case2,case2/payloads/http_file_data/frame_26814_stream_140_10.11.26.183_to_194.180.191.64.bin,frame_26814_stream_140_10.11.26.183_to_194.180.191.64.bin,84,59dc18363d5d0313ae94aa0ecad2d06dc77144758eeae2cc5ed8b4eee3923752,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=l3.<(T{.E���.�V..��k�9|||$(m��$C�ļ�.ǒ��.���y>p��4.���x�UAA�",26814,140,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26842_stream_140_10.11.26.183_to_194.180.191.64.bin,frame_26842_stream_140_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26842,140,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26901_stream_140_10.11.26.183_to_194.180.191.64.bin,frame_26901_stream_140_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26901,140,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_26913_stream_140_10.11.26.183_to_194.180.191.64.bin,frame_26913_stream_140_10.11.26.183_to_194.180.191.64.bin,36,975b5678560775735da4a9e8b805dce370329179b8e17ebc1c289aaeb293f7ff,application/octet-stream,"CMD=ENCD
+ES=1
+DATA=��#.�mH��UAA��g�
+",26913,140,10.11.26.183,194.180.191.64.,yes
+case2,case2/payloads/http_file_data/frame_8_stream_0_104.117.247.184_to_10.11.26.183.bin,frame_8_stream_0_104.117.247.184_to_10.11.26.183.bin,22,5e9a7996fe94d7be10595d7133748760bf8348198b71b7a50fd8affaa980ac61,application/octet-stream,Microsoft Connect Test,8,0,104.117.247.184,10.11.26.183.,no
+case2,case2/visualization/geo_data.csv,geo_data.csv,3610,299ba59371bc570cb5cf11b6705a50834db138478308f578af53a707d52df1dd,text/plain,"ip,country,countryCode,city,lat,lon,org,is_c2
+104.117.244.105,United States,US,",0,0,,,no
+case2,case2/visualization/tls_ja3.csv,tls_ja3.csv,12263,7e980112c37c88f0d8b96a5228cd2b26b93085dbebd84487071a613030ad8cdd,text/plain,"frame_no,timestamp,src_ip,dst_ip,tls_version,tls_version_int,cipher_suites_count",0,0,,,no
+case2,case2/visualization/tls_ja3_summary.json,tls_ja3_summary.json,2513,5a64d70bacaec01af090c8a98ed295f0bf8be2deda35beefd42dd57792204815,unknown,"{
+  ""case"": ""case2"",
+  ""pcap"": ""pcap/2024-11-26-traffic-analysis-exercise.pcap"",",0,0,,,no
+case2,case2/zeek_like/conn_summary.csv,conn_summary.csv,11443,0822f9fec02425617a159b315a6589baf51023bbd242474a3e1e2d2bbb7c13f2,text/plain,"src_ip,dst_ip,src_port,dst_port,protocol
+10.11.26.183,104.117.247.184,53279,80,T",0,0,,,no
+case2,case2/zeek_like/dns_summary.csv,dns_summary.csv,25376,d001679ed9575678d94d5bbf3f86244c396896e60a3ee20dcf580715f6b221d5,text/plain,"timestamp,src_ip,dst_ip,query
+2024-11-26 11:49:38.458138,10.11.26.183,10.11.26.3",0,0,,,no
+case2,case2/zeek_like/http_summary.csv,http_summary.csv,9383,40089c79086737ece2f57f47444340a8f37679a7afa31568d84fddc2418f6953,text/plain,"timestamp,src_ip,dst_ip,method,host,uri,user_agent
+2024-11-26 11:49:38.525014,10",0,0,,,no
+case2,case2/zeek_like/suspicious_http.csv,suspicious_http.csv,51,5bc5e6bfbbec5b37b2e90663a34347f90216cac16ee6a48ab3f3478180c29e91,text/plain,"timestamp,src_ip,dst_ip,method,host,uri,user_agent
+",0,0,,,no
+case3,case3/triage/capinfos_summary.txt,capinfos_summary.txt,1109,6a375b266f03519a0ffacdb50a88943ca0f8af76140ac3924137bef96d6ce8bd,text/plain,"File name:           pcap/2025-06-13-traffic-analysis-exercise.pcap
+File type:  ",0,0,,,no
+case3,case3/triage/file_sizes.txt,file_sizes.txt,124,5f91b17b2c1fc5572009261115fee360b200b4c937e62edbfb4e7d62804c7e92,text/plain,"Permissions Size User Date Modified Name
+.rw-rw-r--   43M yoan 14 Jun  2025  pca",0,0,,,no
+case3,case3/triage/protocol_summary.txt,protocol_summary.txt,3573,0311655d8422cb6f3f658462eada3565176e19cc6bf2eddbaa3eb5c3b7fab442,text/plain,"
+===================================================================
+Protocol Hi",0,0,,,no
+case3,case3/triage/sha256.txt,sha256.txt,113,bc9a9558555b7fef36be50d61bd5aaa7b9cb1d74481b2992b670cc84c5f561b4,text/plain,33e274d7246f4eca8fbe7337c465c7ded077cd650d5d4d42481cad822c962741  pcap/2025-06-1,0,0,,,no
+case3,case3/ioc/beacon_intervals.csv,beacon_intervals.csv,1999,dd7fd90e1d1aacdcae1c945ebe66da963bb8d5f97a54a68b6d4d089033684986,text/plain,"timestamp,src_ip,dst_ip,host,uri,interval_seconds
+2025-06-13 22:37:25.399582,10.",0,0,,,no
+case3,case3/ioc/ioc_case3.csv,ioc_case3.csv,15689,80d4b5f14b93d21fae52483fe840c564e0fd671243c72fb40555a04f4c7a0904,text/plain,"ioc_type,value,notes
+ip,0.0.0.0,unique IP address
+ip,10.6.13.129,unique IP add",0,0,,,no
+case3,case3/ioc/summary_case3.json,summary_case3.json,19108,38ab181d5735c7a199429b92542f233ee0461fc5580549e71e0058bdb6a488bd,unknown,"{
+  ""pcap"": ""pcap/2025-06-13-traffic-analysis-exercise.pcap"",
+  ""unique_ip_count",0,0,,,no
+case3,case3/payloads/http_file_data/frame_133_stream_4_23.192.223.206_to_10.6.13.133.bin,frame_133_stream_4_23.192.223.206_to_10.6.13.133.bin,22,5e9a7996fe94d7be10595d7133748760bf8348198b71b7a50fd8affaa980ac61,application/octet-stream,Microsoft Connect Test,133,4,23.192.223.206,10.6.13.133.,no
+case3,case3/payloads/http_file_data/frame_44292_stream_105_10.6.13.133_to_104.21.16.1.bin,frame_44292_stream_105_10.6.13.133_to_104.21.16.1.bin,30496,d3ac6c1ef446e4f32a18ed4bbe7a5f2c7ba9c6dcd7ef984c01e77c9c160c0a22,application/octet-stream,".�.......
+�}w<�q.v�^.Q..Q�P��#d�.�GF.�+�""dD.�WٛȞ�+;{�x��9�9�����>.�?������u��u",44292,105,10.6.13.133,104.21.16.1.,no
+case3,case3/payloads/http_file_data/frame_44436_stream_106_10.6.13.133_to_104.21.16.1.bin,frame_44436_stream_106_10.6.13.133_to_104.21.16.1.bin,30528,8c7971cf61f24180c18cb006db4affa93329b45bc4cc9bd5a6a5e3f4ed436bb8,application/octet-stream,".�.......
+�}w<�q.��G�.�̐��w$3{��dSd��.�..Q�^..�+���..���O�9�y�7y>�����{���}_�}_",44436,106,10.6.13.133,104.21.16.1.,no
+case3,case3/payloads/http_file_data/frame_44496_stream_107_10.6.13.133_to_104.21.16.1.bin,frame_44496_stream_107_10.6.13.133_to_104.21.16.1.bin,30532,744fd6f8f668a262df315259c9d9d513efb5f346325071dd5576b29372897bd7,application/octet-stream,".�.......
+�}w<�q.6��^e�eoE22.!d.e��]���.e��egf��M�
+���'�.�<�<������=���������",44496,107,10.6.13.133,104.21.16.1.,no
+case3,case3/payloads/http_file_data/frame_44562_stream_108_10.6.13.133_to_104.16.230.132.bin,frame_44562_stream_108_10.6.13.133_to_104.16.230.132.bin,30507,3944c8eb71eaa26f08aca743ecb3368af3bb2463c616abad61d52d045308a011,application/octet-stream,".�.......
+�}w<�q.��=J��.!�Y.!{���e.e.�.!BFf�+2�������'�.�<�<������=���������",44562,108,10.6.13.133,104.16.230.132.,no
+case3,case3/payloads/http_file_data/frame_44693_stream_114_10.6.13.133_to_104.21.16.1.bin,frame_44693_stream_114_10.6.13.133_to_104.21.16.1.bin,30520,53716740f6b82281587d249b925d60a77973f08fb9dfef7df1411fe6b0cfa5bb,application/octet-stream,".�.......
+�}w<�q.vȞ٣�M�Y���wF�lBQvdgo�Jv.�eSv��e.BVo?9�8�y����ϟ�������}��}]�}",44693,114,10.6.13.133,104.21.16.1.,no
+case3,case3/payloads/http_file_data/frame_44756_stream_115_10.6.13.133_to_104.21.16.1.bin,frame_44756_stream_115_10.6.13.133_to_104.21.16.1.bin,30502,b730673b3d8643c2572c2f0ea25685bf3190fa53674b21824dc6ecf669c99246,application/octet-stream,".�.......
+�}w8�a.��wd$��-
+�{��,��������JE��=B�[�dd�	!���y<��}�{|��q.�s���:��:",44756,115,10.6.13.133,104.21.16.1.,no
+case3,case3/payloads/http_file_data/frame_44816_stream_116_10.6.13.133_to_104.16.230.132.bin,frame_44816_stream_116_10.6.13.133_to_104.16.230.132.bin,30534,7c027003af4670e7b52a2345778f855bc034bb1eb5d1a1aca7653ca9d354f31d,application/octet-stream,".�.......
+�}w<�q.v����.ego���I!$3;�Ȉ����M�����2""{�-3��~r�q����y�?ϟ���}�������",44816,116,10.6.13.133,104.16.230.132.,no
+case3,case3/payloads/http_file_data/frame_44868_stream_117_10.6.13.133_to_104.21.16.1.bin,frame_44868_stream_117_10.6.13.133_to_104.21.16.1.bin,30507,301431d89ed1213551538468a4a29959440f01dd96c78a6b8ef08fbb210307a7,application/octet-stream,".�.......
+�}w<�q.62"";;�,{���B�&;;��.2���Y���7..B��.�Q.z��}���y����ϟ������9�9纮",44868,117,10.6.13.133,104.21.16.1.,no
+case3,case3/payloads/http_file_data/frame_44928_stream_118_10.6.13.133_to_104.16.230.132.bin,frame_44928_stream_118_10.6.13.133_to_104.16.230.132.bin,30522,1a010f22cd6de34da3f86273669a269121fb411b8752e7c0f3b9feb333da44fc,application/octet-stream,".�.......
+�}w<�q.vF�.""�.�;3{�.""##��.Bdg˞.ٛBdG�{&;{���'�.�<�<������=���������",44928,118,10.6.13.133,104.16.230.132.,no
+case3,case3/payloads/http_file_data/frame_45174_stream_128_10.6.13.133_to_104.21.16.1.bin,frame_45174_stream_128_10.6.13.133_to_104.21.16.1.bin,30525,27c0b1b2fcdf714fc5748e9f9ef7b40e2b94be77a72a1cfbc17f378edbbd2e24,application/octet-stream,".�.......
+�}g<�a.��M.�.�!Dّ.�G���.*��C��^�[!;��.��Pd���o���o����.>\�����8��8",45174,128,10.6.13.133,104.21.16.1.,no
+case3,case3/payloads/http_file_data/frame_45229_stream_129_10.6.13.133_to_104.21.16.1.bin,frame_45229_stream_129_10.6.13.133_to_104.21.16.1.bin,30515,ab81b7fbfafbdff72ddb798dc16d6b5293a619bb9ce539e660dfa8a126af5f42,application/octet-stream,".�.......
+�}w<�q.����^Q������d.��GQ.�{df��.!d�.����{e�U�~r�q����y�?ϟ���}������",45229,129,10.6.13.133,104.21.16.1.,no
+case3,case3/payloads/http_file_data/frame_45287_stream_130_10.6.13.133_to_104.21.16.1.bin,frame_45287_stream_130_10.6.13.133_to_104.21.16.1.bin,30521,7a94a74299f0e837c9df59b106451183f189569c01fc36072158908034a8b5f8,application/octet-stream,".�.......
+�}w<�q.�.B�.eG!dde�do��Έ.�W�
+٥쐝����C.�gv�~r�q����y�?ϟ���}�������",45287,130,10.6.13.133,104.21.16.1.,no
+case3,case3/payloads/http_file_data/frame_45345_stream_131_10.6.13.133_to_104.21.16.1.bin,frame_45345_stream_131_10.6.13.133_to_104.21.16.1.bin,30490,c2b3ae0298ba65114538d4bc2b9f3be6e7535b9f89d073d2703c5ad58a145062,application/octet-stream,".�.......
+�}w<�q.�.2""...B(B�ބ�M.Bvvv�.!;��=
+!{e�약�����}���y����ϟ�.�9�9纮",45345,131,10.6.13.133,104.21.16.1.,no
+case3,case3/payloads/http_file_data/frame_45445_stream_134_10.6.13.133_to_104.16.230.132.bin,frame_45445_stream_134_10.6.13.133_to_104.16.230.132.bin,30519,38b60c364139be939c978d2a5ada2ffc59e96bd51a13c1a962677d0d2b17686c,application/octet-stream,".�.......
+�}w<�q.6�7�+#BfFd�.��l�̖.2.�.eF�{o�3.!3{�.���O�9�y�7y>�����{���}_�}_�",45445,134,10.6.13.133,104.16.230.132.,no
+case3,case3/payloads/http_file_data/frame_45507_stream_135_10.6.13.133_to_104.16.230.132.bin,frame_45507_stream_135_10.6.13.133_to_104.16.230.132.bin,30514,bd3a82eb1f612be50f8b72121efdf1ace6e4538d043fba24ba39cdc0f8f4bc73,application/octet-stream,".�.......
+�}w<�q.��G(BQȦ�약�^!;;D!;{F�]f��B�ʖ=BȈ.��~r�q����y�?ϟ���}�������",45507,135,10.6.13.133,104.16.230.132.,no
+case3,case3/payloads/http_file_data/frame_45573_stream_136_10.6.13.133_to_104.21.16.1.bin,frame_45573_stream_136_10.6.13.133_to_104.21.16.1.bin,30494,d9266b198b0d7cbfc075fc7a4f1d40de3dbd7d6cb79d62c9a7ec09efc16bb432,application/octet-stream,".�.......
+�}w<�q.vȞ.B����.!{�WF�.Qvv��"";�2�eo�""�"".���'�.�<�.����y�����{��}��u�",45573,136,10.6.13.133,104.21.16.1.,no
+case3,case3/payloads/http_file_data/frame_45627_stream_137_10.6.13.133_to_104.21.16.1.bin,frame_45627_stream_137_10.6.13.133_to_104.21.16.1.bin,30504,3363c2e357e2d659b5f9f6f35bf3a645be0f7670ad6ec2a77681eea76d922805,application/octet-stream,".�.......
+�}w8�a.��GF�""BFʈ�����gHBF��3Sff�(2�M6�{��#d��O���<��%��.v.��~��}]�u]",45627,137,10.6.13.133,104.21.16.1.,no
+case3,case3/payloads/http_file_data/frame_45832_stream_144_10.6.13.133_to_104.21.112.1.bin,frame_45832_stream_144_10.6.13.133_to_104.21.112.1.bin,30500,a90fe74ce1ff41de8865eaa0bafe165c87f9710d9d002fc53ce8f729b00a377d,application/octet-stream,".�.......
+�}w<�q.���(���.��̲W�
+�##;��.�+ʎ���.Bdd�.
+!d�����}��y�?ϟ���}������",45832,144,10.6.13.133,104.21.112.1.,no
+case3,case3/payloads/http_file_data/frame_45905_stream_146_10.6.13.133_to_104.21.16.1.bin,frame_45905_stream_146_10.6.13.133_to_104.21.16.1.bin,30519,ab0be742a01e49bd78ba8a53d853d0ed870e81ec5bdc73adf72d2c6f1ab89699,application/octet-stream,".�.......
+�}w<�q.6!��.Y��#{e.����.��=#٣�.��G�Ef�G�����'�.�<�<������=���������",45905,146,10.6.13.133,104.21.16.1.,no
+case3,case3/payloads/http_file_data/frame_45958_stream_147_10.6.13.133_to_104.21.112.1.bin,frame_45958_stream_147_10.6.13.133_to_104.21.112.1.bin,30520,5161058658a2efbadce669e623905494d2b594089b0f995d889284885a272d47,application/octet-stream,".�.......
+�}w<�q.���.ٲG�.!�e�(d�B)�^Evd��.eo�.!{eoBf���s�s��M����y�����{��}��u�",45958,147,10.6.13.133,104.21.112.1.,no
+case3,case3/payloads/http_file_data/frame_46019_stream_148_10.6.13.133_to_104.16.230.132.bin,frame_46019_stream_148_10.6.13.133_to_104.16.230.132.bin,30527,d0342c30a772f0b3228e433c66acf6a65405a51e7807272dd82464c5bdc91d24,application/octet-stream,".�.......
+�}w<�q.��	.�(D��Έ��Mf.YY�.��M.BF6م��d�약���'�}���}���>.������=�:�\�",46019,148,10.6.13.133,104.16.230.132.,no
+case3,case3/payloads/http_file_data/frame_46075_stream_149_10.6.13.133_to_104.21.112.1.bin,frame_46075_stream_149_10.6.13.133_to_104.21.112.1.bin,30523,27ca5234006ac55805c468dce65009338deda0955aa589f81006ce43c611f095,application/octet-stream,".�.......
+�}w<�q.���.""�.�Y!{��""[f(DQ�왽BVFY�3d�.C�.!�����}���>.�?������u��u]",46075,149,10.6.13.133,104.21.112.1.,no
+case3,case3/payloads/http_file_data/frame_46131_stream_150_10.6.13.133_to_104.21.16.1.bin,frame_46131_stream_150_10.6.13.133_to_104.21.16.1.bin,30528,3d5b36f1782974f21194c1a766c08835599fdfcc1899a0df29897edcf8fb23c9,application/octet-stream,".�.......
+�}w<�q.��=.��""{�-;$#+Bv�l�3#+�J�V��$�eg�ʈ�~r߷�~�7y>��.||}.�s�s�u]",46131,150,10.6.13.133,104.21.16.1.,no
+case3,case3/payloads/http_file_data/frame_46282_stream_156_10.6.13.133_to_104.21.112.1.bin,frame_46282_stream_156_10.6.13.133_to_104.21.112.1.bin,30520,ff8807b2e03385f5b65ead0b9e950e3777b0916f7f9a60983c8aedeb15ef8f72,application/octet-stream,".�.......
+�}w<�q.��=2�.�̬��^![f�2����##dgf����M���,D({�����}���>.�?������u��u",46282,156,10.6.13.133,104.21.112.1.,no
+case3,case3/payloads/http_file_data/frame_46355_stream_158_10.6.13.133_to_104.21.112.1.bin,frame_46355_stream_158_10.6.13.133_to_104.21.112.1.bin,30505,167d9348074d4f2b42e16520d6d5edeaa4a769361445a9a63ed8b649dc2d96a0,application/octet-stream,".�.......
+�}w<�q.��].��.DF��.�2�7.Q���GvF�.���BȎ�-Dvx��9�9�����>.�?������u��u",46355,158,10.6.13.133,104.21.112.1.,no
+case3,case3/payloads/http_file_data/frame_46426_stream_159_10.6.13.133_to_104.21.112.1.bin,frame_46426_stream_159_10.6.13.133_to_104.21.112.1.bin,30523,f4f6bd75760b3ab4cf76a23e42b90a42adf1deb511e032e1e4990cb12f3df8c5,application/octet-stream,".�.......
+�}w<�q.6�G�3Bd��쑽�&
+�+;{.BFffEvdDF�!�B��[�����s�s��M����y�����{��}��",46426,159,10.6.13.133,104.21.112.1.,no
+case3,case3/payloads/http_file_data/frame_46477_stream_160_10.6.13.133_to_104.21.80.1.bin,frame_46477_stream_160_10.6.13.133_to_104.21.80.1.bin,30532,db6d73b27e10392f1275d9d5b479e0c13792067a9e2a025e45030e7a8f80e1a0,application/octet-stream,".�.......
+�}eX��.�t� �tK7� HKI�tHH
+.
+*�H.��H��""��%! �ݡ""�.�.fν""����|��.��{�",46477,160,10.6.13.133,104.21.80.1.,no
+case3,case3/payloads/http_file_data/frame_46540_stream_161_10.6.13.133_to_104.16.231.132.bin,frame_46540_stream_161_10.6.13.133_to_104.16.231.132.bin,30530,7ae0b2b33d7b595a33b2365370959b3a02c3a94077f3ab03377d3d64329bc6dc,application/octet-stream,".�.......
+�}w<�q.��̐Q(.)$��d�-�{��MV�.�=.""#3!{f���7�[x��9�9��&��}�<.~��������",46540,161,10.6.13.133,104.16.231.132.,no
+case3,case3/payloads/http_file_data/frame_46621_stream_163_10.6.13.133_to_104.21.80.1.bin,frame_46621_stream_163_10.6.13.133_to_104.21.80.1.bin,30532,4721a83a5089ebc8adb8077c628957ab1891d36255e4dc43c8cf1818a8583003,application/octet-stream,".�.......
+�}eX��.-�t# HH.
+.�.�!]..J��.���t	""!�%--�tJHww7""!x���a��+r�{~��w���{���",46621,163,10.6.13.133,104.21.80.1.,no
+case3,case3/payloads/http_file_data/frame_46682_stream_164_10.6.13.133_to_104.21.80.1.bin,frame_46682_stream_164_10.6.13.133_to_104.21.80.1.bin,30529,13c698a4c881b0ee95d30e9d20671083223ae42c9779dcf819d0072e6bf84c66,application/octet-stream,".�.......
+�}eX��.-�]�
+H..""�!!� .J��""!���4� H����..HH�4R...�^?df�9���瞟���{�^{�",46682,164,10.6.13.133,104.21.80.1.,no
+case3,case3/payloads/http_file_data/frame_46739_stream_165_10.6.13.133_to_104.21.80.1.bin,frame_46739_stream_165_10.6.13.133_to_104.21.80.1.bin,30535,2cff5fc11cb3679401656d45881237939adb65606e4fff424a094d81c81a6586,application/octet-stream,".�.......
+�}eT��.-%-�4*HH� Hw��tK��.��-%�
+R.""-�-J.���4..��.9�p�}O�w.�1���^k���",46739,165,10.6.13.133,104.21.80.1.,no
+case3,case3/payloads/http_file_data/frame_46795_stream_166_10.6.13.133_to_104.21.80.1.bin,frame_46795_stream_166_10.6.13.133_to_104.21.80.1.bin,30517,717a4d516410d7d3c33d8b8526ed58f948e565cde689f20d3266f0c5cafdd1e6,application/octet-stream,".�.......
+�}w<�q.���.BV�{d�P.!{.�+{��2R.!
+!;��Wef��.�.o?9�8�y����ϟ�������}��}]",46795,166,10.6.13.133,104.21.80.1.,no
+case3,case3/payloads/http_file_data/frame_46851_stream_167_10.6.13.133_to_104.21.80.1.bin,frame_46851_stream_167_10.6.13.133_to_104.21.80.1.bin,30514,6088feed5fd623ef343146878b81fb1fdd85302a1cbcdda79aecc06ddf01b4af,application/octet-stream,".�.......
+�}w8�a.��-�Qdd���w�,2B.!�.�;��2K�!d��.!{�U�^_?y���ߗ�����8��v���:��:�",46851,167,10.6.13.133,104.21.80.1.,no
+case3,case3/payloads/http_file_data/frame_46952_stream_170_10.6.13.133_to_104.21.80.1.bin,frame_46952_stream_170_10.6.13.133_to_104.21.80.1.bin,30518,19a0e42805a5640ff5383884fc0f79ad1fd41d8485ef3ce30907b7ccd9f24736,application/octet-stream,".�.......
+�}w<�q.����)�(dgf���3��eGQ��MFV��[����3�������s��o�|������|.��������",46952,170,10.6.13.133,104.21.80.1.,no
+case3,case3/payloads/http_file_data/frame_47001_stream_171_10.6.13.133_to_104.16.231.132.bin,frame_47001_stream_171_10.6.13.133_to_104.16.231.132.bin,30527,eb109aba4ef5d687fb7557cb3a6722fe69ff3224341ab521deca9754fdfa9934,application/octet-stream,".�.......
+�}w<�q.�.�gfFdDf�d�..Q�""[H""{o��#�^!{�.""�=�Wv����������y�?}������9�9�",47001,171,10.6.13.133,104.16.231.132.,no
+case3,case3/payloads/http_file_data/frame_47096_stream_173_10.6.13.133_to_104.21.80.1.bin,frame_47096_stream_173_10.6.13.133_to_104.21.80.1.bin,30528,325a7198b01f5845e4753e567690a619731a700113d952e768246ad00f8fde2d,application/octet-stream,".�.......
+�}w<�q.���""[.!�����;��WFv..ٛl���^ٲ)Y�3D2�..o?���}?�<���������=�:�\�",47096,173,10.6.13.133,104.21.80.1.,no
+case3,case3/payloads/http_file_data/frame_47206_stream_176_10.6.13.133_to_104.16.231.132.bin,frame_47206_stream_176_10.6.13.133_to_104.16.231.132.bin,30535,a0102d2dfdf9f604c5dce7020abea132ee600ff736e28a6f8a806057ec75b32a,application/octet-stream,".�.......
+�}w<�q.��gHf��""�2����.!doQ��.��T.�G��L��{�)o?9�8�y����ϟ�������}��}]�",47206,176,10.6.13.133,104.16.231.132.,no
+case3,case3/payloads/http_file_data/frame_47266_stream_177_10.6.13.133_to_104.21.80.1.bin,frame_47266_stream_177_10.6.13.133_to_104.21.80.1.bin,30524,2baf1dd69b1fdd7210a5b7ccf7054fe5e56f298c6bc30902076de8c5fc6543b4,application/octet-stream,".�.......
+�}w<�q.��#�PfY�""d��Mv���,#{e�.B(����.Bv��^!3��'�.�<�<������=���������",47266,177,10.6.13.133,104.21.80.1.,no
+case3,case3/payloads/http_file_data/frame_47323_stream_178_10.6.13.133_to_104.16.231.132.bin,frame_47323_stream_178_10.6.13.133_to_104.16.231.132.bin,30523,09d079fe4cd5ccba7a4d7459530ccde14f461ddc28ab76be76419f375df3bf59,application/octet-stream,".�.......
+�}w<�q.6���7�-3#B!$##��^E.�+{..��ٛ�d�.Ev�(��'�.�<�<������=���������",47323,178,10.6.13.133,104.16.231.132.,no
+case3,case3/payloads/http_file_data/frame_47372_stream_179_10.6.13.133_to_104.21.64.1.bin,frame_47372_stream_179_10.6.13.133_to_104.21.64.1.bin,30529,0e6dc7698b5b85d58ecf1db6de9d2d26adae080c504822f56e08ad7352e6e3e9,application/octet-stream,".�.......
+�}w<�q.�.�7e.ID.�2C��{f�Mv���.!#��lّ.�����=�~r�q����y�?ϟ���}�������",47372,179,10.6.13.133,104.21.64.1.,no
+case3,case3/payloads/http_file_data/frame_47423_stream_180_10.6.13.133_to_104.21.64.1.bin,frame_47423_stream_180_10.6.13.133_to_104.21.64.1.bin,30521,3f38460563073ec78e94be62085bedc89abdd664f2e8c69b627d45a7f799dcae,application/octet-stream,".�.......
+�}eX��.-
+.ҍ�HI( (HH7H�.ҥ4�Jw(( �(%����t)]�ݝ�q���a��+r�{~��w���{���Z",47423,180,10.6.13.133,104.21.64.1.,no
+case3,case3/payloads/http_file_data/frame_47482_stream_181_10.6.13.133_to_104.21.80.1.bin,frame_47482_stream_181_10.6.13.133_to_104.21.80.1.bin,30506,0540c813dbc04d7eb0f0a8c45002f6e537ec251a159ee526e2c8bb02f1c0d415,application/octet-stream,".�.......
+��w<���>.�e��.���.�7��Bfe�R.ٲ3��3d�..��.�.���%�.�.��������yz���}��}]",47482,181,10.6.13.133,104.21.80.1.,no
+case3,case3/payloads/http_file_data/frame_47545_stream_182_10.6.13.133_to_104.16.231.132.bin,frame_47545_stream_182_10.6.13.133_to_104.16.231.132.bin,30490,aaba18b0dec70025ecd16a947c4a775a655faf6792fba2f1adbf6d8eaceee18f,application/octet-stream,".�.......
+�}w8��۾.2.�.��.!{.�w.�.��.!��2�3���M.�+�.?.y����/|����#G�q�?�u��u�",47545,182,10.6.13.133,104.16.231.132.,no
+case3,case3/payloads/http_file_data/frame_47603_stream_183_10.6.13.133_to_104.21.80.1.bin,frame_47603_stream_183_10.6.13.133_to_104.21.80.1.bin,30536,1bb9c3c6fb445e218779b679c76752e91795c44cab14ff001e37d9de27676ace,application/octet-stream,".�.......
+�}eX��.�4�tIH#�J)].""H#!%."".J���t#.""%�R����tw(��t\?df�9���瞟���{�^{�",47603,183,10.6.13.133,104.21.80.1.,no
+case3,case3/payloads/http_file_data/frame_47652_stream_184_10.6.13.133_to_104.21.80.1.bin,frame_47652_stream_184_10.6.13.133_to_104.21.80.1.bin,30496,9fce2d5d2c076560fe0bdb09c64b90b0ee860b18214c6da1082a4fa8815c5ddf,application/octet-stream,".�.......
+�}w<�q.6�Ȉ2��.!{ed��M.��E�ޡ.!��-������.Bf�~r߷�~�7<����.����=�:�\�u",47652,184,10.6.13.133,104.21.80.1.,no
+case3,case3/payloads/http_file_data/frame_47710_stream_185_10.6.13.133_to_104.16.231.132.bin,frame_47710_stream_185_10.6.13.133_to_104.16.231.132.bin,30524,18bef6d684def5209ff2fbab46c793192a9aa85611ed5aab5a38d009f864915c,application/octet-stream,".�.......
+�}eX��.-ݍ��( .
+��!%(!J����tK�t(� %) ""!�J�t	...��Cf��s��y��9?�y�w��^k",47710,185,10.6.13.133,104.16.231.132.,no
+case3,case3/payloads/http_file_data/frame_47767_stream_186_10.6.13.133_to_104.21.80.1.bin,frame_47767_stream_186_10.6.13.133_to_104.21.80.1.bin,30530,fabc83de2abc842a38a0fedd5d742c3f3179c9a609e401b3719e52821f132570,application/octet-stream,".�.......
+�}w<�q.��MvIDDF({.�=�eD�d��=B��.��""{..Ef�z��9�9��&��}�<.~��������",47767,186,10.6.13.133,104.21.80.1.,no
+case3,case3/payloads/http_file_data/frame_47823_stream_187_10.6.13.133_to_104.21.80.1.bin,frame_47823_stream_187_10.6.13.133_to_104.21.80.1.bin,30527,4f46087652991ec1233367ad02f852c5897ee7456ca16b82454377df0fedccc5,application/octet-stream,".�.......
+�}w<�q.��.!��]vBv�.�3��d�d�Q.�.e�.�WF���Ȗ=���'�.�<�<������=���������",47823,187,10.6.13.133,104.21.80.1.,no
+case3,case3/payloads/http_file_data/frame_47875_stream_188_10.6.13.133_to_104.16.230.132.bin,frame_47875_stream_188_10.6.13.133_to_104.16.230.132.bin,30529,0041c17767c79ec17c2672ecc2ec316172c90e04546a9a90f297ad83fc0a6125,application/octet-stream,".�.......
+�}eX��.-Jw	.����
+��4���..��%�����""%��t�t)�t#"" ��Cf��s��y��9?�y�w��^k",47875,188,10.6.13.133,104.16.230.132.,no
+case3,case3/payloads/http_file_data/frame_47938_stream_189_10.6.13.133_to_104.21.80.1.bin,frame_47938_stream_189_10.6.13.133_to_104.21.80.1.bin,30517,7888997c8f73c0de793a68e416e30d56eea6f7746b2d7e83d08ccc45a4bbadd7,application/octet-stream,".�.......
+�}w<�q.6!{�""{%+#dgfgD�(��.�[dd���B�콳��{S.Yo?9�8�y����ϟ�������}��}]",47938,189,10.6.13.133,104.21.80.1.,no
+case3,case3/payloads/http_file_data/frame_47985_stream_190_10.6.13.133_to_104.21.112.1.bin,frame_47985_stream_190_10.6.13.133_to_104.21.112.1.bin,30520,138e5e166edefef373be789df14bd9c3eed2c9343902c17a316c4095e2f4fde4,application/octet-stream,".�.......
+�}eX��.�t��.� -��� �  !�"")-� -!]..J(�)JK�t�� �t��Cf��s��y��9?�y�w��^k",47985,190,10.6.13.133,104.21.112.1.,no
+case3,case3/payloads/http_file_data/frame_48044_stream_191_10.6.13.133_to_104.21.112.1.bin,frame_48044_stream_191_10.6.13.133_to_104.21.112.1.bin,30532,c5a0d8b4704c13513b67a1edf959164121ba493c58a9a937abec0ccb8358b2b4,application/octet-stream,".�.......
+�}w<�q.���W��7!Bv��=�.�M..ٛ�.��Yv�&B����&��'�.�<�<������=���������",48044,191,10.6.13.133,104.21.112.1.,no
+case3,case3/payloads/http_file_data/frame_48098_stream_192_10.6.13.133_to_104.16.230.132.bin,frame_48098_stream_192_10.6.13.133_to_104.16.230.132.bin,30534,650631f8bd89c65ce5a16cd3ff09fb603659ff790d5c1f6bd77426b78a5df198,application/octet-stream,".�.......
+�}eX��.�  ��� .*!R�(]��݊�H
+�!�.R""""�tI#!-)�""H��Cf��s��y��9?�y�w��^k",48098,192,10.6.13.133,104.16.230.132.,no
+case3,case3/payloads/http_file_data/frame_48291_stream_200_10.6.13.133_to_104.16.230.132.bin,frame_48291_stream_200_10.6.13.133_to_104.16.230.132.bin,30528,75bec75a3ba62b7f91fce61bb4e47461bb5c79ddfe0d87c79e9ea536c11616ff,application/octet-stream,".�.......
+�}w<�q.��I�.E��3Bv!BF�&3�P��!#�CffV��.eS6�!����s��o�|������|.��������",48291,200,10.6.13.133,104.16.230.132.,no
+case3,case3/payloads/http_file_data/frame_48369_stream_202_10.6.13.133_to_104.21.112.1.bin,frame_48369_stream_202_10.6.13.133_to_104.21.112.1.bin,30527,1f9ccbeecb82d8689eed81500a8804b2ccc435458212a4d18efc1d69c6d03c14,application/octet-stream,".�.......
+�}w<�q.6!��.�d.Y�{${%#[FF�ȖY��=3""{E!d��-#+{��O�9�y�7y>�����{���}_�}_",48369,202,10.6.13.133,104.21.112.1.,no
+case3,case3/payloads/http_file_data/frame_48430_stream_203_10.6.13.133_to_104.16.230.132.bin,frame_48430_stream_203_10.6.13.133_to_104.16.230.132.bin,30522,e0fe1fbd2e2bd11116b193a74bf8889e3963fbd5b534ec72d090186f869408a7,application/octet-stream,".�.......
+�}w8�a.���g��(��&{��2�#dD�
+�#[(.""DV���=""{d��.����<�����=���..��v���:��",48430,203,10.6.13.133,104.16.230.132.,no
+case3,case3/payloads/http_file_data/frame_48500_stream_204_10.6.13.133_to_104.16.230.132.bin,frame_48500_stream_204_10.6.13.133_to_104.16.230.132.bin,30524,b43859e9d538530ecb6b8e6517b0e648ae788d7ac699b3235a266f289a7384e0,application/octet-stream,".�.......
+�}w<�q.6Q���H�""��ɞ����2"";#BFfR""B��ٲeo�[�����s��o�|������|.��������",48500,204,10.6.13.133,104.16.230.132.,no
+case3,case3/payloads/http_file_data/frame_48557_stream_205_10.6.13.133_to_104.21.112.1.bin,frame_48557_stream_205_10.6.13.133_to_104.21.112.1.bin,30518,e55352c0c43ba43b6f9812ef7573c124d8196ee5cb32e207bb8637d27d717b94,application/octet-stream,".�.......
+�}w<�q.6��##���Ȏ�-!3��.مd�Q.Q������^E��2Cv���s�s��M����y�����{��}��u",48557,205,10.6.13.133,104.21.112.1.,no
+case3,case3/payloads/http_file_data/frame_48608_stream_206_10.6.13.133_to_104.21.112.1.bin,frame_48608_stream_206_10.6.13.133_to_104.21.112.1.bin,30534,580381b8c19c950b361f86b6362bc60a74225ea9bea99d5b7652ccecae1d235c,application/octet-stream,".�.......
+�}eX��.-
+J
+.R*!..� �t��tK#�݈4�!�� ]""��.���ݝҍ�.�.fν""����|��.��{��",48608,206,10.6.13.133,104.21.112.1.,no
+case3,case3/payloads/http_file_data/frame_48661_stream_207_10.6.13.133_to_104.16.231.132.bin,frame_48661_stream_207_10.6.13.133_to_104.16.231.132.bin,30515,bdc565b8b928809b8b6f0e7c7e53d6baba992c5ea0b472c7e70f8dbf6e1f2d9b,application/octet-stream,".�.......
+�}w<�q.��GvvdefG!dd�.!��.�({��=2�W({.!{ό�.!D��O��v���&��}��.����{�uι",48661,207,10.6.13.133,104.16.231.132.,no
+case3,case3/payloads/http_file_data/frame_48794_stream_212_10.6.13.133_to_104.21.96.1.bin,frame_48794_stream_212_10.6.13.133_to_104.21.96.1.bin,30526,c2e21dee81b70298462191dfc307c5536d5382af55fc8b8e12ba1145399201de,application/octet-stream,".�.......
+�}eX��.-.�!.����t(�].��%HH..J�� ���(!!J.��%)��!-\?df�9���瞟���{�^{�",48794,212,10.6.13.133,104.21.96.1.,no
+case3,case3/payloads/http_file_data/frame_48855_stream_213_10.6.13.133_to_104.21.112.1.bin,frame_48855_stream_213_10.6.13.133_to_104.21.112.1.bin,30528,724ffbd37471042977062da86a0c0beb63d7bb9247f8257b892fa85e8c3dd79c,application/octet-stream,".�.......
+�}w<�q.vdo.�.edf.�2C6){eg�Hf(3+�.�G����(B���'�.�<�<������=���������",48855,213,10.6.13.133,104.21.112.1.,no
+case3,case3/payloads/http_file_data/frame_5979_stream_83_10.6.13.133_to_10.6.13.129.bin,frame_5979_stream_83_10.6.13.133_to_10.6.13.129.bin,733,f97de6033c33002e71dbea51c9a31b839220cec8633f78ba325a39ffa89e2e54,application/octet-stream,"<?xml version=""1.0"" encoding=""utf-8""?><soap:Envelope xmlns:soap=""http://www.w3.o",5979,83,10.6.13.133,10.6.13.129.,no
+case3,case3/payloads/http_file_data/frame_5982_stream_83_10.6.13.129_to_10.6.13.133.bin,frame_5982_stream_83_10.6.13.129_to_10.6.13.133.bin,2208,8505f74ca504fc12862e6c6e1d61dddcdb0279957b2fe3b84479a0dea4f3b698,application/octet-stream,"<?xml version=""1.0"" encoding=""utf-8""?><soap:Envelope xmlns:soap=""http://www.w3.o",5982,83,10.6.13.129,10.6.13.133.,no
+case3,case3/payloads/http_file_data/frame_6654_stream_89_104.21.24.186_to_10.6.13.133.bin,frame_6654_stream_89_104.21.24.186_to_10.6.13.133.bin,5485,1332433fbcea805d83cb8f00c4b1e5063d264389403b3e37ebce18d41c17e7ec,application/octet-stream,"${Get-Hotfix -InputFormat -LogName System && ($ttegb)} = ""JE82YjdIQnU4ZzQwQ2VmZl",6654,89,104.21.24.186,10.6.13.133.,yes
+case3,case3/payloads/http_file_data/frame_6699_stream_90_10.6.13.133_to_104.21.112.1.bin,frame_6699_stream_90_10.6.13.133_to_104.21.112.1.bin,2798,4a12788f1aa53b51cc12e989a261de38a443a5c9e1b18eb317ac58879eabe7dd,application/octet-stream,"
+Host Name:                     DESKTOP-5AVE44C
+OS Name:                      ",6699,90,10.6.13.133,104.21.112.1.,no
+case3,case3/payloads/http_file_data/frame_8561_stream_90_104.21.112.1_to_10.6.13.133.bin,frame_8561_stream_90_104.21.112.1_to_10.6.13.133.bin,991303,9e2f538ca158d67ab3572080cf575ab21c0373ba05d19ce8794fcb3665fb7acf,application/octet-stream,"${Get-Hotfix -InputFormat -Uri oauth2.googleapis.com/token && ($lipp)} = ""JGZ6TV",8561,90,104.21.112.1,10.6.13.133.,yes
+case3,case3/visualization/geo_data.csv,geo_data.csv,4135,2e4605df382d55a2e52634b47cd195506856a78650cd86e12dca46f18d18c49f,text/plain,"ip,country,countryCode,city,lat,lon,org,is_c2
+104.16.124.96,Canada,CA,Toronto,4",0,0,,,no
+case3,case3/visualization/tls_ja3.csv,tls_ja3.csv,12131,46ef8980462dd5599a562dc4e7acff1c13394a8c29aa89a7881b8ed5a495f764,text/plain,"frame_no,timestamp,src_ip,dst_ip,tls_version,tls_version_int,cipher_suites_count",0,0,,,no
+case3,case3/visualization/tls_ja3_summary.json,tls_ja3_summary.json,2359,c3e8d2b24be1c5a12ce6e0415d1eff0676293e20eacd34ea2756b2b5c3860ef7,unknown,"{
+  ""case"": ""case3"",
+  ""pcap"": ""pcap/2025-06-13-traffic-analysis-exercise.pcap"",",0,0,,,no
+case3,case3/zeek_like/conn_summary.csv,conn_summary.csv,16515,b9e72749a8ab7ad59806c8970cde0d7167e5175f28a26ba2d978eed9345403fe,text/plain,"src_ip,dst_ip,src_port,dst_port,protocol
+10.6.13.133,10.6.13.3,52427,389,TCP
+10.",0,0,,,no
+case3,case3/zeek_like/dns_summary.csv,dns_summary.csv,29519,6b5b42aaeb865add832b25efe188a7dccd3d18113551f4a74c9d57f76f764358,text/plain,"timestamp,src_ip,dst_ip,query
+2025-06-13 22:33:55.712627,10.6.13.133,10.6.13.3,w",0,0,,,no
+case3,case3/zeek_like/http_summary.csv,http_summary.csv,10664,5499e7b50dcb7ed3bab0ae8d6b61a4d920e7aba7045cb3ba69743f5a89fd0d21,text/plain,"timestamp,src_ip,dst_ip,method,host,uri,user_agent
+2025-06-13 22:34:00.479901,10",0,0,,,no
+case3,case3/zeek_like/suspicious_http.csv,suspicious_http.csv,51,5bc5e6bfbbec5b37b2e90663a34347f90216cac16ee6a48ab3f3478180c29e91,text/plain,"timestamp,src_ip,dst_ip,method,host,uri,user_agent
+",0,0,,,no

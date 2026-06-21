@@ -1,0 +1,9 @@
+2025-06-13 (FRIDAY): TRAFFIC ANALYSIS EXERCISE FORENSIC ANALYSIS NOTES:
+
+LIST OF FILES FOUND DURING POST-INFECTION FORENSIC ANALYSIS:
+
+C:\Users\rgaines\AppData\Roaming\afUGkp\c2.exe
+C:\Users\rgaines\AppData\Roaming\afUGkp\ycBFVIbLl.lnk
+C:\Users\rgaines\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\ycBFVIbLl.lnk
+C:\Users\rgaines\AppData\Roaming\php\[lots of files]
+

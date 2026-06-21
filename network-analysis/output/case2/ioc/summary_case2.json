@@ -1,0 +1,563 @@
+{
+  "pcap": "pcap/2024-11-26-traffic-analysis-exercise.pcap",
+  "unique_ip_count": 61,
+  "dns_query_count": 60,
+  "http_request_count": 64,
+  "user_agent_count": 4,
+  "suspicious_post_count": 58,
+  "protocol_counter": {
+    "DNS": 343,
+    "TCP": 20051,
+    "HTTP": 8,
+    "DATA-TEXT-LINES": 3,
+    "_WS.MALFORMED": 12,
+    "CLDAP": 10,
+    "LDAP": 111,
+    "MDNS": 7,
+    "LLMNR": 2,
+    "TLS": 5012,
+    "NBNS": 20,
+    "SSDP": 10,
+    "BROWSER": 17,
+    "KERBEROS": 16,
+    "DCERPC": 34,
+    "EPM": 20,
+    "SMB": 66,
+    "SMB2": 256,
+    "DRSUAPI": 50,
+    "SAMR": 30,
+    "RPC_NETLOGON": 2,
+    "NBSS": 10,
+    "LANMAN": 20,
+    "DATA": 106,
+    "NTP": 8,
+    "OCSP": 1,
+    "URLENCODED-FORM": 62,
+    "QUIC": 253,
+    "LSARPC": 4
+  },
+  "suspicious_posts": [
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 11:50:45.849438"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 11:50:46.046139"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 11:50:46.348055"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 11:50:46.749227"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 11:51:46.921682"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 11:52:47.103354"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 11:53:47.260093"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 11:54:47.427092"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 11:55:47.485672"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 11:56:47.546358"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 11:57:47.608604"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 11:58:47.763032"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 11:59:47.818149"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:00:48.022865"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:01:48.318189"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:02:48.487475"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:03:48.558212"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:04:48.715402"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:05:48.896946"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:06:48.946138"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:07:49.001919"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:08:49.062950"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:09:49.216290"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:10:49.369834"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:11:49.523158"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:12:49.680246"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:13:49.737747"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:14:49.880222"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:15:49.936096"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:16:50.090084"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:17:50.148715"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:18:50.207754"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:19:50.367131"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:20:50.424378"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:21:50.485705"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:22:50.640951"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:23:50.794559"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:24:51.056411"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:25:51.112829"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:26:51.175685"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:27:51.330432"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:28:51.593448"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:29:51.748754"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:30:52.010090"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:31:52.161738"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:32:52.411164"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:33:52.561197"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:34:52.717415"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:35:52.967228"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:36:53.228563"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:37:53.382552"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:38:53.536694"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:40:28.801338"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:40:29.009850"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:40:29.317405"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:41:29.372894"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:42:29.528770"
+    },
+    {
+      "method": "POST",
+      "host": "194.180.191.64",
+      "uri": "http://194.180.191.64/fakeurl.htm",
+      "user_agent": "NetSupport Manager/1.3",
+      "src_ip": "10.11.26.183",
+      "dst_ip": "194.180.191.64",
+      "time": "2024-11-26 12:43:29.682016"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+metric,case1_case2,case1_case3,case2_case3,all_three
+shared_public_ips,6,2,4,2
+shared_domains,20,16,21,14

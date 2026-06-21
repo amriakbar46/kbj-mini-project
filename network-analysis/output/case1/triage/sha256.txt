@@ -1,0 +1,3 @@
+8fee06d0b1686faab4364f5b7a741e736ad7e713d5ca9299ff9161a4b4d4862e  pcap/2024-09-04-traffic-analysis-exercise.pcap
+a38267943a7bf3b0e445d7e51cb0a68b3dee797d67081bc9a033f73d079c0f50  pcap/2024-11-26-traffic-analysis-exercise.pcap
+33e274d7246f4eca8fbe7337c465c7ded077cd650d5d4d42481cad822c962741  pcap/2025-06-13-traffic-analysis-exercise.pcap

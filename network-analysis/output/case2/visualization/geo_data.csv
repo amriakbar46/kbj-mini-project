@@ -1,0 +1,42 @@
+ip,country,countryCode,city,lat,lon,org,is_c2
+104.117.244.105,United States,US,Cambridge,42.3649,-71.0888,"Akamai Technologies, Inc.",no
+104.117.244.106,United States,US,Cambridge,42.3649,-71.0888,"Akamai Technologies, Inc.",no
+104.117.244.112,United States,US,Cambridge,42.3649,-71.0888,"Akamai Technologies, Inc.",no
+104.117.244.96,United States,US,Cambridge,42.3649,-71.0888,"Akamai Technologies, Inc.",no
+104.117.247.162,United States,US,Cambridge,42.3649,-71.0888,"Akamai Technologies, Inc.",no
+104.117.247.184,United States,US,Cambridge,42.3649,-71.0888,"Akamai Technologies, Inc.",no
+104.117.247.99,Japan,JP,Chiyoda City,35.694,139.754,"Akamai Technologies, Inc.",no
+104.26.1.231,Canada,CA,Toronto,43.6532,-79.3832,"Cloudflare, Inc.",no
+13.107.21.239,United States,US,Teterboro,40.8618,-74.0587,Microsoft Corporation,no
+13.107.246.57,United States,US,New York,40.7128,-74.006,Microsoft Corporation,no
+13.107.5.93,United States,US,Newark,40.7357,-74.1724,Microsoft Corporation,no
+13.56.30.207,United States,US,San Jose,37.3394,-121.895,AWS EC2 (us-west-1),no
+142.250.113.120,United States,US,Mountain View,37.4225,-122.085,Google LLC,no
+142.250.113.94,United States,US,Mountain View,37.4225,-122.085,Google LLC,no
+142.250.115.95,United States,US,Mountain View,37.4225,-122.085,Google LLC,no
+142.250.138.94,United States,US,Mountain View,37.4225,-122.085,Google LLC,no
+142.251.186.147,United States,US,Mountain View,37.4225,-122.085,Google LLC,no
+142.251.186.95,United States,US,Mountain View,37.4225,-122.085,Google LLC,no
+193.42.38.139,United States,US,Seattle,47.6062,-122.332,HZ Na47,no
+194.180.191.64,Moldova,MD,Chisinau,47.0042,28.8574,,yes
+20.189.173.16,United States,US,San Francisco,37.783,-122.417,Microsoft Azure One Ds Collector (westus),no
+20.189.173.23,United States,US,San Francisco,37.783,-122.417,Microsoft Azure One Ds Collector (westus),no
+20.189.173.26,United States,US,San Francisco,37.783,-122.417,Microsoft Azure One Ds Collector (westus),no
+20.189.173.6,United States,US,San Francisco,37.783,-122.417,Microsoft Azure One Ds Collector (westus),no
+20.42.73.25,United States,US,Boydton,36.677696,-78.37471,Microsoft Azure One Ds Collector (eastus),no
+20.42.73.28,United States,US,Boydton,36.677696,-78.37471,Microsoft Azure One Ds Collector (eastus),no
+20.7.1.246,United States,US,Boydton,36.677696,-78.37471,Microsoft Azure Cloud (eastus2),no
+20.7.2.167,United States,US,Boydton,36.677696,-78.37471,Microsoft Azure Cloud (eastus2),no
+20.96.153.111,United States,US,Boydton,36.677696,-78.37471,Microsoft Azure Cloud (eastus2),no
+20.99.184.37,United States,US,Quincy,47.233,-119.852,Microsoft Azure Cloud (westus2),no
+204.79.197.203,Canada,CA,Montreal,45.5019,-73.5674,Microsoft Corporation,no
+204.79.197.239,Canada,CA,Montreal,45.5019,-73.5674,Microsoft Corporation,no
+213.246.109.5,United Kingdom,GB,Worcester,52.2171,-2.21532,Namesco Limited,no
+23.201.68.167,Japan,JP,Chiyoda City,35.694,139.754,"Akamai Technologies, Inc.",no
+23.204.171.61,United States,US,Irving,32.8116,-96.9522,"Akamai Technologies, Inc.",no
+23.221.22.209,United States,US,Dallas,32.7797,-96.8022,"Akamai Technologies, Inc.",no
+23.221.22.46,United States,US,Dallas,32.7797,-96.8022,"Akamai Technologies, Inc.",no
+23.53.127.105,United States,US,Irving,32.8116,-96.9522,"Akamai Technologies, Inc.",no
+23.53.127.200,United States,US,Irving,32.8116,-96.9522,"Akamai Technologies, Inc.",no
+4.149.227.78,United States,US,Quincy,47.233,-119.852,Microsoft Azure Cloud (westus2),no
+4.150.155.223,United States,US,Des Moines,41.5908,-93.6208,Microsoft Azure Cloud (centralus),no

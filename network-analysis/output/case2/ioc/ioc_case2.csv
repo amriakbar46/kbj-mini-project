@@ -1,0 +1,190 @@
+ioc_type,value,notes
+ip,10.11.26.183,unique IP address
+ip,10.11.26.255,unique IP address
+ip,10.11.26.3,unique IP address
+ip,104.117.244.105,unique IP address
+ip,104.117.244.106,unique IP address
+ip,104.117.244.112,unique IP address
+ip,104.117.244.96,unique IP address
+ip,104.117.247.162,unique IP address
+ip,104.117.247.184,unique IP address
+ip,104.117.247.99,unique IP address
+ip,104.26.1.231,unique IP address
+ip,13.107.21.239,unique IP address
+ip,13.107.246.57,unique IP address
+ip,13.107.5.93,unique IP address
+ip,13.56.30.207,unique IP address
+ip,142.250.113.120,unique IP address
+ip,142.250.113.94,unique IP address
+ip,142.250.115.95,unique IP address
+ip,142.250.138.94,unique IP address
+ip,142.251.186.147,unique IP address
+ip,142.251.186.95,unique IP address
+ip,151.101.66.137,unique IP address
+ip,173.222.49.101,unique IP address
+ip,18.160.156.103,unique IP address
+ip,18.160.156.61,unique IP address
+ip,193.42.38.139,unique IP address
+ip,194.180.191.64,unique IP address
+ip,20.189.173.16,unique IP address
+ip,20.189.173.23,unique IP address
+ip,20.189.173.26,unique IP address
+ip,20.189.173.6,unique IP address
+ip,20.42.73.25,unique IP address
+ip,20.42.73.28,unique IP address
+ip,20.7.1.246,unique IP address
+ip,20.7.2.167,unique IP address
+ip,20.96.153.111,unique IP address
+ip,20.99.184.37,unique IP address
+ip,204.79.197.203,unique IP address
+ip,204.79.197.239,unique IP address
+ip,213.246.109.5,unique IP address
+ip,224.0.0.251,unique IP address
+ip,224.0.0.252,unique IP address
+ip,23.201.68.167,unique IP address
+ip,23.204.171.61,unique IP address
+ip,23.221.22.209,unique IP address
+ip,23.221.22.46,unique IP address
+ip,23.53.127.105,unique IP address
+ip,23.53.127.200,unique IP address
+ip,239.255.255.250,unique IP address
+ip,4.149.227.78,unique IP address
+ip,4.150.155.223,unique IP address
+ip,40.118.171.167,unique IP address
+ip,40.126.28.11,unique IP address
+ip,40.126.29.9,unique IP address
+ip,52.109.0.136,unique IP address
+ip,52.109.20.47,unique IP address
+ip,52.109.8.89,unique IP address
+ip,52.113.194.132,unique IP address
+ip,52.165.164.15,unique IP address
+ip,52.168.112.67,unique IP address
+ip,52.8.34.0,unique IP address
+domain,NEMOTODES-DC.nemotoads.health,DNS query
+domain,_ldap._tcp.Default-First-Site-Name._sites.NEMOTODES-DC.nemotoads.health,DNS query
+domain,_ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.mshome.net,DNS query
+domain,_ldap._tcp.Default-First-Site-Name._sites.dc._msdcs.nemotoads.health,DNS query
+domain,_ldap._tcp.Default-First-Site-Name._sites.nemotoads.health,DNS query
+domain,_ldap._tcp.NEMOTODES-DC.nemotoads.health,DNS query
+domain,_ldap._tcp.dc._msdcs.mshome.net,DNS query
+domain,acroipm2.adobe.com,DNS query
+domain,api.msn.com,DNS query
+domain,armmf.adobe.com,DNS query
+domain,assets.msn.com,DNS query
+domain,checkappexec.microsoft.com,DNS query
+domain,classicgrand.com,DNS query
+domain,client.wns.windows.com,DNS query
+domain,code.jquery.com,DNS query
+domain,confirmsubscription.com,DNS query
+domain,css.createsend1.com,DNS query
+domain,ctldl.windowsupdate.com,DNS query
+domain,data-edge.smartscreen.microsoft.com,DNS query
+domain,default.exp-tas.com,DNS query
+domain,displaycatalog.mp.microsoft.com,DNS query
+domain,dns.msftncsi.com,DNS query
+domain,ecs.office.com,DNS query
+domain,edge.microsoft.com,DNS query
+domain,fa000000002.resources.office.net,DNS query
+domain,fa000000005.resources.office.net,DNS query
+domain,fa000000116.resources.office.net,DNS query
+domain,fa000000128.resources.office.net,DNS query
+domain,fa000000163.resources.office.net,DNS query
+domain,fd.api.iris.microsoft.com,DNS query
+domain,fe3cr.delivery.mp.microsoft.com,DNS query
+domain,fonts.googleapis.com,DNS query
+domain,fonts.gstatic.com,DNS query
+domain,geo.netsupportsoftware.com,DNS query
+domain,img-s-msn-com.akamaized.net,DNS query
+domain,inputsuggestions.msdxcdn.microsoft.com,DNS query
+domain,js.createsend1.com,DNS query
+domain,licensing.mp.microsoft.com,DNS query
+domain,login.live.com,DNS query
+domain,maps.googleapis.com,DNS query
+domain,maps.gstatic.com,DNS query
+domain,mobile.events.data.microsoft.com,DNS query
+domain,modandcrackedapk.com,DNS query
+domain,mrodevicemgr.officeapps.live.com,DNS query
+domain,nav.smartscreen.microsoft.com,DNS query
+domain,odc.officeapps.live.com,DNS query
+domain,officeclient.microsoft.com,DNS query
+domain,r10.o.lencr.org,DNS query
+domain,srtb.msn.com,DNS query
+domain,storecatalogrevocation.storequality.microsoft.com,DNS query
+domain,th.bing.com,DNS query
+domain,v10.events.data.microsoft.com,DNS query
+domain,windows.msn.com,DNS query
+domain,wpad.mshome.net,DNS query
+domain,wpad.nemotoads.health,DNS query
+domain,www.bing.com,DNS query
+domain,www.google.com,DNS query
+domain,www.gstatic.com,DNS query
+domain,www.msftconnecttest.com,DNS query
+domain,www.msn.com,DNS query
+url,GET http://www.msftconnecttest.com/connecttest.txt,"src=10.11.26.183, dst=104.117.247.184"
+url,GET http://r10.o.lencr.org/MFMwUTBPME0wSzAJBgUrDgMCGgUABBRpD%2BQVZ%2B1vf7U0RGQGBm8JZwdxcgQUdKR2KRcYVIUxN75n5gZYwLzFBXICEgRSsdGCXQJklJZNbHi669GH4A%3D%3D,"src=10.11.26.183, dst=104.117.247.99"
+url,GET http://geo.netsupportsoftware.com/location/loca.asp,"src=10.11.26.183, dst=104.26.1.231"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,GET http://acroipm2.adobe.com/assets/Owner/arm/ProcessMAU.txt,"src=10.11.26.183, dst=23.53.127.105"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,GET http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/disallowedcertstl.cab?ce02e9976e1239e1,"src=10.11.26.183, dst=23.53.127.200"
+url,GET http://ctldl.windowsupdate.com/msdownload/update/v3/static/trustedr/en/authrootstl.cab?778a0928305752e9,"src=10.11.26.183, dst=23.53.127.200"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+url,POST http://194.180.191.64http://194.180.191.64/fakeurl.htm,"src=10.11.26.183, dst=194.180.191.64"
+user_agent,Microsoft NCSI,HTTP User-Agent
+user_agent,Microsoft-CryptoAPI/10.0,HTTP User-Agent
+user_agent,Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; Tablet PC 2.0),HTTP User-Agent
+user_agent,NetSupport Manager/1.3,HTTP User-Agent

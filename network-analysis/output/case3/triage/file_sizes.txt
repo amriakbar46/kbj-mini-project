@@ -1,0 +1,2 @@
+Permissions Size User Date Modified Name
+.rw-rw-r--   43M yoan 14 Jun  2025  pcap/2025-06-13-traffic-analysis-exercise.pcap
