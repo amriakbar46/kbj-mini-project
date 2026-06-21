@@ -17,6 +17,18 @@ Folder ini berisi custom Python scripts untuk automation dan analisis DFIR pada 
 | `zeek_like_logs.py` | Generate normalized logs |
 | `beacon_visualization.py` | Generate beacon timeline |
 | `communication_graph.py` | Generate communication graph |
+| `visualize_protocol_pie.py` | Protocol distribution pie chart |
+| `visualize_timeline_heatmap.py` | Host × time activity heatmap |
+| `visualize_dns_timeline.py` | DNS query timeline + DGA detection |
+| `visualize_geo_map.py` | Folium geographic IP map |
+| `visualize_beacon_histogram.py` | Beacon interval histogram |
+| `visualize_ioc_heatmap.py` | IOC coverage heatmap |
+| `visualize_cross_case_overlap.py` | Cross-case Venn diagram |
+| `compute_response_variables.py` | Compute report response variables |
+| `build_mitre_navigator.py` | Generate MITRE ATT&CK Navigator JSON |
+| `analyze_tls_ja3.py` | Extract TLS Client Hello + JA3 fingerprint |
+| `build_file_extraction_summary.py` | File extraction summary CSV |
+| `wireshark_evidence/gen_wireshark_evidence.py` | Generate Wireshark-style evidence PNGs (Lampiran A Final Report) |
 
 ---
 
@@ -40,6 +52,14 @@ python scripts/beacon_analysis.py
 python scripts/beacon_visualization.py
 python scripts/communication_graph.py
 ```
+
+## Wireshark Evidence (Lampiran A Final Report)
+
+```bash
+python scripts/wireshark_evidence/gen_wireshark_evidence.py
+```
+
+Lihat `scripts/wireshark_evidence/README.md` untuk detail filter tshark per PNG.
 
 ---
 

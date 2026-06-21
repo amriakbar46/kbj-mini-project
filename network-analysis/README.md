@@ -403,6 +403,14 @@ Tujuan:
 | `analyze_tls_ja3.py` | Extract TLS Client Hello, compute JA3 fingerprint per case, build cross-case JA3 comparison |
 | `build_file_extraction_summary.py` | Build comprehensive file extraction summary CSV with SHA256, content preview, suspicious flag |
 
+## Report Evidence Script (NEW)
+
+| Script | Function |
+|---|---|
+| `wireshark_evidence/gen_wireshark_evidence.py` | Generate Wireshark-style evidence PNGs (11 frame captures + Follow TCP Stream) for Lampiran A Final Report. Render dari tshark output via matplotlib — reproducible, headless, verifiable. |
+
+Lihat `scripts/wireshark_evidence/README.md` untuk detail.
+
 # Exploratory DFIR Workflow
 
 Selama proses investigasi, beberapa analisis dilakukan secara exploratory dan iterative menggunakan command-line serta Python inline execution untuk validasi cepat terhadap artefak network traffic.
