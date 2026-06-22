@@ -127,41 +127,93 @@ def render_wireshark_pane(title, columns, rows, fname, out_dir,
 
 
 def find_first_tcp_stream(pcap, host_filter):
-    """Return the TCP stream index of the first matching frame."""
+    """Return the TCP stream index of the first matching frame that has data.
+
+    Skips streams with empty node info (Node 0/1 with :0 — these are control
+    packets without real TCP stream, e.g. tshark internally uses some
+    pseudo-streams for synchronization).
+    """
     r = subprocess.run(
         ["tshark", "-r", pcap, "-Y", host_filter, "-T", "fields", "-e", "tcp.stream"],
         capture_output=True, text=True,
     )
     if not r.stdout.strip():
         return None
-    return r.stdout.strip().split("\n")[0]
+    seen = set()
+    for raw in r.stdout.strip().split("\n"):
+        s = raw.strip()
+        if not s or s in seen:
+            continue
+        seen.add(s)
+        verify = subprocess.run(
+            ["tshark", "-r", pcap, "-q", "-z", f"follow,tcp,ascii,{s}"],
+            capture_output=True, text=True,
+        )
+        if "Node 0: :0" in verify.stdout or "Node 1: :0" in verify.stdout:
+            continue
+        if "===" not in verify.stdout:
+            continue
+        return s
+    return None
 
 
 def get_follow_stream(pcap, stream_idx, max_bytes=4096):
-    """Extract a TCP stream via tshark -z follow and split into client/server."""
+    """Extract a TCP stream via tshark -z follow and split into client/server.
+
+    Skips tshark header/footer lines (==, Follow:, Filter:, Node X:).
+    Detects client vs server via a state machine:
+      - First content block is always the client request (after header).
+      - A tab-prefixed digit (\\t<num>) marks a server response length;
+        lines after that until the next bare digit (client request length
+        of a subsequent request) are server content.
+      - A bare digit line (e.g. '443') marks a client request length;
+        lines after that until the next \\t<num> are client content.
+    Strips CR (\\r) from data lines.
+    """
     r = subprocess.run(
         ["tshark", "-r", pcap, "-q", "-z", f"follow,tcp,ascii,{stream_idx}"],
         capture_output=True, text=True,
     )
     if r.returncode != 0:
         return None, None
+
     client, server = [], []
-    for line in r.stdout.split("\n"):
-        if not line.strip() or line.startswith("===") or line.startswith("Filter:"):
+    skip_prefixes = ("===", "Follow:", "Filter:", "Node 0:", "Node 1:")
+    in_server_block = False
+
+    for raw in r.stdout.split("\n"):
+        line = raw.rstrip("\r")
+        if not line.strip():
             continue
+        if any(line.startswith(p) for p in skip_prefixes):
+            in_server_block = False
+            continue
+
         if line.startswith("\t"):
-            content = line.lstrip("\t").rstrip()
-            if content:
-                client.append(content)
+            in_server_block = True
+            stripped = line.lstrip("\t").rstrip()
+            if stripped and not stripped.isdigit():
+                server.append(stripped)
+            continue
+        if line.strip().isdigit():
+            in_server_block = False
+            continue
+
+        if in_server_block:
+            server.append(line.rstrip())
         else:
-            content = line.strip()
-            if content:
-                server.append(content)
+            client.append(line.rstrip())
+
     return client[:max_bytes], server[:max_bytes]
 
 
 def render_stream(pcap, stream_idx, title, fname, out_dir, max_lines=25):
-    """Render a Wireshark Follow TCP Stream dialog as PNG."""
+    """Render a Wireshark Follow TCP Stream dialog as PNG.
+
+    Client and server lines are rendered as two separate columns side by side
+    (client on the left, server on the right) so the original Wireshark layout
+    is preserved without any overlap.
+    """
     client, server = get_follow_stream(pcap, stream_idx)
     if client is None:
         return None
@@ -178,13 +230,11 @@ def render_stream(pcap, stream_idx, title, fname, out_dir, max_lines=25):
                 break
         return out
 
-    c_lines = wrap_lines(client, limit=max_lines)
-    s_lines = wrap_lines(server, limit=max_lines)
-    c_lines = c_lines[:22]
-    s_lines = s_lines[:22]
+    c_lines = wrap_lines(client, limit=max_lines)[:22]
+    s_lines = wrap_lines(server, limit=max_lines)[:22]
 
     n_rows = max(len(c_lines), len(s_lines), 1)
-    fig_h = max(5.0, 0.32 * (n_rows + 5))
+    fig_h = max(5.0, 0.30 * (n_rows + 5))
     fig, ax = plt.subplots(figsize=(14, fig_h))
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)
@@ -198,30 +248,33 @@ def render_stream(pcap, stream_idx, title, fname, out_dir, max_lines=25):
                            facecolor="#c43232", edgecolor="none"))
     ax.text(0.04, 0.92, "Client \u2192 Server (victim)", fontsize=8,
             family="monospace", va="center", ha="left")
-    ax.add_patch(Rectangle((0.30, 0.91), 0.012, 0.022,
+    ax.add_patch(Rectangle((0.52, 0.91), 0.012, 0.022,
                            facecolor="#1d5d8f", edgecolor="none"))
-    ax.text(0.32, 0.92, "Server \u2192 Client (C2)", fontsize=8,
+    ax.text(0.54, 0.92, "Server \u2192 Client (C2)", fontsize=8,
             family="monospace", va="center", ha="left")
 
+    col_separator = 0.5
     y_top = 0.88
-    row_h = 0.028
+    row_h = 0.026
 
     for ri, line in enumerate(c_lines):
         y = y_top - (ri + 1) * row_h
         if ri % 2 == 0:
-            ax.add_patch(Rectangle((0, y), 1, row_h,
+            ax.add_patch(Rectangle((0, y), col_separator, row_h,
                                    facecolor="#fdf5f5", edgecolor="none"))
-        ax.text(0.02, y + row_h / 2, line, fontsize=7.5, family="monospace",
+        ax.text(0.005, y + row_h / 2, line, fontsize=7, family="monospace",
                 color="#c43232", va="center", ha="left")
 
     for ri, line in enumerate(s_lines):
         y = y_top - (ri + 1) * row_h
-        if ri >= len(c_lines) or c_lines[ri] != line:
-            if ri % 2 == 0:
-                ax.add_patch(Rectangle((0, y), 1, row_h,
-                                       facecolor="#f5f8fc", edgecolor="none"))
-            ax.text(0.02, y + row_h / 2, line, fontsize=7.5, family="monospace",
-                    color="#1d5d8f", va="center", ha="left")
+        if ri % 2 == 0:
+            ax.add_patch(Rectangle((col_separator, y), 1 - col_separator, row_h,
+                                   facecolor="#f5f8fc", edgecolor="none"))
+        ax.text(col_separator + 0.005, y + row_h / 2, line, fontsize=7,
+                family="monospace", color="#1d5d8f", va="center", ha="left")
+
+    ax.add_patch(Rectangle((col_separator - 0.001, 0), 0.002, 0.9,
+                           facecolor="#cccccc", edgecolor="none"))
 
     plt.tight_layout(pad=0)
     out_path = os.path.join(out_dir, fname)
